@@ -1,5 +1,5 @@
 <tr>
-  <td colspan="<%= cells %>" style="background: #ffdddd;">
+  <td colspan="<%= cells %>" style="background: #edffdd;">
     <% usr_name = '' %>
     <% contents.each_with_index do |v,i| %>
         <div style="float: left;clear: both;margin-left: 5px;">
@@ -8,6 +8,11 @@
             <%== usr_name == v.name ? uname_opacity(v.name,1) : uname_opacity(v.name,0) %>:<%= v.issue_id %>:<%= v.progress %>h:<%= v.subject %>
             <% usr_name = v.name %>
           </a>
+        </div>
+    <% end %>
+    <% if contents.length <= 0 %>
+        <div style="float: left;clear: both;margin-left: 5px;">
+          <%= t('.no_data') %>
         </div>
     <% end %>
   </td>

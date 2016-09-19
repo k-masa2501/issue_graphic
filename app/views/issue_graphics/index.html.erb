@@ -69,6 +69,7 @@
     var g_dSet1 = <%== @estimated.to_json %>;
     var g_dSet2 = <%== @atual.to_json %>;
     var g_dSet3 = <%== @plan.to_json %>;
+    var g_get_process_url = '<%= get_process_project_issue_graphics_path %>';
     draw_d3_line_graph(g_dSet1,g_dSet2,g_dSet3);
 </script>
 <%= javascript_include_tag "index", :plugin => "issue_graphic" %>

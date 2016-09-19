@@ -11,6 +11,7 @@ ja:
     fri: '(金)'
     sat: '(土)'
     unselected: '-- 未選択 --'
+    incomplete: '未完了'
     index_t:
       filter:
         filter: "フィルター"
@@ -21,6 +22,7 @@ ja:
         status: "ステータス："
       process:
         not_assigned: "担当なし"
+        no_data: "該当データなし"
     index:
       view_h2: "バーンダウンチャート"
       date: "日付"

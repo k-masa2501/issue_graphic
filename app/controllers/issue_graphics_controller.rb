@@ -26,7 +26,7 @@ class IssueGraphicsController < ApplicationController
 
     # ステータス
     @status = IssueStatus.pluck('name, id')
-    @status.unshift(['未完了',9999])
+    @status.unshift([I18n.t('issue_graphics.incomplete'),9999])
 
     # 優先度
     @priority = Enumeration.where('type = ?',IssuePriority).pluck('name, id')
@@ -46,7 +46,7 @@ class IssueGraphicsController < ApplicationController
 
     @member.push([nil,nil])
 
-    @member = [@member.find { |v| v[1].to_i == params[:assigned_to].to_i}] if params[:assigned_to].present?
+    @member = [@member.find { |v| v[1].to_i == params[:f_assigned_to].to_i}] if params[:f_assigned_to].present?
 
     # プロジェクトごとの集計結果を取得
     data = Aggregation.get_sum_group_by_today(@index_filter)
@@ -60,7 +60,8 @@ class IssueGraphicsController < ApplicationController
   def get_process
     set_filter(params)
     result = Aggregation.get_assigned_by_process(@index_filter)
-    render json: {:html => render_to_string(partial: "issue_graphics/index_t/process", locals: {contents: result, cells: params[:cells]} )}
+    render json: {:html => render_to_string(partial: "issue_graphics/index_t/process",
+                                            locals: {contents: result, cells: params[:cells]} )}
   end
 
 private
@@ -101,7 +102,7 @@ private
     #r_average = plan[plan.length-1][:value].quo(due_date - data[data.length-1].today)
     count = 0
     ((data[data.length-1].today+1)..due_date).each_with_index do |v, i|
-      next if v.wday == 0 or v.wday == 6
+      next if v.wday == 0 or v.wday == 6 or v < start_date
       count += 1
     end
 
@@ -109,7 +110,7 @@ private
 
     ((data[data.length-1].today+1)..due_date).each_with_index do |v, i|
       estimated.push({date: v, value: data[data.length-1].estimated_sum})
-      if v.wday == 0 or v.wday == 6
+      if v.wday == 0 or v.wday == 6 or v < start_date
         plan.push({date: v, value:plan[plan.length-1][:value]})
       else
         plan.push({date: v, value:plan[plan.length-1][:value] - r_average})

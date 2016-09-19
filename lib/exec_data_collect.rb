@@ -7,7 +7,7 @@ class ExecDataCollect
     # 集計日がチケットの開始～終了期間に含まれるレコードを収集
     issue_aggs = []
     issue_custom_agg = []
-    today = Date.strptime('2016-8-7','%Y-%m-%d')#Date.today.to_s
+    today = Date.today
     issue_rc = get_issues(arg[:issue_id], arg[:project_id])
 
     issue_rc.each do |issue|

@@ -19,7 +19,7 @@ $(function(){
 
       $.ajax({
         type: "get",
-        url: "aggregations/get_process",
+        url: g_get_process_url,
         data: data,
         dataType: "json"
       }).done(function(  data, textStatus, jqXHR ) {

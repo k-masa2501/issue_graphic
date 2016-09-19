@@ -11,6 +11,7 @@ en:
     fri: '(fri)'
     sat: '(sat)'
     unselected: '-- unselected --'
+    incomplete: 'incomplete'
     index_t:
       filter:
         filter: "filter"
@@ -21,6 +22,7 @@ en:
         status: "status："
       process:
         not_assigned: "no charge"
+        no_data: "No Data Available"
     index:
       view_h2: "Burn down chart"
       date: "date"
