@@ -1,0 +1,30 @@
+ja:
+  label_issue_graphic: チケットグラフ
+  project_module_issue_graphic: チケットグラフプラグイン
+  permission_view_issue_graphics: チケットグラフの閲覧
+  issue_graphics:
+    sun: '(日)'
+    mon: '(月)'
+    tue: '(火)'
+    wed: '(水)'
+    thu: '(木)'
+    fri: '(金)'
+    sat: '(土)'
+    unselected: '-- 未選択 --'
+    index_t:
+      filter:
+        filter: "フィルター"
+        assigned_to: "担当者："
+        tracker: "トラッカー："
+        priority: "優先度："
+        category: "カテゴリ："
+        status: "ステータス："
+      process:
+        not_assigned: "担当なし"
+    index:
+      view_h2: "バーンダウンチャート"
+      date: "日付"
+      estimated: "予定"
+      actual: "実績"
+      gap: "差異"
+      not_assigned: "担当なし"

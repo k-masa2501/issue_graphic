@@ -1,0 +1,32 @@
+<fieldset id="filters" class="collapsible">
+  <legend onclick="toggleFieldset(this);"><%= t('.filter') %></legend>
+
+  <%= form_tag('/index', :method => :get, :class => 'filter-form') do %>
+      <div style="float: left;margin-left: 5px">
+        <label for="assigned_to"><%= t('.assigned_to') %><%= select_tag 'f_assigned_to', custom_options_for_select(assigned_to, params[:f_assigned_to]),{:class => 'filter-change'} %></label>
+      </div>
+      <div style="float: left;margin-left: 5px">
+        <label for="tracker"><%= t('.tracker') %><%= select_tag 'f_tracker', custom_options_for_select(tracker, params[:f_tracker]),{:class => 'filter-change'} %></label>
+      </div>
+      <div style="float: left;margin-left: 5px">
+        <label for="priority"><%= t('.priority') %><%= select_tag 'f_priority', custom_options_for_select(priority, params[:f_priority]),{:class => 'filter-change'} %></label>
+      </div>
+      <div style="float: left;margin-left: 5px">
+        <label for="category"><%= t('.category') %><%= select_tag 'f_category', custom_options_for_select(category, params[:f_category]),{:class => 'filter-change'} %></label>
+      </div>
+      <div style="float: left;margin-left: 5px">
+        <label for="status"><%= t('.status') %><%= select_tag 'f_status', custom_options_for_select(status, params[:f_status]),{:class => 'filter-change'} %></label>
+      </div>
+      <% custom.each_with_index do |v,i| %>
+          <div style="float: left;margin-left: 5px">
+            <% v.each do |key,value| %>
+                <% name = value.delete_at(0) %>
+                <% default = params[:custom].present? ? params[:custom]["#{name}"] : nil %>
+                <label for="<%= key %>">
+                  <%= key %>：<%= select_tag "custom[#{name}]", custom_options_for_select(value, default),{:class => 'filter-change'} %>
+                </label>
+            <% end %>
+          </div>
+      <% end %>
+  <% end %>
+</fieldset>

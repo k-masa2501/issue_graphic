@@ -1,0 +1,30 @@
+en:
+  label_issue_graphic: Ticket graph
+  project_module_issue_graphic: Ticket graph plug-ins
+  permission_view_issue_graphics: View of ticket graph
+  issue_graphics:
+    sun: '(sun)'
+    mon: '(mon)'
+    tue: '(tue)'
+    wed: '(wed)'
+    thu: '(thu)'
+    fri: '(fri)'
+    sat: '(sat)'
+    unselected: '-- unselected --'
+    index_t:
+      filter:
+        filter: "filter"
+        assigned_to: "assigned_to："
+        tracker: "tracker："
+        priority: "priority："
+        category: "category："
+        status: "status："
+      process:
+        not_assigned: "no charge"
+    index:
+      view_h2: "Burn down chart"
+      date: "date"
+      estimated: "plan"
+      actual: "actual"
+      gap: "gap"
+      not_assigned: "no charge"

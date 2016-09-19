@@ -1,0 +1,14 @@
+<tr>
+  <td colspan="<%= cells %>" style="background: #ffdddd;">
+    <% usr_name = '' %>
+    <% contents.each_with_index do |v,i| %>
+        <div style="float: left;clear: both;margin-left: 5px;">
+          <a href="<%= issue_path(v.issue_id) %>">
+            <% v.name = t('.not_assigned') if v.name.blank? %>
+            <%== usr_name == v.name ? uname_opacity(v.name,1) : uname_opacity(v.name,0) %>:<%= v.issue_id %>:<%= v.progress %>h:<%= v.subject %>
+            <% usr_name = v.name %>
+          </a>
+        </div>
+    <% end %>
+  </td>
+</tr>
