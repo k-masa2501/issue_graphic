@@ -1,12 +1,14 @@
+include IssueGraphicsHelper
 class IssueGraphicsController < ApplicationController
   unloadable
   menu_item :issue_graphic
   before_filter :find_project, :authorize
-  before_filter :find_issue_graphic, :except => [:index, :get_process]
+  before_filter :find_issue_graphic, :except => [:index, :get_process, :gantt_chart]
+  before_filter :set_filter
+  before_filter :collect_filter_item, :except => [:get_process]
+  before_filter :check_delete, :except => [:get_process]
 
   def index
-
-    set_filter(params)
 
     @day_names = [
         I18n.t('issue_graphics.sun'),
@@ -18,11 +20,103 @@ class IssueGraphicsController < ApplicationController
         I18n.t('issue_graphics.sat')
     ]
 
+    # プロジェクトごとの集計結果を取得
+    data = Aggregation.get_sum_group_by_today(@filter)
+    @estimated, @atual, @plan, @daily_gap = collect_graph_data(data)
+
+    # 担当者別日ごとの実績値
+    @daily_sum, @total_by_assigned, @progress = get_every_assigned_in_charge_act(@member)
+
+    Thread.start do
+
+    end
+
+  end
+
+  def gantt_chart
+
+    pos = 0
+    @chart_data = Array.new
+    is_closed = IssueStatus.where('is_closed > 0').pluck('id')
+
+    # 担当者別日ごとの実績値
+    @daily_sum, @total_by_assigned, @progress = get_every_assigned_in_charge_act(@member)
+
+    # ---------
+
+    data = Aggregation.get_task_progress_rate(@filter)
+
+    data.each_with_index do |v,i|
+      # 残日数
+      r_day = v.due_date - (v.start_date-1)
+      act = v.done_ratio.present? ? (r_day*v.done_ratio):0
+
+      @chart_data.push([
+                           {text: v.subject.to_s, data: (r_day*24).to_i, pos: pos, color: "#DFDFDF", date: v.start_date.to_s + " 00:00"},
+                           {text: "", data: (act*24).to_f, pos: pos, color: gantt_color(v, is_closed), date: v.start_date.to_s + " 00:00"}
+                       ])
+      pos +=30
+
+    end
+
+    @start_date, @due_date = Aggregation.get_date(@filter)
+
+    logger.debug(@chart_data)
+    logger.debug(@start_date)
+    logger.debug(@due_date)
+
+    # ---------
+
+  end
+
+
+  def get_process
+
+    result = Aggregation.get_assigned_by_process(@filter)
+    render json: {:html => render_to_string(partial: "issue_graphics/index_t/process",
+                                            locals: {contents: result, cells: params[:cells]} )}
+  end
+
+private
+
+  def find_project
+    @project = Project.find(params[:project_id])
+  rescue ActiveRecord::RecordNotFound
+    render_404
+  end
+
+  def find_ticket_graphic
+    #@foo = Foo.find_by_id(params[:id])
+    #render_404    unless @foo
+  end
+
+  def check_delete
+
+     issue_ids = Issue.where('project_id = ?', @project.id).pluck("id")
+     aggs_ids = Aggregation
+                    .where("aggregations.today = (#{Aggregation.select('max(today)').to_sql})")
+                    .where('project_id = ?', @project.id).pluck("issue_id")
+
+    if issue_ids.length != aggs_ids.length
+
+      delete_ids = Array.new
+      aggs_ids.each do |v|
+        ret = issue_ids.find { |n| n.to_i == v.to_i }
+        delete_ids.push(v) if ret.blank?
+      end
+
+      Aggregation.delete_records(delete_ids) if delete_ids.length > 0
+
+    end
+
+  end
+
+  def collect_filter_item
     # トラッカー
     @tracker = Tracker
-                     .joins('inner join projects_trackers ptrs on trackers.id = ptrs.tracker_id')
-                     .where('ptrs.project_id = ?', @project.id)
-                     .pluck('trackers.name, trackers.id')
+                   .joins('inner join projects_trackers ptrs on trackers.id = ptrs.tracker_id')
+                   .where('ptrs.project_id = ?', @project.id)
+                   .pluck('trackers.name, trackers.id')
 
     # ステータス
     @status = IssueStatus.pluck('name, id')
@@ -47,36 +141,7 @@ class IssueGraphicsController < ApplicationController
     @member.push([nil,nil])
 
     @member = [@member.find { |v| v[1].to_i == params[:f_assigned_to].to_i}] if params[:f_assigned_to].present?
-
-    # プロジェクトごとの集計結果を取得
-    data = Aggregation.get_sum_group_by_today(@index_filter)
-    @estimated, @atual, @plan, @daily_gap = collect_graph_data(data)
-
-    # 担当者別日ごとの実績値
-    @daily_sum, @total_by_assigned, @progress = get_every_assigned_in_charge_act(@member)
-
   end
-
-  def get_process
-    set_filter(params)
-    result = Aggregation.get_assigned_by_process(@index_filter)
-    render json: {:html => render_to_string(partial: "issue_graphics/index_t/process",
-                                            locals: {contents: result, cells: params[:cells]} )}
-  end
-
-private
-
-  def find_project
-    @project = Project.find(params[:project_id])
-  rescue ActiveRecord::RecordNotFound
-    render_404
-  end
-
-  def find_ticket_graphic
-    #@foo = Foo.find_by_id(params[:id])
-    #render_404    unless @foo
-  end
-
 
   def collect_graph_data(data)
     #begin
@@ -89,9 +154,6 @@ private
     # データが存在しない場合は処理しない
     return nil, nil, nil, nil if data.length <= 0
 
-    # チケットの期限が一番遅い日と、開始日が一番早い日を取得
-    start_date, due_date = Aggregation.get_date(@index_filter)
-
     data.each_with_index do |v, i|
       estimated.push({date: v.today, value: v.estimated_sum})
       atual.push({date: v.today, value: v.estimated_sum - v.actual_sum})
@@ -99,7 +161,8 @@ private
       daily_gap.push(v.actual_sum - v.plan_value_sum)
     end
 
-    #r_average = plan[plan.length-1][:value].quo(due_date - data[data.length-1].today)
+    start_date, due_date = Aggregation.get_date(@filter)
+
     count = 0
     ((data[data.length-1].today+1)..due_date).each_with_index do |v, i|
       next if v.wday == 0 or v.wday == 6 or v < start_date
@@ -135,7 +198,7 @@ private
     array = Array.new
     daily_sum =  Array.new
 
-    group_by_assign, group_by_today = Aggregation.get_assign_act_cost(@index_filter)
+    group_by_assign, group_by_today = Aggregation.get_assign_act_cost(@filter)
 
     today = group_by_today[0].today if group_by_today.length > 0
 
@@ -192,32 +255,32 @@ private
 
   end
 
-  def set_filter(params)
+  def set_filter
 
-    @index_filter = [['aggregations.project_id = ?',@project.id]]
+    @filter = [['aggregations.project_id = ?',@project.id]]
 
     params.each do |key,value|
       case key
         when 'custom' then
           value.each do |k2,v2|
-            @index_filter.push(["aggregations.custom_value REGEXP '(^|,)?=?(,|$)'", k2.to_i,v2.to_i]) if v2.present?
+            @filter.push(["aggregations.custom_value REGEXP '(^|,)?=?(,|$)'", k2.to_i,v2.to_i]) if v2.present?
           end
         when 'f_assigned_to' then
-          @index_filter.push(["aggregations.assigned_to_id = ?", value]) if value.present?
+          @filter.push(["aggregations.assigned_to_id = ?", value]) if value.present?
         when 'f_tracker' then
-          @index_filter.push(["aggregations.tracker_id = ?", value]) if value.present?
+          @filter.push(["aggregations.tracker_id = ?", value]) if value.present?
         when 'f_priority' then
-          @index_filter.push(["aggregations.priority_id = ?", value]) if value.present?
+          @filter.push(["aggregations.priority_id = ?", value]) if value.present?
         when 'f_category' then
-          @index_filter.push(["aggregations.category_id = ?", value]) if value.present?
+          @filter.push(["aggregations.category_id = ?", value]) if value.present?
         when 'f_status' then
           if value.to_i == 9999
-            @index_filter.push(["aggregations.status_id in (select id from issue_statuses where is_closed = 0)"])
+            @filter.push(["aggregations.status_id in (select id from issue_statuses where is_closed = 0)"])
           else
-            @index_filter.push(["aggregations.status_id = ?", value]) if value.present?
+            @filter.push(["aggregations.status_id = ?", value]) if value.present?
           end
         when 'today' then
-          @index_filter.push(["aggregations.today = ?", value]) if value.present?
+          @filter.push(["aggregations.today = ?", value]) if value.present?
         else
       end
     end

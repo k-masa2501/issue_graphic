@@ -46,19 +46,10 @@ text {
     border-radius: 10px;
 }
 
-.deficit{color: red;}
-.surplus{color: #1754ff;}
-
-.sum_img {
-    float: left;
-    width: 50px;
-    height: 15px;
-    background: url('../images/sum.gif');
+.deficit{
+    color: #FF727B;
+}
+.surplus{
+    color: #1754ff;
 }
 
-.progress_img {
-    float: left;
-    width: 50px;
-    height: 15px;
-    background: url('../images/progress.gif');
-}

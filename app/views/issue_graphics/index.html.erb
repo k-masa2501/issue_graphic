@@ -1,7 +1,9 @@
 <%= javascript_include_tag "d3.v3.min", :plugin => "issue_graphic" %>
 <%= javascript_include_tag "jquery-3.1.0.min", :plugin => "issue_graphic" %>
+<%= stylesheet_link_tag "common", :plugin => "issue_graphic" %>
 <%= stylesheet_link_tag "index", :plugin => "issue_graphic" %>
-<%= javascript_include_tag "draw_chart", :plugin => "issue_graphic" %>
+<%= javascript_include_tag "common", :plugin => "issue_graphic" %>
+<%= javascript_include_tag "draw_line_graph", :plugin => "issue_graphic" %>
 <h2><%= t('.view_h2') %></h2>
 <div style="float: left;width: 100%">
   <div class="sum_img"></div>
@@ -18,7 +20,7 @@
 
   </div>
 </div>
-<%= render partial: "issue_graphics/index_t/filter", locals: {params: params,
+<%= render partial: "layouts/filter", locals: {params: params,
                                                             assigned_to: @assigned_to,
                                                             tracker: @tracker,
                                                             priority: @priority,
@@ -53,8 +55,6 @@
               <td class="<%= get_num_color(daily_gap) %>"><%= atual %></td>
               <td class="<%= get_num_color(daily_gap) %>"><%= daily_gap %></td>
               <% @member.each do |v| %>
-                  <% logger.debug(@member) %>
-                  <% logger.debug(@daily_sum) %>
                   <% item = @daily_sum[index].find {|item| item[:name] == v[0] } %>
                   <% nil != item ? sum = item[:sum].round(1) : sum = 0.0 %>
                   <td class="<%= get_n_color_of_assignend(sum) %>"><%= sum %></td>
@@ -65,11 +65,12 @@
     </tbody>
   </table>
 </div>
-<script>
-    var g_dSet1 = <%== @estimated.to_json %>;
-    var g_dSet2 = <%== @atual.to_json %>;
-    var g_dSet3 = <%== @plan.to_json %>;
-    var g_get_process_url = '<%= get_process_project_issue_graphics_path %>';
-    draw_d3_line_graph(g_dSet1,g_dSet2,g_dSet3);
-</script>
 <%= javascript_include_tag "index", :plugin => "issue_graphic" %>
+<script>
+  $(function(){
+    var line_graph = new DrawLineGraphs(<%== @estimated.to_json %>,<%== @atual.to_json %>,<%== @plan.to_json %>);
+    var index = new Indexes('<%= get_process_project_issue_graphics_path %>', line_graph);
+
+    line_graph.draw();
+  });
+</script>

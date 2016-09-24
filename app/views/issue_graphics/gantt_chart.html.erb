@@ -1,0 +1,39 @@
+<%= javascript_include_tag "d3.v3.min", :plugin => "issue_graphic" %>
+<%= javascript_include_tag "jquery-3.1.0.min", :plugin => "issue_graphic" %>
+<%= stylesheet_link_tag "common", :plugin => "issue_graphic" %>
+<%= stylesheet_link_tag "gantt_chart", :plugin => "issue_graphic" %>
+<%= javascript_include_tag "common", :plugin => "issue_graphic" %>
+<%= javascript_include_tag "draw_ganttchart", :plugin => "issue_graphic" %>
+<h2><%= t('.view_h2') %></h2>
+<div style="float: left;width: 100%">
+  <div class="sum_img"></div>
+  <div style="float: left;margin-left: 5px">
+    <% @total_by_assigned.each do |v| %>
+        <span style="margin-left: 5px"><%= v[0] == nil ? t('.not_assigned') : v[0]  %>:<%= v[1] %></span>
+    <% end %>
+  </div>
+  <div style="float: left;margin-left: 5px">
+    <div class="progress_img"></div>
+    <% @progress.each do |v| %>
+        <span style="margin-left: 5px"><%= v[0] == nil ? t('.not_assigned') : v[0] %>:<%= v[1] %></span>
+    <% end %>
+  </div>
+</div>
+<%= render partial: "layouts/filter", locals: {params: params,
+                                               assigned_to: @assigned_to,
+                                               tracker: @tracker,
+                                               priority: @priority,
+                                               category: @category,
+                                               status: @status,
+                                               custom: @custom}  %>
+
+<svg id='gantchart' class="svg_main"></svg>
+<div class="div_svg_footer"><svg id='svg_footer' class="svg_footer"></svg></div>
+<%= javascript_include_tag "gantt_chart", :plugin => "issue_graphic" %>
+<script>
+  $(function(){
+    var gantt_chart = new DrawGanttCharts(<%== @chart_data.to_json %>,'<%= @start_date.to_s + " 00:00" %>', '<%= (@due_date+1).to_s  + " 00:00"%>');
+    var event = new GanttCharts(gantt_chart);
+    gantt_chart.draw();
+  });
+</script>

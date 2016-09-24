@@ -7,7 +7,7 @@ Redmine::Plugin.register :issue_graphic do
   author_url 'http://www.r-labs.org/projects/r-labs/wiki'
 
   project_module :issue_graphic do
-    permission :view_issue_graphics, :issue_graphics => [:index, :get_process]
+    permission :view_issue_graphics, :issue_graphics => [:index, :get_process, :gantt_chart]
   end
 
   module RedmineApp

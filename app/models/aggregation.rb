@@ -52,8 +52,15 @@ class Aggregation < ActiveRecord::Base
 
   def self.get_date(where)
 
+    max_today = self.select('max(today)')
+    where.each do |v|
+      max_today = max_today.where(v)
+    end
+
     data = self.select('min(start_date) as start_date','max(due_date) as due_date')
-               .where("aggregations.today = (select max(today) from aggregations where project_id=#{where[0][1]})")
+               .where("aggregations.today = (#{max_today.to_sql})")
+               .where("start_date is not NULL")
+               .where("due_date is not NULL")
     where.each do |v|
       data = data.where(v)
     end
@@ -86,6 +93,43 @@ class Aggregation < ActiveRecord::Base
 
     return data
 
+  end
+
+  def self.get_task_progress_rate(where)
+    @chart_data = Array.new
+
+    max_today = Aggregation.select('max(today)')
+    where.each do |v|
+      max_today = max_today.where(v)
+    end
+
+    data = Aggregation
+               .select("subject",
+                       "start_date",
+                       "due_date","(act_value / estimated) as done_ratio",
+                        "status_id")
+               .where("aggregations.today = (#{max_today.to_sql})")
+               .where("start_date is not NULL")
+               .where("due_date is not NULL")
+
+    where.each do |v|
+      data = data.where(v)
+    end
+
+    data = data.order('start_date ASC')
+  end
+
+  def self.delete_records(delete_ids)
+    begin
+      self.transaction do
+        Aggregation.where(issue_id: delete_ids).delete_all
+      end
+    rescue => e
+      Rails.logger.error 'Collection of data has failed.'
+      Rails.logger.error($@)
+      Rails.logger.error(e)
+      return
+    end
   end
 
 end

@@ -107,12 +107,18 @@ class ExecDataCollect
              'issues.estimated_hours as estimated_hours',
              'issues.subject as subject',
              "group_concat(custom_fields.id , '=' ,custom_values.value SEPARATOR ',') as custom_valule")
+        .joins(:project)
         .joins('LEFT JOIN custom_values on issues.id = custom_values.customized_id')
+        .joins('LEFT JOIN custom_fields on custom_values.custom_field_id = custom_fields.id')
         .joins('LEFT JOIN custom_fields on custom_values.custom_field_id = custom_fields.id')
         .where(cf_t[:field_format].eq('enumeration').or(cf_t[:field_format].eq(nil)))
         .where(cf_t[:type].eq('IssueCustomField').or(cf_t[:type].eq(nil)))
     record = record.where(id: issue_id) if issue_id.present?
-    record = record.where(project_id: project_id) if project_id.present?
+    if project_id.present?
+      record = record.where('issues.project_id = ?', project_id)
+    else
+      record = record.where('projects.status = 1')
+    end
     record = record.group(:id)
 
     return record

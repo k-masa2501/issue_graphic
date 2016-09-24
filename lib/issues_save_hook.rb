@@ -23,7 +23,8 @@ class IssuesSaveHook < Redmine::Hook::Listener
             return  if Aggregation.where('today = ? and project_id = ?', Date.today.to_s, issue_to.project_id).limit(1).length > 0
             ExecDataCollect.execute({:issue_id => nil, :project_id => issue_to.project_id})
           else
-            puts '他のプロセスが実行中です'
+            Rails.logger.error '他のプロセスが実行中です'
+            puts
           end
         end
         lock.close

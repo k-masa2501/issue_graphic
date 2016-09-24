@@ -31,4 +31,20 @@ module IssueGraphicsHelper
     end
   end
 
+  def gantt_color(v, is_closed)
+
+    r_day = v.due_date - (v.start_date-1)
+    act = v.done_ratio.present? ? (r_day*v.done_ratio):0
+    now = Date.today - (v.start_date-1)
+
+    if  /(^|,)#{v.status_id}(,|$)/.match(is_closed.join(','))
+      '#3CEBFF' # is_closed
+    elsif act < now
+      '#FF727B' # delayed
+    else
+      '#6DFFB6' # as scheduled
+    end
+
+  end
+
 end
