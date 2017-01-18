@@ -12,7 +12,7 @@ class CreateAggregations < ActiveRecord::Migration
       t.integer "category_id",    limit: 2
       t.date    "start_date"
       t.date    "due_date"
-      t.float   "estimated",      limit: 24
+      t.float   "estimated_hours",      limit: 24
       t.float   "act_value",      limit: 24
       t.float   "plan_value",     limit: 24
       t.float   "progress",       limit: 24

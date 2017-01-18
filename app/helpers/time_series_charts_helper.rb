@@ -1,0 +1,2 @@
+module TimeSeriesChartsHelper
+end

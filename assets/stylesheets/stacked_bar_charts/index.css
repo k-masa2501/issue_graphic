@@ -1,0 +1,16 @@
+text {
+    font-size:10px;
+    color: #000000 !important;
+}
+
+.svg_main {
+    float: left;
+    width: 100%;
+    min-height: 650px;
+    background: #f3f3f3;
+    border-radius: 10px;
+}
+
+.tick line{
+    opacity: 0.1;
+}

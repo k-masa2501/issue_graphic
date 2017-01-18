@@ -1,0 +1,36 @@
+<%= stylesheet_link_tag "common/common", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "gantt_charts/index", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "jquery-ui.min", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "jquery.MultiSelectFilter", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "d3.v4.min", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "jquery-3.1.0.min", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "common/common", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "gantt_charts/index", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "gantt_charts/gantt_chart", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "jquery.MultiSelectFilter", :plugin => "redmine_chart" %>
+
+<h2 class="redmine_chart"><%= t('.view_h2') %></h2>
+
+<%= render(partial: "layouts/change_view",:locals => {
+    :index => project_gantt_charts_path,
+    :project_identifier => @project.identifier
+} ) %>
+
+<%= cell("cells/filter").(:sum, {project_id: @project.id,
+                                 params: params, filter: @filter,
+                                 member: @member}) %>
+
+<%= cell("cells/filter").(:filter, project_id: @project.id) %>
+
+<svg id='gantchart' class="svg_main"></svg>
+<div class="div_svg_footer">
+  <svg id='svg_footer' class="svg_footer"></svg>
+</div>
+
+<script>
+  var $p = {};
+  $p.index = new IndexController({
+    chart: new GanttChart(<%== JSON.generate(@chart_data) %>),
+    url: '<%= get_gantt_chart_data_project_gantt_charts_path %>'
+  });
+</script>

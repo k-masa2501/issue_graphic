@@ -1,0 +1,32 @@
+<table class="list issues sort-by-assigned-to sort-asc" style="margin-top: 10px">
+  <thead>
+  <tr>
+    <th><%= t('.date') %></th>
+    <th><%= t('.estimated') %></th>
+    <th><%= t('.actual') %></th>
+    <th><%= t('.gap') %></th>
+    <% data[:member].each_with_index do |v, i| %>
+        <th><%= v[0] == nil ? t('.not_assigned') : v[0] %></th>
+    <% end %>
+  </tr>
+  </thead>
+  <tbody>
+  <% data[:atual].each_with_index.reverse_each do |value,index| %>
+      <tr class="hascontextmenu <%= 0 == (index % 2) ? 'even' : 'odd' %> issue pulldown" data-process='0'>
+        <% estimated = (data[:estimated][index][:value] - data[:plan][index][:value]).round(1) %>
+        <% atual = (data[:estimated][index][:value] - value[:value]).round(1) %>
+        <% daily_gap = data[:daily_gap][index].round(1) %>
+        <% date = value[:date].strftime("%Y-%m-%d") %>
+        <td data-date="<%= date %>"><%= date + data[:day_names][value[:date].wday] %></td>
+        <td class="<%= get_num_color(estimated)  %>"><%= estimated %></td>
+        <td class="<%= get_num_color(daily_gap) %>"><%= atual %></td>
+        <td class="<%= get_num_color(daily_gap) %>"><%= daily_gap %></td>
+        <% data[:member].each do |v| %>
+            <% item = data[:daily_aggs][index].find {|item| item[:name] == v[0] } %>
+            <% nil != item ? sum = item[:sum].round(1) : sum = 0.0 %>
+            <td class="<%= get_n_color_of_assignend(sum) %>"><%= sum %></td>
+        <% end %>
+      </tr>
+  <% end if data[:atual].present? %>
+  </tbody>
+</table>

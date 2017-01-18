@@ -1,8 +1,35 @@
 ja:
-  label_issue_graphic: チケットグラフ
-  project_module_issue_graphic: チケットグラフプラグイン
-  permission_view_issue_graphics: チケットグラフの閲覧
-  issue_graphics:
+  label_redmine_chart: チケットグラフ
+  project_module_redmine_chart: チケットグラフプラグイン
+  permission_view_burn_down_chart: バーンダウンチャートの閲覧
+  permission_view_time_series_chart: 時系列チャートの閲覧
+  permission_view_gantt_chart: ガントチャートの閲覧
+  permission_view_stacked_bar_chart: 積み上げチャートの閲覧
+  cells:
+    filter:
+      filter: "フィルター"
+      assigned_to: "担当者："
+      tracker: "トラッカー："
+      priority: "優先度："
+      category: "カテゴリー："
+      status: "ステータス："
+      version: "対象バージョン："
+      not_assigned: "担当なし"
+      timeSeries_filter: "分析観点"
+      view_point: "観点："
+      method: "方法："
+      total: "合計"
+      remaining: "残作業"
+      item_number: "件数"
+      remaining_number: "残件数"
+      item: "件"
+      progress_total: "進捗合計"
+      rem_work: "残作業量"
+      number_of_initiations: "着手件数"
+      number_of_rem_items: "残件数"
+      legend_total: '合計'
+      uncomplete: '未完了：'
+  burn_down_charts:
     sun: '(日)'
     mon: '(月)'
     tue: '(火)'
@@ -12,21 +39,34 @@ ja:
     sat: '(土)'
     unselected: '-- 未選択 --'
     incomplete: '未完了'
+    index:
+      view_h2: "バーンダウンチャート"
     index_t:
-      filter:
-        filter: "フィルター"
-        assigned_to: "担当者："
-        tracker: "トラッカー："
-        priority: "優先度："
-        category: "カテゴリ："
-        status: "ステータス："
       process:
         not_assigned: "担当なし"
         no_data: "該当データなし"
+      table:
+        date: "日付"
+        estimated: "予定"
+        actual: "実績"
+        gap: "差異"
+        not_assigned: "担当なし"
+    version_not exist: "対象バージョンが存在しないため、ページを表示できません。\n対象バージョンを定義し、各チケットに対象バージョンを設定してください。"
+  time_series_charts:
+    unselected: '-- 未選択 --'
+    incomplete: '未完了'
+    index_t:
+      process:
     index:
-      view_h2: "バーンダウンチャート"
-      date: "日付"
-      estimated: "予定"
-      actual: "実績"
-      gap: "差異"
-      not_assigned: "担当なし"
+      view_h2: "時系列チャート"
+  view_hooks:
+    view_issues_form_details_bottom:
+      remaining: '残工数'
+  layouts:
+    cahnge_view:
+      burn_down_charts: "バーンダウンチャート"
+      time_series_charts: "時系列チャート"
+      gantt_charts: "ガントチャート"
+  gantt_charts:
+    index:
+      view_h2: "ガントチャート"

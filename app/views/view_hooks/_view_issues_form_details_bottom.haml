@@ -1,0 +1,9 @@
+- if issue.done_ratio.present? and issue.estimated_hours.present?
+  %p
+    %label
+      = t('.remaining')
+    = (issue.estimated_hours - (issue.done_ratio.quo(100) * issue.estimated_hours)).round(1).to_s + 'h'
+:javascript
+  $p = {}
+  $p.done_ratio = #{issue.done_ratio};
+= javascript_include_tag "common/view_issues_form_details_bottom", :plugin => "redmine_chart"

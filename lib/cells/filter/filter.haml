@@ -1,0 +1,46 @@
+%fieldset#filters.collapsible{class: 'design'}
+  %legend{onclick: "toggleFieldset(this);"}
+    = t('.filter')
+  %div
+    = form_tag('/index', :method => :get, :class => 'filter-form') do
+      %div{class: "chkbox-filter"}
+        %label{for: "uncomplete"}
+          = t('.uncomplete')
+          = check_box_tag 'c_status', @status[0][1], false, {:class => 'filter-change multi'}
+      %div{class: "select-filter"}
+        %label{for: "assigned_to"}
+          = t('.assigned_to')
+          = select_tag 'f_assigned_to[]', options_for_select(@assigned_to, params[:f_assigned_to]),{:class => 'filter-change multi', :multiple => true}
+      %div{class: "select-filter"}
+        %label{for: "tracker"}
+          = t('.tracker')
+          = select_tag 'f_tracker[]', options_for_select(@tracker, params[:f_tracker]),{:class => 'filter-change multi', :multiple => true}
+      %div{class: "select-filter"}
+        %label{for: "priority"}
+          = t('.priority')
+          = select_tag 'f_priority[]', options_for_select(@priority, params[:f_priority]),{:class => 'filter-change multi', :multiple => true}
+      %div{class: "select-filter"}
+        %label{for: "category"}
+          = t('.category')
+          = select_tag 'f_category[]', options_for_select(@category, params[:f_category]),{:class => 'filter-change multi', :multiple => true}
+      %div{class: "select-filter"}
+        %label{for: "status"}
+          = t('.status')
+          = select_tag 'f_status[]', options_for_select(@status, params[:f_status]),{:class => 'filter-change multi', :multiple => true}
+      %div{class: "select-filter"}
+        %label{for: "version"}
+          = t('.version')
+          = select_tag 'f_version[]', options_for_select(@version, params[:f_version]),{:class => 'filter-change multi', :multiple => true}
+:javascript
+    $(function(){
+      $("select.multi").MultiSelectFilter('init',{
+        delay: 300,
+        width: 170,
+        textlen: 3,
+        selected: '個選択',
+        defalult: '-- 未選択 --',
+        check_all: 'すべて選択',
+        uncheck_all: 'すべて選択解除',
+        filter: false
+      });
+    });

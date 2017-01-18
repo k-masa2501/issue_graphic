@@ -1,0 +1,56 @@
+h2.redmine_chart{
+    float:left;
+}
+
+fieldset.design{
+    float: left;
+    width: 100%;
+}
+
+div.change_view{
+    float: right;
+    margin: 8px 10px 0px 0px;
+}
+
+div.estimated_total {
+    float: left;
+    width: 50px;
+    height: 15px;
+    background: #FF0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+}
+
+div.remaining_total {
+    float: left;
+    width: 50px;
+    height: 15px;
+    background: #FF0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 3px;
+}
+
+div.cost_summary{
+    float: left;
+    margin: 2px;
+}
+
+div.select-filter{
+    float: left;
+    margin-left: 5px;
+    width: 180px;
+}
+
+div.chkbox-filter {
+    float: left;
+    margin-top: 15px;
+    width: 75px;
+}
+
+div.select-filter select{
+    width: 100%;
+}

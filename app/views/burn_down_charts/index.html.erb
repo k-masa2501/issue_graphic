@@ -1,0 +1,44 @@
+<%= stylesheet_link_tag "common/common", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "burn_down_charts/index", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "jquery-ui.min", :plugin => "redmine_chart" %>
+<%= stylesheet_link_tag "jquery.MultiSelectFilter", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "d3.v4.min", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "jquery-3.1.0.min", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "common/common", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "burn_down_charts/index", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "burn_down_charts/burn_down_chart", :plugin => "redmine_chart" %>
+<%= javascript_include_tag "jquery.MultiSelectFilter", :plugin => "redmine_chart" %>
+
+<h2 class="redmine_chart"><%= t('.view_h2') %></h2>
+
+<%= render(partial: "layouts/change_view",:locals => {
+    :index => project_burn_down_charts_path,
+    :project_identifier => @project.identifier
+} ) %>
+
+<%= cell("cells/filter").(:sum, {project_id: @project.id,
+                                 params: params, filter: @filter,
+                                 member: @send_data[:member]}) %>
+
+<%= cell("cells/filter").(:filter, project_id: @project.id) %>
+
+<svg id="MyGraph" class="svg_main"></svg>
+
+<div id='daily_act_view' class="autoscroll">
+  <%= render(partial: "burn_down_charts/index_t/table",
+             :locals => {:data => @send_data} ) %>
+</div>
+
+<script>
+  var $p = {};
+
+  $p.index = new IndexController({
+    burndown: new BurnDownsChart({
+      o_dset1: <%== @send_data[:estimated].to_json %>,
+      o_dset2: <%== @send_data[:atual].to_json %>,
+      o_dset3: <%== @send_data[:plan].to_json %>}),
+    url: '<%= get_process_project_burn_down_charts_path %>',
+    url2: '<%= get_burn_down_data_project_burn_down_charts_path %>'
+  });
+
+</script>

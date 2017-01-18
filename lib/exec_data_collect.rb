@@ -1,16 +1,112 @@
-class ExecDataCollect
+class ExecDataCollect < DaemonSpawn::Base
 
-  def self.execute(arg={})
+  def start(args)
+
+    Rails.logger.debug "start : #{Time.now}"
+
+    next_daily = DateTime.parse((Date.today+1).to_s + " 01:00")
+    next_minute = DateTime.now  + get_rational
+
+    bulk_execute
+
+    while(1)
+
+      now = DateTime.now
+
+      if now > next_daily
+
+        next_daily += 1
+        next_minute +=  get_rational
+        bulk_execute
+
+      elsif now > next_minute
+
+        gap = now - next_minute
+        next_minute += get_rational
+        execute(now - get_rational - gap)
+
+      end
+
+      sleep 1
+
+    end
+
+  end
+
+  def stop
+    Rails.logger.debug "stop  : #{Time.now}"
+
+    # やることがなくても、メソッドを実装しないと例外
+  end
+
+  def get_rational(x=0)
+    Rational(30+x, 24 * 60)
+  end
+
+  def get_condition
+    @versions = Version.where("versions.status = 'open'").pluck('id').uniq
+    @enables = EnabledModule.where(name: 'redmine_chart').pluck('project_id')
+  end
+
+  def execute(time)
+
+    issue_aggs = []
+    today = Date.today
+    get_condition
+
+    get_issues([['issues.updated_on >= ?', time]]).each do |issue|
+
+      act_value, plan_value = get_cost(issue, today)
+
+      aggs = Aggregation.where(issue_id: issue.id).where(today: today)[0]
+      aggs = Aggregation.new if aggs.blank?
+      aggs.attributes = {
+          :today => today,
+          :issue_id => issue.id,
+          :project_id => issue.project_id,
+          :tracker_id => issue.tracker_id,
+          :status_id => issue.status_id,
+          :priority_id => issue.priority_id,
+          :assigned_to_id => issue.assigned_to_id,
+          :category_id => issue.category_id,
+          :fixed_version_id => issue.fixed_version_id,
+          :start_date => issue.start_date,
+          :due_date => issue.due_date,
+          :estimated_hours => issue.estimated_hours,
+          :act_value => act_value,
+          :plan_value => plan_value,
+          :progress => get_progress(act_value,today,issue.id)
+      }
+      issue_aggs << aggs
+    end
+
+    begin
+
+      ActiveRecord::Base.transaction do
+
+        issue_aggs.each do |v|
+          v.save!
+        end
+
+      end
+    rescue => e
+      Rails.logger.error 'Collection of data has failed.'
+      Rails.logger.error($@)
+      Rails.logger.error(e)
+      return false
+    end
+
+  end
+
+  def bulk_execute
 
     Rails.logger.debug "Start a collection of data."
 
-    # 集計日がチケットの開始～終了期間に含まれるレコードを収集
     issue_aggs = []
-    issue_custom_agg = []
     today = Date.today
-    issue_rc = get_issues(arg[:issue_id], arg[:project_id])
+    get_condition
 
-    issue_rc.each do |issue|
+    get_issues.each do |issue|
 
       # 予定工数から実績工数を計算
       act_value, plan_value = get_cost(issue, today)
@@ -24,14 +120,13 @@ class ExecDataCollect
           :priority_id => issue.priority_id,
           :assigned_to_id => issue.assigned_to_id,
           :category_id => issue.category_id,
+          :fixed_version_id => issue.fixed_version_id,
           :start_date => issue.start_date,
           :due_date => issue.due_date,
-          :estimated => issue.estimated_hours,
+          :estimated_hours => issue.estimated_hours,
           :act_value => act_value,
           :plan_value => plan_value,
-          :progress => get_progress(act_value,today,issue.id),
-          :custom_value => issue.custom_valule,
-          :subject => issue.subject
+          :progress => get_progress(act_value,today,issue.id)
       )
 
     end
@@ -41,32 +136,33 @@ class ExecDataCollect
 
       ActiveRecord::Base.transaction do
 
-        if arg[:issue_id].present?
-          Aggregation.where('today =? and issue_id =?',today, arg[:issue_id]).delete_all
-        else
-          Aggregation.delete_all(today: today)
+        Aggregation.delete_all(today: today) if issue_aggs.length > 0
+
+        issue_aggs.each do |v|
+          v.save!
         end
 
-        Aggregation.import issue_aggs
       end
     rescue => e
       Rails.logger.error 'Collection of data has failed.'
       Rails.logger.error($@)
       Rails.logger.error(e)
-      return
+      return false
     end
 
     Rails.logger.debug "Exit the collection of data."
 
+    return true
+
   end
 
-  def self.get_cost(issue, today)
+  def get_cost(issue, today)
 
     act_value = nil
     plan_value = nil
 
     if issue.estimated_hours.present? and issue.done_ratio.present?
-      act_value = (issue.estimated_hours*(issue.done_ratio.quo(100))).round(2)
+      act_value = (issue.estimated_hours*(issue.done_ratio.quo(100))).round(1)
     end
 
     # 集計日における予定作業量
@@ -82,21 +178,19 @@ class ExecDataCollect
         r_days = today-(issue.start_date-1)
       end
       average = issue.estimated_hours.quo(w_days)
-      plan_value = (average.to_f * r_days.to_i).round(2)
+      plan_value = (average.to_f * r_days.to_i).round(1)
     end
     return act_value, plan_value
   end
 
   private
 
-  def self.get_issues(issue_id=nil, project_id=nil)
-
-    cf_t = CustomField.arel_table
+  def get_issues(condition=[])
 
     record = Issue.select(
              'issues.id as id',
-             'issues.project_id as project_id',
              'issues.tracker_id as tracker_id',
+             'issues.project_id as project_id',
              'issues.status_id as status_id',
              'issues.priority_id as priority_id',
              'issues.assigned_to_id as assigned_to_id',
@@ -105,34 +199,38 @@ class ExecDataCollect
              'issues.due_date as due_date',
              'issues.done_ratio as done_ratio',
              'issues.estimated_hours as estimated_hours',
-             'issues.subject as subject',
-             "group_concat(custom_fields.id , '=' ,custom_values.value SEPARATOR ',') as custom_valule")
-        .joins(:project)
-        .joins('LEFT JOIN custom_values on issues.id = custom_values.customized_id')
-        .joins('LEFT JOIN custom_fields on custom_values.custom_field_id = custom_fields.id')
-        .joins('LEFT JOIN custom_fields on custom_values.custom_field_id = custom_fields.id')
-        .where(cf_t[:field_format].eq('enumeration').or(cf_t[:field_format].eq(nil)))
-        .where(cf_t[:type].eq('IssueCustomField').or(cf_t[:type].eq(nil)))
-    record = record.where(id: issue_id) if issue_id.present?
-    if project_id.present?
-      record = record.where('issues.project_id = ?', project_id)
-    else
-      record = record.where('projects.status = 1')
+             'issues.fixed_version_id as fixed_version_id')
+                 .joins(:project)
+                 .where(project_id: @enables)
+                 .where('projects.status = 1')
+                 .where(fixed_version_id: @versions)
+
+    Rails.logger.debug condition
+
+    condition.each do |v|
+      record = record.where(v) if v.present?
     end
-    record = record.group(:id)
 
     return record
   end
 
-  def self.get_progress(act_value,today,issue_id)
+  def get_progress(act_value,today,issue_id)
 
     return 0 if act_value.blank?
 
-    previous = Aggregation.where('today = ? and issue_id = ?', today-1, issue_id).limit(1).pluck('act_value')[0]
+    previous = Aggregation.where('today < ? and issue_id = ?', today, issue_id).order('today desc').limit(1).pluck('act_value')[0]
 
     return act_value if previous.blank?
-    return (act_value - previous).round(2)
+    return (act_value - previous).round(1)
 
   end
 
 end
+
+ExecDataCollect.spawn!({
+                    :working_dir => Rails.root,
+                    :pid_file => File.expand_path("#{Rails.root}/tmp/rchart.pid"),
+                    :log_file => File.expand_path("#{Rails.root}/log/rchart.log"),
+                    :sync_log => true,
+                    :singleton => true
+                })

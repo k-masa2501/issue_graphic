@@ -1,0 +1,19 @@
+%fieldset#filters.collapsible{class: 'design'}
+  %legend{onclick: "toggleFieldset(this);"}
+    = t('.timeSeries_filter')
+  %div
+    = form_tag('/index', :method => :get, :class => 'filter-form') do
+      %div{style: "float: left;margin-left: 5px"}
+        %label{for: "kind", style: "float: left;margin-top: 2px;"}
+          = '単位'
+        = select_tag 'f_kind', options_for_select(@kind, params[:f_kind]),{:class => 'filter-change'}
+      %div{style: "float: left;margin-left: 5px"}
+        %label{for: "view_point", style: "float: left;margin-top: 2px;"}
+          = t('.view_point')
+        = select_tag 'f_view_point', options_for_select(@view_point, params[:f_view_point]),{:class => 'filter-change'}
+      %div{style: "float: left;margin-left: 5px"}
+        %label{for: "method", style: "float: left;margin-top: 2px;"}
+          = t('.method')
+        = select_tag 'f_method', options_for_select(@method, params[:f_method]),{:class => 'filter-change'}
+
+

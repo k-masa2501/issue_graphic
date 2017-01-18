@@ -1,8 +1,35 @@
 en:
-  label_issue_graphic: Ticket graph
-  project_module_issue_graphic: Ticket graph plug-ins
-  permission_view_issue_graphics: View of ticket graph
-  issue_graphics:
+  label_redmine_chart: Ticket graph
+  project_module_redmine_chart: Ticket graph plug-ins
+  permission_view_burn_down_chart: View burn down chart
+  permission_view_time_series_chart: View time series chart
+  permission_view_gantt_chart: View gantt chart
+  permission_view_stacked_bar_chart: View stacked bar chart
+  cells:
+    filter:
+      filter: "filter"
+      assigned_to: "assigned_to："
+      tracker: "tracker："
+      priority: "priority："
+      category: "category："
+      status: "status："
+      version: "version："
+      not_assigned: "not assigned"
+      timeSeries_filter: "analysis perspective"
+      view_point: "perspective："
+      method: "method："
+      total: "total"
+      remaining: "remaining"
+      item_number: "item number"
+      remaining_number: "remaining number"
+      item: "item"
+      progress_total: "progress total"
+      rem_work: "remaining work"
+      number_of_initiations: "number of initiations"
+      number_of_rem_items: "number of remaining items"
+      legend_total: 'total'
+      uncomplete: 'uncomplete：'
+  burn_down_charts:
     sun: '(sun)'
     mon: '(mon)'
     tue: '(tue)'
@@ -12,21 +39,34 @@ en:
     sat: '(sat)'
     unselected: '-- unselected --'
     incomplete: 'incomplete'
-    index_t:
-      filter:
-        filter: "filter"
-        assigned_to: "assigned_to："
-        tracker: "tracker："
-        priority: "priority："
-        category: "category："
-        status: "status："
-      process:
-        not_assigned: "no charge"
-        no_data: "No Data Available"
     index:
       view_h2: "Burn down chart"
-      date: "date"
-      estimated: "plan"
-      actual: "actual"
-      gap: "gap"
-      not_assigned: "no charge"
+    index_t:
+      process:
+        not_assigned: "not assigned"
+        no_data: "No Data Available"
+      table:
+        date: "date"
+        estimated: "estimate"
+        actual: "actual"
+        gap: "gap"
+        not_assigned: "not assigned"
+    version_not exist: "The page can not be displayed because the target version does not exist. \nDefine the target version and set the target version in each ticket."
+  time_series_charts:
+    unselected: '-- unselected --'
+    incomplete: 'incomplete'
+    index_t:
+      process:
+    index:
+      view_h2: "Time series chart"
+  view_hooks:
+    view_issues_form_details_bottom:
+      remaining: 'remaining'
+  layouts:
+    cahnge_view:
+      burn_down_charts: "burn down charts"
+      time_series_charts: "time series charts"
+      gantt_charts: "gantt charts"
+  gantt_charts:
+    index:
+      view_h2: "gantt charts"

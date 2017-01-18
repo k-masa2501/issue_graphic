@@ -1,5 +1,8 @@
 class Aggregation < ActiveRecord::Base
   unloadable
+
+  self.primary_key = :today, :issue_id
+
   belongs_to :project
   belongs_to :tracker
   belongs_to :status, :class_name => 'IssueStatus'
@@ -8,18 +11,11 @@ class Aggregation < ActiveRecord::Base
   belongs_to :fixed_version, :class_name => 'Version'
   belongs_to :priority, :class_name => 'IssuePriority'
   belongs_to :category, :class_name => 'IssueCategory'
-  has_many :aggs_custom_today, :class_name => 'AggsCustomField', :foreign_key => 'today'
-  has_many :aggs_custom_issue, :class_name => 'AggsCustomField', :foreign_key => 'issue_id'
 
-  #acts_as_attachable :delete_permission => :manage_foos
-
-  #validates_presence_of :subject
-  #validates_length_of :subject, :maximum => 255
-
-  def self.get_sum_group_by_today(where)
+  def self.get_aggs_each_daily(where) # fetch_sum_group_by_today
       data = self
                .select([:today,
-                        self.arel_table[:estimated].sum().as('estimated_sum'),
+                        self.arel_table[:estimated_hours].sum().as('estimated_sum'),
                         self.arel_table[:act_value].sum().as('actual_sum'),
                         self.arel_table[:plan_value].sum().as('plan_value_sum'),])
       where.each do |v|
@@ -28,29 +24,46 @@ class Aggregation < ActiveRecord::Base
       data =  data.group(:today)
   end
 
-  def self.get_assign_act_cost(where)
+  def self.get_aggs_each_assigned(where) # fetch_cost_each_assigned
 
-    assign_to = self.select('aggregations.today as today',
+    record = self.select(
                             "concat(users.firstname,' ',users.lastname) as name",
-                            self.arel_table[:estimated].sum().as('estimated_sum'),
+                            self.arel_table[:estimated_hours].sum().as('estimated_sum'),
+                            self.arel_table[:act_value].sum().as('actual_sum'))
+                    .joins('left join users on users.id = aggregations.assigned_to_id')
+
+    where.each do |v|
+      record = record.where(v)
+    end
+
+    record = record
+                 .where("aggregations.today = (select max(today) from aggregations where project_id=#{where[0][1]})")
+                 .group(:assigned_to_id)
+
+    return record
+
+  end
+
+  def self.get_aggs_each_daily_assigned(where) # fetch_cost_each_assigned
+
+    record = self.select('aggregations.today as today',
+                            "concat(users.firstname,' ',users.lastname) as name",
+                            self.arel_table[:estimated_hours].sum().as('estimated_sum'),
                             self.arel_table[:act_value].sum().as('actual_sum'),
                             self.arel_table[:progress].sum().as('progress'))
                     .joins('left join users on users.id = aggregations.assigned_to_id')
 
     where.each do |v|
-      assign_to = assign_to.where(v)
+      record = record.where(v)
     end
 
-    group_by_assign = assign_to
-                          .where("aggregations.today = (select max(today) from aggregations where project_id=#{where[0][1]})")
-                          .group(:assigned_to_id)
-    group_by_today = assign_to.group(:today, :assigned_to_id).order('today ASC')
+    record = record.group(:today, :assigned_to_id).order('today ASC')
 
-    return group_by_assign, group_by_today
+    return record
 
   end
 
-  def self.get_date(where)
+  def self.get_both_date(where)
 
     max_today = self.select('max(today)')
     where.each do |v|
@@ -74,62 +87,83 @@ class Aggregation < ActiveRecord::Base
 
   end
 
-  def self.get_assigned_by_process(where)
+  def self.get_progress_each_assigned(where) # fetch_progress_each_operator
 
     data = self.select(
-        "concat(users.firstname,' ',users.lastname) as name",
-        'aggregations.issue_id as issue_id',
-        'aggregations.project_id as project_id',
-        'aggregations.progress as progress',
-        'aggregations.subject as subject')
+        "concat(users.firstname,' ',users.lastname) user_name",
+        'aggregations.issue_id issue_id',
+        'aggregations.project_id project_id',
+        'issue_statuses.name status_name',
+        'aggregations.progress progress')
                .joins('left join users on users.id = aggregations.assigned_to_id')
+               .joins('left join issue_statuses on issue_statuses.id = aggregations.status_id')
                .where('aggregations.progress > 0')
 
     where.each do |v|
       data = data.where(v)
     end
 
-    data = data.order("name")
-
     return data
 
   end
 
-  def self.get_task_progress_rate(where)
-    @chart_data = Array.new
+  #def self.get_sum_each_daily(where,  groupby, table_name=self.table_name)
 
-    max_today = Aggregation.select('max(today)')
-    where.each do |v|
-      max_today = max_today.where(v)
-    end
+  #end
 
-    data = Aggregation
-               .select("subject",
-                       "start_date",
-                       "due_date","(act_value / estimated) as done_ratio",
-                        "status_id")
-               .where("aggregations.today = (#{max_today.to_sql})")
-               .where("start_date is not NULL")
-               .where("due_date is not NULL")
+  def self.get_sum(where, method)
+
+    result = self
 
     where.each do |v|
-      data = data.where(v)
+      result = result.where(v)
     end
 
-    data = data.order('start_date ASC')
+    return result.pluck("#{method}")
   end
 
-  def self.delete_records(delete_ids)
-    begin
-      self.transaction do
-        Aggregation.where(issue_id: delete_ids).delete_all
-      end
-    rescue => e
-      Rails.logger.error 'Collection of data has failed.'
-      Rails.logger.error($@)
-      Rails.logger.error(e)
-      return
+  def self.get_sum_each_daily_data(where, map)
+
+    return {:data => [], :keys => []} if map.blank?
+
+    record = self.eager_load(map[:view][:joins])
+
+    where.each do |v|
+      query = [self.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
     end
+
+    record = record.group(:today).group(map[:view][:pluck])
+
+    keys = record.pluck("CASE WHEN #{map[:view][:pluck]} is NULL THEN 'null' ELSE #{map[:view][:pluck]} END").uniq
+    data = record.pluck(
+        "today",
+        "CASE WHEN #{map[:view][:pluck]} is NULL THEN 'null' ELSE #{map[:view][:pluck]} END",
+        "#{map[:method][:query]}")
+
+    return {:data => data, :keys => keys}
+  end
+
+  def self.get_sum_each_period_data(where, map)
+
+    return {:data => [], :keys => []} if map.blank?
+
+    record = self.eager_load(map[:view][:joins])
+
+    where.each do |v|
+      query = [self.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    record = record.group("DATE_FORMAT(today, '#{map[:format][:group]}')").group(map[:view][:pluck])
+
+    keys = record.pluck("CASE WHEN #{map[:view][:pluck]} is NULL THEN 'null' ELSE #{map[:view][:pluck]} END").uniq
+    data = record.pluck(
+        "DATE_FORMAT(today, '#{map[:format][:pluck]}')",
+        "CASE WHEN #{map[:view][:pluck]} is NULL THEN 'null' ELSE #{map[:view][:pluck]} END",
+        "#{map[:method][:query]}")
+
+    return {:data => data, :keys => keys}
   end
 
 end

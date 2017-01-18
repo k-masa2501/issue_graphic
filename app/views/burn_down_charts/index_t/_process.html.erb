@@ -1,0 +1,23 @@
+<tr>
+  <td colspan="<%= cells %>">
+    <% usr_name = '' %>
+    <% contents.each_with_index do |v,i| %>
+        <% v.user_name = t('.not_assigned') if v.user_name.blank? %>
+        <% if usr_name == v.user_name %>
+            <% tag = "" %>
+        <% else %>
+            <% tag = content_tag :div, ERB::Util.h(v.user_name),{:class => 'burn_down_process'} %>
+        <% end %>
+        <%== tag %>
+        <div style="float: left;clear: both;margin-left: 5px;">
+          <a href="<%= issue_path(v.issue_id) %>">
+            <%= '#' + v.issue_id.to_s %>&nbsp;:&nbsp;<%= v.progress %>h&nbsp;:&nbsp; <%= v.status_name %> &nbsp;:&nbsp;<%= subject[v.issue_id] %>
+            <% usr_name = v.user_name %>
+          </a>
+        </div>
+    <% end %>
+    <% if contents.length <= 0 %>
+        <%==  content_tag :div, t('.no_data'),{:class => 'burn_down_process'} %>
+    <% end %>
+  </td>
+</tr>

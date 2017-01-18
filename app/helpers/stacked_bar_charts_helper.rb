@@ -1,0 +1,2 @@
+module StackedBarChartsHelper
+end
