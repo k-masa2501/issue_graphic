@@ -72,8 +72,17 @@ class Cells::FilterCell <  Cell::ViewModel
                    [I18n.t('cells.filter.category'), "category"],
                    [I18n.t('cells.filter.version'), "fixed_version"]]
     @method = [[I18n.t('cells.filter.progress_total'), "sum_act_value"],
-               [I18n.t('cells.filter.number_of_initiations'), "count_act_value"]]
+               [I18n.t('cells.filter.number_of_initiations'), "count_act_value"],
+               [I18n.t('cells.filter.ticket_amount'), "ticket_amount"],
+               [I18n.t('cells.filter.workload'), "workload"],
+               ['クローズ件数', "close"],
+               [I18n.t('cells.filter.per_unit'), "per_unit"]]
     @kind = [['日', "daily"],['週', "weekly"],['月', "monthly"]]
+    @months = Array.new
+
+    for num in 0..36
+      @months.push((Date.today << num).strftime("%Y/%m"))
+    end
     render
   end
 

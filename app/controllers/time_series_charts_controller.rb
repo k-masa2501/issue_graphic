@@ -49,13 +49,16 @@ private
 
     data = Aggregation.get_sum_each_daily_data(@filter, get_map(params[:f_view_point], params[:f_method]))
 
-    before_date = data[:data][0][0] if 0 < data[:data].length
+    data[:data].each_with_index do |v,i|
 
-    procedure = ->(v, keys, chart_data, sum, count, before_date, params){
+      chart_data[count] ||= Hash.new
+      chart_data[count]['date'] ||= v[0]
+      chart_data[count][v[1]] = v[2].to_i
 
-      if v[0] != before_date
+      if data[:data].length == i+1 || data[:data][i+1][0]  != v[0]
+
         tmp_sum = 0
-        keys.each do |v|
+        data[:keys].each do |v|
           if chart_data[count][v].blank?
             chart_data[count][v] = 0
           end
@@ -63,25 +66,10 @@ private
         end
         sum = tmp_sum if sum < tmp_sum
         count += 1
+
       end
 
-      return chart_data, sum, count
-
-    }
-
-    data[:data].each_with_index do |v,i|
-
-      chart_data, sum, count = procedure.call(v, data[:keys], chart_data, sum, count, before_date, params)
-
-      before_date = v[0]
-      chart_data[count] ||= Hash.new
-      chart_data[count]['date'] ||= v[0]
-      chart_data[count][v[1]] = v[2].to_i
-
     end
-
-    chart_data, sum, count =
-        procedure.call(data[:data][data[:data].length-1], data[:keys], chart_data, sum, count, nil, params) if 0 < data[:data].length
 
     return {:data => chart_data, :keys => data[:keys], :sum => sum}
 

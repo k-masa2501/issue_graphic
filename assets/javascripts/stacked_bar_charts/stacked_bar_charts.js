@@ -1,13 +1,11 @@
 var StackedBarChart = function(arg){
   this.data = arg.data;
   this.keys = arg.keys;
-  this.sum = arg.sum;
 };
 
 StackedBarChart.prototype.set = function(arg){
   this.data = arg.data;
   this.keys = arg.keys;
-  this.sum = arg.sum;
 };
 
 StackedBarChart.prototype.draw = function(){
@@ -27,7 +25,7 @@ StackedBarChart.prototype.draw = function(){
   }
 
   svg = d3.select("#MyGraph");
-  var margin = {top: 20, right: 130, bottom: 30, left: 40},
+  var margin = {top: 20, right: 130, bottom: 60, left: 40},
       width =  $('#MyGraph').width() - margin.left - margin.right,
       height =  $('#MyGraph').height() - margin.top - margin.bottom,
       g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
@@ -45,7 +43,11 @@ StackedBarChart.prototype.draw = function(){
     var keys = this.keys;
   
     x.domain(this.data.map(function(d) { return d.date; }));
-    y.domain([0, this.sum]).nice();
+    y.domain([0, d3.max(this.data, function(d){
+      var cnt = 0;
+      for(var i=0,len=keys.length;i<len;i++){if (null != d[keys[i]]) cnt += d[keys[i]];}
+      return cnt;
+    })]).nice();
     z.domain(keys);
 
   var fill = g.append("g")
@@ -59,7 +61,7 @@ StackedBarChart.prototype.draw = function(){
   fill.selectAll("rect")
       .data(function(d) { return d; })
       .enter().append("rect")
-      .attr("x", function(d) { return x(d.data.date); })
+      .attr("x", function(d) { return x(d.data.date)+10; })
       .attr("y", function(d) { return y(d[1]); })
       .attr("height", function(d) { return y(d[0]) - y(d[1]); })
       .attr("width", x.bandwidth());
@@ -70,7 +72,7 @@ StackedBarChart.prototype.draw = function(){
       .data(function(d) { return d; })
       .enter().append("text")
       .attr("x", function(d) {
-        return x(d.data.date)+(x.bandwidth()/2)+5; })
+        return x(d.data.date)+(x.bandwidth()/2)+15; })
       .attr("y", function(d) { return y(d[1])+5;})
       .attr("dy", ".35em")
       .style("font", "10px sans-serif")
@@ -82,8 +84,13 @@ StackedBarChart.prototype.draw = function(){
 
   g.append("g")
       .attr("class", "axis")
-      .attr("transform", "translate(0," + height + ")")
-      .call(d3.axisBottom(x));
+      .attr("transform", "translate(10," + height + ")")
+      .call(d3.axisBottom(x))
+      .selectAll("text")
+      .attr("transform", "rotate(45)")
+      .attr("dy", 10)
+      .attr("dx", 10)
+      .style("text-anchor", "start");
 
   g.append("g")
       .attr("class", "axis")

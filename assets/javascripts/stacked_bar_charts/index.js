@@ -8,6 +8,10 @@ var IndexController = function(arg){
 
   this._set_event_lisnter();
 
+  $('.input-day').datepicker({ dateFormat: 'yy/mm/dd' });
+
+  $('#f_kind').focus();
+
 };
 
 IndexController.prototype.destroy = function(){
@@ -24,6 +28,10 @@ IndexController.prototype._set_event_lisnter = function(){
 
   $(".filter-change").change($.proxy(function(e){
     this._change_selectBox(e)
+  },this));
+
+  $(".period-change").change($.proxy(function(e){
+    this._change_periodType(e)
   },this));
 
   $(window).resize($.proxy(function(e){
@@ -48,6 +56,29 @@ IndexController.prototype._change_selectBox = function(e){
 
   }
   
+};
+
+IndexController.prototype._change_periodType = function(e){
+
+  var target = $(e.currentTarget);
+  switch (target.val()){
+    case 'daily':
+      $('#period-input-day').show();
+      $('#period-input-week').hide();
+      $('#period-input-month').hide();
+      break;
+    case 'weekly':
+      $('#period-input-day').hide();
+      $('#period-input-week').show();
+      $('#period-input-month').hide();
+      break;
+    case 'monthly':
+      $('#period-input-day').hide();
+      $('#period-input-week').hide();
+      $('#period-input-month').show();
+      break;
+  }
+
 };
 
 IndexController.prototype._resize_window = function(e){

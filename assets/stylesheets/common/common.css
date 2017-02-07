@@ -54,3 +54,15 @@ div.chkbox-filter {
 div.select-filter select{
     width: 100%;
 }
+
+.input-day{
+    height: 13px;
+    width: 100px;
+    margin-top: 0px;
+}
+
+.input-week{
+    height: 13px;
+    width: 30px;
+    margin-top: 0px;
+}

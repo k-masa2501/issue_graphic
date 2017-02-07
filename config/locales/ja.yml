@@ -25,8 +25,11 @@ ja:
       item: "件"
       progress_total: "進捗合計"
       rem_work: "残作業量"
-      number_of_initiations: "着手件数"
-      number_of_rem_items: "残件数"
+      number_of_initiations: "着手件数の推移"
+      number_of_rem_items: "残件数の推移"
+      ticket_amount: "チケット量の推移"
+      workload: "作業量の推移"
+      per_unit: "単位ごとの作業量"
       legend_total: '合計'
       uncomplete: '未完了：'
   burn_down_charts:

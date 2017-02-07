@@ -64,7 +64,7 @@ GanttChart.prototype.draw = function(){
       .attr("class", "serie");
 
   serie.selectAll("rect")
-      .data(function(d) { return d; })
+      .data(function(d) { return d.map(function(elm){ return elm}); })
       .enter().append("rect")
       .attr("class", "rect")
       .attr("x", function(d) { return time_scale(fmtFunc(d.date)); })

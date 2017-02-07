@@ -155,7 +155,7 @@ class Aggregation < ActiveRecord::Base
       record = record.where(query)
     end
 
-    record = record.group("DATE_FORMAT(today, '#{map[:format][:group]}')").group(map[:view][:pluck])
+    record = record.group(map[:format][:group]).group(map[:view][:pluck])
 
     keys = record.pluck("CASE WHEN #{map[:view][:pluck]} is NULL THEN 'null' ELSE #{map[:view][:pluck]} END").uniq
     data = record.pluck(
