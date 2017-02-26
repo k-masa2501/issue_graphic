@@ -5,19 +5,19 @@
     = form_tag('/index', :method => :get, :class => 'filter-form') do
       %div{style: "float: left;margin-left: 5px"}
         %label{for: "kind", style: "float: left;margin-top: 2px;"}
-          = '期間種別:'
+          = '期間:'
         = select_tag 'f_kind', options_for_select(@kind, params[:f_kind]),{:class => 'filter-change period-change'}
       %div{style: "float: left;margin-left: 5px"}
         %label{for: "period-input-day", style: "float: left;margin-top: 2px;"}
           = '期間:'
         %div{id: 'period-input-day',style: "float: left;margin-left: 5px", class: 'period-input'}
-          =  text_field_tag 'f_d_start', params[:f_d_start], {class: 'input-day'}
+          =  text_field_tag 'f_d_start', params[:f_d_start], {class: 'input-day', readonly: true}
           ～
-          =  text_field_tag 'f_d_end', params[:f_d_end], {class: 'input-day'}
+          =  text_field_tag 'f_d_end', params[:f_d_end], {class: 'input-day', readonly: true}
         %div{id: 'period-input-week',style: "float: left;margin-left: 5px;display: none;", class: 'period-input'}
           = select_tag 'f_week_cnt', options_for_select(Array(1..20), params[:f_week_cnt]),{:class => 'filter-change'}
           = '週前～'
-          =  text_field_tag 'f_w_end', params[:f_w_end], {class: 'input-day'}
+          =  text_field_tag 'f_w_end', params[:f_w_end], {class: 'input-day', readonly: true}
         %div{id: 'period-input-month',style: "float: left;margin-left: 5px;display: none;", class: 'period-input'}
           = select_tag 'f_m_start', options_for_select(@months, @months[12]),{:class => 'filter-change'}
           ～

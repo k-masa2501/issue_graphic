@@ -30,7 +30,7 @@
       %div{class: "select-filter"}
         %label{for: "version"}
           = t('.version')
-          = select_tag 'f_version[]', options_for_select(@version, params[:f_version]),{:class => 'filter-change multi', :multiple => true}
+          = select_tag 'f_version', options_for_select(@version, params[:f_version]),{:class => 'filter-change', :multiple => false}
 :javascript
     $(function(){
       $("select.multi").MultiSelectFilter('init',{

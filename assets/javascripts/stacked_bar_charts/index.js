@@ -3,12 +3,16 @@ var IndexController = function(arg){
   this.timer = null;
   this.chart = arg.chart;
   this.url = arg.url;
+  this.local = arg.local;
 
   this.chart.draw();
 
   this._set_event_lisnter();
 
-  $('.input-day').datepicker({ dateFormat: 'yy/mm/dd' });
+  $('.input-day').datepicker({
+    dateFormat: 'yy/mm/dd',
+    showButtonPanel: true
+  });
 
   $('#f_kind').focus();
 
@@ -26,7 +30,7 @@ IndexController.prototype.destroy = function(){
 
 IndexController.prototype._set_event_lisnter = function(){
 
-  $(".filter-change").change($.proxy(function(e){
+  $(".filter-change, .input-day").change($.proxy(function(e){
     this._change_selectBox(e)
   },this));
 
@@ -43,15 +47,27 @@ IndexController.prototype._set_event_lisnter = function(){
 IndexController.prototype._change_selectBox = function(e){
 
   var option = {type: "get", url: this.url, data: $('.filter-form').serialize(), dataType: "json"};
-  var obj = {done: ajax_done, arg: {chart: this.chart}};
+  var obj = {done: ajax_done, arg: {index: this}};
 
   ajax_http_request(option, null, null, obj);
 
   function ajax_done(recv, arg){
 
-    arg.chart.set(recv.data);
-    arg.chart.draw();
-
+    switch (recv.type){
+      case 'sum_act_value':
+      case 'count_act_value':
+      case 'ticket_amount':
+      case 'workload':
+      case 'per_period_work':
+        arg.index.chart = new StackedBarChart(recv.data);
+        arg.index.chart.draw();
+        break;
+      case 'per_period_oc':
+        arg.index.chart = new StackedBarOcChart(recv.data);
+        arg.index.chart.draw();
+        break;
+    }
+    
     $("#cost_summarys_view").html(recv.render_summary);
 
   }
@@ -88,7 +104,6 @@ IndexController.prototype._resize_window = function(e){
   }
   
   this.timer = setTimeout($.proxy(function(){
-    $('#MyGraph').empty();
     this.chart.draw();
   },this), 200);
 

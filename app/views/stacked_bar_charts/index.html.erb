@@ -5,6 +5,9 @@
 <%= javascript_include_tag "d3.v4.min", :plugin => "redmine_chart" %>
 <%= javascript_include_tag "jquery-3.1.0.min", :plugin => "redmine_chart" %>
 <%= javascript_include_tag "jquery-ui.js", :plugin => "redmine_chart" %>
+<% if 'ja' == I18n.locale.to_s %>
+  <%= javascript_include_tag "jquery.ui.datepicker-ja.min.js", :plugin => "redmine_chart" %>
+<% end %>
 <%= javascript_include_tag "common/common", :plugin => "redmine_chart" %>
 <%= javascript_include_tag "stacked_bar_charts/index", :plugin => "redmine_chart" %>
 <%= javascript_include_tag "stacked_bar_charts/stacked_bar_charts", :plugin => "redmine_chart" %>

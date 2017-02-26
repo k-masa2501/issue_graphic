@@ -6,11 +6,16 @@ text {
 .svg_main {
     float: left;
     width: 100%;
-    min-height: 650px;
+    min-height: 550px;
     background: #f3f3f3;
     border-radius: 10px;
 }
 
 .tick line{
     opacity: 0.1;
+}
+
+.rect1{
+    stroke: #000000;
+    stroke-width: 0.5px;
 }

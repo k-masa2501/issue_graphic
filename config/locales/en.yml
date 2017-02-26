@@ -29,7 +29,7 @@ en:
       number_of_rem_items: "number of remaining items"
       ticket_amount: "ticket amount"
       workload: "workload"
-      per_unit: "work amount per unit"
+      per_period_work: "work amount per unit"
       legend_total: 'total'
       uncomplete: 'uncomplete：'
   burn_down_charts:

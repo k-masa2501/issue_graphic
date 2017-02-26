@@ -75,12 +75,13 @@ class Cells::FilterCell <  Cell::ViewModel
                [I18n.t('cells.filter.number_of_initiations'), "count_act_value"],
                [I18n.t('cells.filter.ticket_amount'), "ticket_amount"],
                [I18n.t('cells.filter.workload'), "workload"],
-               ['クローズ件数', "close"],
-               [I18n.t('cells.filter.per_unit'), "per_unit"]]
+               [I18n.t('cells.filter.per_period_work'), "per_period_work"],
+               ['期間ごとの発生/クローズ件数', "per_period_oc"]
+    ]
     @kind = [['日', "daily"],['週', "weekly"],['月', "monthly"]]
     @months = Array.new
 
-    for num in 0..36
+    for num in 0..24
       @months.push((Date.today << num).strftime("%Y/%m"))
     end
     render

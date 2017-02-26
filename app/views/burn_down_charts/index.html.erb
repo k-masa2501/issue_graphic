@@ -24,7 +24,7 @@
 
 <svg id="MyGraph" class="svg_main"></svg>
 
-<div id='daily_act_view' class="autoscroll">
+<div id='daily_act_view' class="autoscroll" style="width: 100%">
   <%= render(partial: "burn_down_charts/index_t/table",
              :locals => {:data => @send_data} ) %>
 </div>
