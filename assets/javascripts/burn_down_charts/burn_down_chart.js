@@ -36,7 +36,7 @@ BurnDownsChart.prototype.draw = function(){
   var today = formatDate(new Date(), "YYYY-MM-DD");
 
   // Ｘ，Ｙ軸を表示できるようにグラフの周囲にマージンを確保する
-  var margin = {top: 40, right: 80, bottom: 80, left: 80};
+  var margin = {top: 40, right: 110, bottom: 80, left: 80};
   var width = $('#MyGraph').width() - margin.left - margin.right;
   var height = $('#MyGraph').height() - margin.top - margin.bottom;
 
@@ -151,8 +151,54 @@ BurnDownsChart.prototype.draw = function(){
       .attr("class", "axis")
       .call(d3.axisLeft(y_scale).tickSizeInner(-width));
 
-};
+  var legend = svg.append("g");
 
+  var x_legend = d3.scaleLinear()
+      .domain([0, 100])
+      .range([0, width]);
+
+  var y_legend = d3.scaleLinear()
+      .domain([0, 100])
+      .range([height, 0]);
+
+  var legend_scale = d3.line()
+      .x(function(d){return x_legend(d['x']);})
+      .y(function(d){return y_legend(d["y"]);});
+
+  legend.append("path")
+      .datum([{x: 102,y: 95}, {x: 104,y: 95}])
+      .attr("class", "line1")
+      .attr("d", legend_scale);
+
+  legend.append("text")
+      .attr("x", x_legend(104.5))
+      .attr("y", y_legend(95))
+      .attr("dy", "0.32em")
+      .text("作業量");
+
+  legend.append("path")
+      .datum([{x: 102,y: 85}, {x: 104,y: 85}])
+      .attr("class", "line3")
+      .attr("d", legend_scale);
+
+  legend.append("text")
+      .attr("x", x_legend(104.5))
+      .attr("y", y_legend(85))
+      .attr("dy", "0.32em")
+      .text("予定実績");
+
+  legend.append("path")
+      .datum([{x: 102,y: 75}, {x: 104,y: 75}])
+      .attr("class", "line2")
+      .attr("d", legend_scale);
+
+  legend.append("text")
+      .attr("x", x_legend(104.5))
+      .attr("y", y_legend(75))
+      .attr("dy", "0.32em")
+      .text("実績");
+
+};
 
 BurnDownsChart.prototype._deep_copy = function(){
   return {dset1: this.dset1,dset2: this.dset2,dset3: this.dset3};

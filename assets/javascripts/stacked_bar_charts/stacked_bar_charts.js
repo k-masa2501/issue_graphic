@@ -315,7 +315,7 @@ StackedBarOcChart.prototype.draw = function(){
       .attr("dy", "0.32em")
       .text(function(d) { return d; });
 
-  legend = g.append("g")
+  g.append("g")
       .attr("font-family", "sans-serif")
       .attr("font-size", 10)
       .attr("text-anchor", "end")

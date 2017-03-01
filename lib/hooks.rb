@@ -22,9 +22,3 @@ class Hooks < Redmine::Hook::ViewListener
   end
 
 end
-=begin
-    context[:controller].send(:render_to_string, {
-        :partial => "layouts/change_view",
-        :locals => {:index => project_issues_path(context[:project].identifier)}
-    })
-=end

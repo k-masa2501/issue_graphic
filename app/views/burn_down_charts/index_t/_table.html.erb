@@ -2,11 +2,11 @@
   <thead>
   <tr>
     <th><%= t('.date') %></th>
-    <th><%= t('.estimated') %></th>
-    <th><%= t('.actual') %></th>
-    <th><%= t('.gap') %></th>
+    <th><%= t('.estimated') %>(h)</th>
+    <th><%= t('.actual') %>(h)</th>
+    <th><%= t('.gap') %>(h)</th>
     <% data[:member].each_with_index do |v, i| %>
-        <th><%= v[0] == nil ? t('.not_assigned') : v[0] %></th>
+        <th><%= v[0] == nil ? t('.not_assigned') : v[0] %>(h)</th>
     <% end %>
   </tr>
   </thead>
