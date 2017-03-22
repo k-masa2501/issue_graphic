@@ -2,24 +2,31 @@ class ExecDataCollect < DaemonSpawn::Base
 
   def start(args)
 
-    Rails.logger.debug "start : #{Time.now}"
+    Rails.logger.info "start : #{Time.now}"
 
-    next_daily = DateTime.parse((Date.today+1).to_s + " 01:00")
-    next_minute = DateTime.now  + get_rational
+    next_daily = Time.parse((Date.today+1).to_s)
+    next_minute = Time.now  + get_rational
 
     bulk_execute
 
     while(1)
 
-      now = DateTime.now
+      now = Time.now
 
-      if now > next_daily
+      if now >= next_daily
 
-        next_daily += 1
-        next_minute +=  get_rational
+        Rails.logger.debug "next_daily : #{next_daily}"
+        Rails.logger.debug "now : #{now}"
+        Rails.logger.debug "next_minute : #{next_minute}"
+
+        next_daily = 1.days.since next_daily
         bulk_execute
 
-      elsif now > next_minute
+      elsif now >= next_minute
+
+        Rails.logger.debug "next_daily : #{next_daily}"
+        Rails.logger.debug "now : #{now}"
+        Rails.logger.debug "next_minute : #{next_minute}"
 
         gap = now - next_minute
         next_minute += get_rational
@@ -34,13 +41,13 @@ class ExecDataCollect < DaemonSpawn::Base
   end
 
   def stop
-    Rails.logger.debug "stop  : #{Time.now}"
+    Rails.logger.info "stop  : #{Time.now}"
 
     # やることがなくても、メソッドを実装しないと例外
   end
 
   def get_rational(x=0)
-    Rational(30+x, 24 * 60)
+    (30+x) * 60
   end
 
   def get_condition
@@ -100,7 +107,7 @@ class ExecDataCollect < DaemonSpawn::Base
 
   def bulk_execute
 
-    Rails.logger.debug "Start a collection of data."
+    Rails.logger.info "Start a collection of data."
 
     issue_aggs = []
     today = Date.today
@@ -150,7 +157,7 @@ class ExecDataCollect < DaemonSpawn::Base
       return false
     end
 
-    Rails.logger.debug "Exit the collection of data."
+    Rails.logger.info "Exit the collection of data."
 
     return true
 
@@ -204,8 +211,6 @@ class ExecDataCollect < DaemonSpawn::Base
                  .where(project_id: @enables)
                  .where('projects.status = 1')
                  .where(fixed_version_id: @versions)
-
-    Rails.logger.debug condition
 
     condition.each do |v|
       record = record.where(v) if v.present?

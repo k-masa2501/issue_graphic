@@ -1,0 +1,42 @@
+
+issue_categories0:
+  id: 1
+  project_id: 1
+  name: 開発
+  assigned_to_id: 
+
+
+issue_categories1:
+  id: 2
+  project_id: 1
+  name: IT
+  assigned_to_id: 
+
+
+issue_categories2:
+  id: 3
+  project_id: 1
+  name: UT
+  assigned_to_id: 
+
+
+issue_categories3:
+  id: 4
+  project_id: 1
+  name: レビュー
+  assigned_to_id: 
+
+
+issue_categories4:
+  id: 5
+  project_id: 1
+  name: 仕様検討
+  assigned_to_id: 
+
+
+issue_categories5:
+  id: 6
+  project_id: 1
+  name: 構築
+  assigned_to_id: 
+

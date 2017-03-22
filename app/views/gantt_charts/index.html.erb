@@ -16,11 +16,11 @@
     :project_identifier => @project.identifier
 } ) %>
 
+<%= cell("cells/filter").(:filter, project_id: @project.id) %>
+
 <%= cell("cells/filter").(:sum, {project_id: @project.id,
                                  params: params, filter: @filter,
                                  member: @member}) %>
-
-<%= cell("cells/filter").(:filter, project_id: @project.id) %>
 
 <svg id='gantchart' class="svg_main"></svg>
 <div class="div_svg_footer">
@@ -33,4 +33,12 @@
     chart: new GanttChart(<%== JSON.generate(@chart_data) %>),
     url: '<%= get_gantt_chart_data_project_gantt_charts_path %>'
   });
+
+  window.onload = function () {
+    setTimeout((function(){
+      // コンテンツの表示
+      $('div#content').css('visibility', 'visible');
+    }) , 50);
+  };
+
 </script>

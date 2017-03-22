@@ -1,0 +1,4896 @@
+
+journal_details0:
+  id: 1
+  journal_id: 1
+  property: attr
+  prop_key: category_id
+  old_value: 
+  value: '1'
+
+
+journal_details1:
+  id: 2
+  journal_id: 2
+  property: attr
+  prop_key: due_date
+  old_value: 
+  value: '2017-02-03'
+
+
+journal_details2:
+  id: 3
+  journal_id: 3
+  property: attr
+  prop_key: due_date
+  old_value: '2017-02-03'
+  value: '2016-08-21'
+
+
+journal_details3:
+  id: 4
+  journal_id: 3
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-13'
+  value: '2016-08-20'
+
+
+journal_details4:
+  id: 5
+  journal_id: 3
+  property: attr
+  prop_key: estimated_hours
+  old_value: '1.0'
+  value: '12.0'
+
+
+journal_details5:
+  id: 6
+  journal_id: 4
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details6:
+  id: 7
+  journal_id: 5
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details7:
+  id: 8
+  journal_id: 6
+  property: attr
+  prop_key: estimated_hours
+  old_value: '12.0'
+  value: 
+
+
+journal_details8:
+  id: 9
+  journal_id: 7
+  property: attr
+  prop_key: estimated_hours
+  old_value: 
+  value: '15.0'
+
+
+journal_details9:
+  id: 15
+  journal_id: 11
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details10:
+  id: 16
+  journal_id: 12
+  property: cf
+  prop_key: '3'
+  old_value: '5'
+  value: '6'
+
+
+journal_details11:
+  id: 17
+  journal_id: 13
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '90'
+
+
+journal_details12:
+  id: 18
+  journal_id: 14
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '30'
+
+
+journal_details13:
+  id: 19
+  journal_id: 15
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '50'
+
+
+journal_details14:
+  id: 20
+  journal_id: 16
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '30'
+
+
+journal_details15:
+  id: 21
+  journal_id: 17
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '30'
+
+
+journal_details16:
+  id: 22
+  journal_id: 18
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '50'
+
+
+journal_details17:
+  id: 23
+  journal_id: 19
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '50'
+
+
+journal_details18:
+  id: 24
+  journal_id: 20
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '40'
+
+
+journal_details19:
+  id: 25
+  journal_id: 21
+  property: cf
+  prop_key: '3'
+  old_value: '6'
+  value: '5'
+
+
+journal_details20:
+  id: 26
+  journal_id: 22
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '60'
+
+
+journal_details21:
+  id: 27
+  journal_id: 23
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '40'
+
+
+journal_details22:
+  id: 59
+  journal_id: 36
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-13'
+  value: '2016-09-12'
+
+
+journal_details23:
+  id: 60
+  journal_id: 36
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-13'
+  value: '2016-08-08'
+
+
+journal_details24:
+  id: 61
+  journal_id: 36
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details25:
+  id: 62
+  journal_id: 36
+  property: attr
+  prop_key: estimated_hours
+  old_value: '13.0'
+  value: '15.0'
+
+
+journal_details26:
+  id: 63
+  journal_id: 36
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '2'
+
+
+journal_details27:
+  id: 64
+  journal_id: 36
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details28:
+  id: 65
+  journal_id: 36
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details29:
+  id: 68
+  journal_id: 39
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-12'
+  value: '2016-08-12'
+
+
+journal_details30:
+  id: 69
+  journal_id: 40
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-11'
+  value: '2016-08-12'
+
+
+journal_details31:
+  id: 70
+  journal_id: 40
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-11'
+  value: '2016-08-08'
+
+
+journal_details32:
+  id: 71
+  journal_id: 40
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details33:
+  id: 72
+  journal_id: 40
+  property: attr
+  prop_key: estimated_hours
+  old_value: '11.0'
+  value: '14.0'
+
+
+journal_details34:
+  id: 73
+  journal_id: 40
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details35:
+  id: 74
+  journal_id: 40
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details36:
+  id: 75
+  journal_id: 40
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details37:
+  id: 76
+  journal_id: 41
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-09'
+  value: '2016-08-12'
+
+
+journal_details38:
+  id: 77
+  journal_id: 41
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '6'
+  value: '5'
+
+
+journal_details39:
+  id: 78
+  journal_id: 41
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-09'
+  value: '2016-08-05'
+
+
+journal_details40:
+  id: 79
+  journal_id: 41
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details41:
+  id: 80
+  journal_id: 41
+  property: attr
+  prop_key: estimated_hours
+  old_value: '9.0'
+  value: '15.0'
+
+
+journal_details42:
+  id: 81
+  journal_id: 41
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details43:
+  id: 82
+  journal_id: 41
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details44:
+  id: 83
+  journal_id: 41
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details45:
+  id: 84
+  journal_id: 42
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-07'
+  value: '2016-08-12'
+
+
+journal_details46:
+  id: 85
+  journal_id: 42
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '6'
+  value: '5'
+
+
+journal_details47:
+  id: 86
+  journal_id: 42
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-07'
+  value: '2016-08-05'
+
+
+journal_details48:
+  id: 87
+  journal_id: 42
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details49:
+  id: 88
+  journal_id: 42
+  property: attr
+  prop_key: estimated_hours
+  old_value: '7.0'
+  value: '14.0'
+
+
+journal_details50:
+  id: 89
+  journal_id: 42
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details51:
+  id: 90
+  journal_id: 42
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details52:
+  id: 91
+  journal_id: 42
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details53:
+  id: 92
+  journal_id: 43
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-06'
+  value: '2016-08-19'
+
+
+journal_details54:
+  id: 93
+  journal_id: 43
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-06'
+  value: '2016-08-15'
+
+
+journal_details55:
+  id: 94
+  journal_id: 43
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details56:
+  id: 95
+  journal_id: 43
+  property: attr
+  prop_key: estimated_hours
+  old_value: '6.0'
+  value: '15.0'
+
+
+journal_details57:
+  id: 96
+  journal_id: 43
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details58:
+  id: 97
+  journal_id: 43
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details59:
+  id: 98
+  journal_id: 43
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details60:
+  id: 99
+  journal_id: 44
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-05'
+  value: '2016-08-19'
+
+
+journal_details61:
+  id: 100
+  journal_id: 44
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-05'
+  value: '2016-08-15'
+
+
+journal_details62:
+  id: 101
+  journal_id: 44
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details63:
+  id: 102
+  journal_id: 44
+  property: attr
+  prop_key: estimated_hours
+  old_value: '5.0'
+  value: '14.0'
+
+
+journal_details64:
+  id: 103
+  journal_id: 44
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details65:
+  id: 104
+  journal_id: 44
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details66:
+  id: 105
+  journal_id: 44
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details67:
+  id: 106
+  journal_id: 45
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-05'
+  value: '2016-08-08'
+
+
+journal_details68:
+  id: 107
+  journal_id: 46
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-05'
+  value: '2016-08-08'
+
+
+journal_details69:
+  id: 108
+  journal_id: 47
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-03'
+  value: '2016-09-19'
+
+
+journal_details70:
+  id: 109
+  journal_id: 47
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '5'
+  value: '6'
+
+
+journal_details71:
+  id: 110
+  journal_id: 47
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-03'
+  value: '2016-08-15'
+
+
+journal_details72:
+  id: 111
+  journal_id: 47
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details73:
+  id: 112
+  journal_id: 47
+  property: attr
+  prop_key: estimated_hours
+  old_value: '3.0'
+  value: '15.0'
+
+
+journal_details74:
+  id: 113
+  journal_id: 47
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details75:
+  id: 114
+  journal_id: 47
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details76:
+  id: 115
+  journal_id: 47
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details77:
+  id: 116
+  journal_id: 48
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-01'
+  value: '2016-08-19'
+
+
+journal_details78:
+  id: 117
+  journal_id: 48
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '5'
+  value: '6'
+
+
+journal_details79:
+  id: 118
+  journal_id: 48
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-01'
+  value: '2016-08-15'
+
+
+journal_details80:
+  id: 119
+  journal_id: 48
+  property: attr
+  prop_key: done_ratio
+  old_value: '21'
+  value: '0'
+
+
+journal_details81:
+  id: 120
+  journal_id: 48
+  property: cf
+  prop_key: '1'
+  old_value: ''
+  value: '1'
+
+
+journal_details82:
+  id: 121
+  journal_id: 48
+  property: cf
+  prop_key: '2'
+  old_value: 
+  value: '3'
+
+
+journal_details83:
+  id: 122
+  journal_id: 48
+  property: cf
+  prop_key: '3'
+  old_value: ''
+  value: '5'
+
+
+journal_details84:
+  id: 123
+  journal_id: 49
+  property: attr
+  prop_key: estimated_hours
+  old_value: '1.0'
+  value: '15.0'
+
+
+journal_details85:
+  id: 124
+  journal_id: 50
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104242'
+
+
+journal_details86:
+  id: 128
+  journal_id: 54
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-19'
+  value: '2016-08-26'
+
+
+journal_details87:
+  id: 129
+  journal_id: 54
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-15'
+  value: '2016-08-22'
+
+
+journal_details88:
+  id: 130
+  journal_id: 55
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104244'
+
+
+journal_details89:
+  id: 132
+  journal_id: 57
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104245'
+
+
+journal_details90:
+  id: 134
+  journal_id: 59
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104246'
+
+
+journal_details91:
+  id: 174
+  journal_id: 96
+  property: attr
+  prop_key: due_date
+  old_value: '2016-09-19'
+  value: '2016-08-19'
+
+
+journal_details92:
+  id: 198
+  journal_id: 120
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details93:
+  id: 220
+  journal_id: 142
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '20'
+
+
+journal_details94:
+  id: 221
+  journal_id: 143
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '6'
+  value: 
+
+
+journal_details95:
+  id: 222
+  journal_id: 143
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details96:
+  id: 223
+  journal_id: 144
+  property: attr
+  prop_key: assigned_to_id
+  old_value: 
+  value: '5'
+
+
+journal_details97:
+  id: 224
+  journal_id: 145
+  property: attr
+  prop_key: subject
+  old_value: sanple11
+  value: "[開発]チケット登録画面にプルダウン追加"
+
+
+journal_details98:
+  id: 225
+  journal_id: 146
+  property: attr
+  prop_key: subject
+  old_value: sanple13
+  value: "[開発]wikiの参照更新画面に担当者欄を追加"
+
+
+journal_details99:
+  id: 238
+  journal_id: 156
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '30'
+
+
+journal_details100:
+  id: 251
+  journal_id: 161
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-12'
+  value: '2016-09-30'
+
+
+journal_details101:
+  id: 252
+  journal_id: 161
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-08'
+  value: '2016-09-26'
+
+
+journal_details102:
+  id: 253
+  journal_id: 161
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '0'
+
+
+journal_details103:
+  id: 254
+  journal_id: 162
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-12'
+  value: '2016-09-30'
+
+
+journal_details104:
+  id: 255
+  journal_id: 162
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-08'
+  value: '2016-09-26'
+
+
+journal_details105:
+  id: 256
+  journal_id: 162
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '0'
+
+
+journal_details106:
+  id: 257
+  journal_id: 163
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-12'
+  value: '2016-09-30'
+
+
+journal_details107:
+  id: 258
+  journal_id: 163
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-08'
+  value: '2016-09-26'
+
+
+journal_details108:
+  id: 259
+  journal_id: 164
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-12'
+  value: '2016-09-30'
+
+
+journal_details109:
+  id: 260
+  journal_id: 164
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-08'
+  value: '2016-09-26'
+
+
+journal_details110:
+  id: 261
+  journal_id: 165
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-26'
+  value: '2016-10-07'
+
+
+journal_details111:
+  id: 262
+  journal_id: 165
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-22'
+  value: '2016-09-19'
+
+
+journal_details112:
+  id: 263
+  journal_id: 165
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details113:
+  id: 264
+  journal_id: 165
+  property: attr
+  prop_key: estimated_hours
+  old_value: '15.0'
+  value: '50.0'
+
+
+journal_details114:
+  id: 265
+  journal_id: 166
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-19'
+  value: '2016-10-07'
+
+
+journal_details115:
+  id: 266
+  journal_id: 166
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-15'
+  value: '2016-10-02'
+
+
+journal_details116:
+  id: 267
+  journal_id: 167
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-19'
+  value: '2016-10-07'
+
+
+journal_details117:
+  id: 268
+  journal_id: 167
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-15'
+  value: '2016-10-02'
+
+
+journal_details118:
+  id: 269
+  journal_id: 168
+  property: attr
+  prop_key: due_date
+  old_value: '2016-08-19'
+  value: '2016-10-07'
+
+
+journal_details119:
+  id: 270
+  journal_id: 168
+  property: attr
+  prop_key: start_date
+  old_value: '2016-08-15'
+  value: '2016-10-02'
+
+
+journal_details120:
+  id: 275
+  journal_id: 173
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '2'
+
+
+journal_details121:
+  id: 276
+  journal_id: 174
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '2'
+
+
+journal_details122:
+  id: 277
+  journal_id: 175
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '2'
+
+
+journal_details123:
+  id: 278
+  journal_id: 176
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '9'
+
+
+journal_details124:
+  id: 279
+  journal_id: 177
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '9'
+
+
+journal_details125:
+  id: 280
+  journal_id: 178
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '9'
+
+
+journal_details126:
+  id: 281
+  journal_id: 179
+  property: cf
+  prop_key: '1'
+  old_value: '1'
+  value: '9'
+
+
+journal_details127:
+  id: 286
+  journal_id: 184
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details128:
+  id: 287
+  journal_id: 185
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details129:
+  id: 288
+  journal_id: 186
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details130:
+  id: 289
+  journal_id: 187
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details131:
+  id: 290
+  journal_id: 188
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details132:
+  id: 297
+  journal_id: 195
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '5'
+  value: '6'
+
+
+journal_details133:
+  id: 303
+  journal_id: 201
+  property: attr
+  prop_key: subject
+  old_value: sanple6
+  value: "[開発]issuesテーブルとガントチャートの連携"
+
+
+journal_details134:
+  id: 304
+  journal_id: 202
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details135:
+  id: 305
+  journal_id: 203
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details136:
+  id: 306
+  journal_id: 204
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '0'
+
+
+journal_details137:
+  id: 307
+  journal_id: 205
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '0'
+
+
+journal_details138:
+  id: 320
+  journal_id: 215
+  property: attr
+  prop_key: start_date
+  old_value: '2016-10-02'
+  value: '2016-10-03'
+
+
+journal_details139:
+  id: 321
+  journal_id: 216
+  property: attr
+  prop_key: start_date
+  old_value: '2016-10-02'
+  value: '2016-10-03'
+
+
+journal_details140:
+  id: 322
+  journal_id: 217
+  property: attr
+  prop_key: start_date
+  old_value: '2016-10-02'
+  value: '2016-10-03'
+
+
+journal_details141:
+  id: 331
+  journal_id: 223
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '40'
+
+
+journal_details142:
+  id: 332
+  journal_id: 224
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '20'
+
+
+journal_details143:
+  id: 345
+  journal_id: 237
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104248'
+
+
+journal_details144:
+  id: 347
+  journal_id: 239
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104249'
+
+
+journal_details145:
+  id: 349
+  journal_id: 241
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104250'
+
+
+journal_details146:
+  id: 377
+  journal_id: 269
+  property: attr
+  prop_key: category_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details147:
+  id: 378
+  journal_id: 269
+  property: attr
+  prop_key: priority_id
+  old_value: '5'
+  value: '3'
+
+
+journal_details148:
+  id: 379
+  journal_id: 269
+  property: cf
+  prop_key: '5'
+  old_value: ''
+  value: '5'
+
+
+journal_details149:
+  id: 380
+  journal_id: 269
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details150:
+  id: 381
+  journal_id: 269
+  property: cf
+  prop_key: '7'
+  old_value: ''
+  value: '1'
+
+
+journal_details151:
+  id: 382
+  journal_id: 270
+  property: attr
+  prop_key: category_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details152:
+  id: 383
+  journal_id: 270
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '1'
+
+
+journal_details153:
+  id: 384
+  journal_id: 270
+  property: attr
+  prop_key: priority_id
+  old_value: '4'
+  value: '3'
+
+
+journal_details154:
+  id: 385
+  journal_id: 270
+  property: cf
+  prop_key: '5'
+  old_value: ''
+  value: '5'
+
+
+journal_details155:
+  id: 386
+  journal_id: 270
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details156:
+  id: 387
+  journal_id: 270
+  property: cf
+  prop_key: '7'
+  old_value: ''
+  value: '1'
+
+
+journal_details157:
+  id: 388
+  journal_id: 271
+  property: attr
+  prop_key: category_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details158:
+  id: 389
+  journal_id: 271
+  property: cf
+  prop_key: '5'
+  old_value: ''
+  value: '5'
+
+
+journal_details159:
+  id: 390
+  journal_id: 271
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details160:
+  id: 391
+  journal_id: 271
+  property: cf
+  prop_key: '7'
+  old_value: ''
+  value: '1'
+
+
+journal_details161:
+  id: 392
+  journal_id: 272
+  property: attr
+  prop_key: category_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details162:
+  id: 393
+  journal_id: 272
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '1'
+
+
+journal_details163:
+  id: 394
+  journal_id: 272
+  property: attr
+  prop_key: priority_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details164:
+  id: 395
+  journal_id: 272
+  property: cf
+  prop_key: '5'
+  old_value: ''
+  value: '5'
+
+
+journal_details165:
+  id: 396
+  journal_id: 272
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details166:
+  id: 397
+  journal_id: 272
+  property: cf
+  prop_key: '7'
+  old_value: ''
+  value: '1'
+
+
+journal_details167:
+  id: 495
+  journal_id: 358
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '40'
+
+
+journal_details168:
+  id: 496
+  journal_id: 359
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '30'
+
+
+journal_details169:
+  id: 497
+  journal_id: 360
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details170:
+  id: 498
+  journal_id: 361
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details171:
+  id: 509
+  journal_id: 372
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104243'
+
+
+journal_details172:
+  id: 511
+  journal_id: 374
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104252'
+
+
+journal_details173:
+  id: 525
+  journal_id: 388
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '100'
+
+
+journal_details174:
+  id: 551
+  journal_id: 412
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details175:
+  id: 561
+  journal_id: 421
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104218'
+
+
+journal_details176:
+  id: 562
+  journal_id: 422
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details177:
+  id: 565
+  journal_id: 425
+  property: cf
+  prop_key: '5'
+  old_value: '5'
+  value: '6'
+
+
+journal_details178:
+  id: 566
+  journal_id: 426
+  property: cf
+  prop_key: '5'
+  old_value: '6'
+  value: '5'
+
+
+journal_details179:
+  id: 567
+  journal_id: 426
+  property: cf
+  prop_key: '6'
+  old_value: hhhhh
+  value: vv
+
+
+journal_details180:
+  id: 569
+  journal_id: 428
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details181:
+  id: 570
+  journal_id: 429
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details182:
+  id: 571
+  journal_id: 430
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details183:
+  id: 572
+  journal_id: 431
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details184:
+  id: 573
+  journal_id: 432
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details185:
+  id: 574
+  journal_id: 433
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details186:
+  id: 575
+  journal_id: 434
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details187:
+  id: 576
+  journal_id: 435
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details188:
+  id: 577
+  journal_id: 436
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details189:
+  id: 578
+  journal_id: 437
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details190:
+  id: 579
+  journal_id: 438
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '1'
+
+
+journal_details191:
+  id: 580
+  journal_id: 439
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '20'
+
+
+journal_details192:
+  id: 581
+  journal_id: 440
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '10'
+
+
+journal_details193:
+  id: 582
+  journal_id: 441
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '50'
+
+
+journal_details194:
+  id: 583
+  journal_id: 442
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104256'
+
+
+journal_details195:
+  id: 584
+  journal_id: 443
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104210'
+
+
+journal_details196:
+  id: 585
+  journal_id: 444
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details197:
+  id: 586
+  journal_id: 444
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details198:
+  id: 587
+  journal_id: 445
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details199:
+  id: 588
+  journal_id: 445
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details200:
+  id: 589
+  journal_id: 446
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details201:
+  id: 590
+  journal_id: 446
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details202:
+  id: 591
+  journal_id: 447
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details203:
+  id: 592
+  journal_id: 448
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '100'
+
+
+journal_details204:
+  id: 593
+  journal_id: 449
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details205:
+  id: 594
+  journal_id: 449
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details206:
+  id: 595
+  journal_id: 450
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details207:
+  id: 596
+  journal_id: 450
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details208:
+  id: 597
+  journal_id: 451
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details209:
+  id: 598
+  journal_id: 451
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '100'
+
+
+journal_details210:
+  id: 599
+  journal_id: 452
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details211:
+  id: 600
+  journal_id: 452
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details212:
+  id: 601
+  journal_id: 453
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details213:
+  id: 602
+  journal_id: 453
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details214:
+  id: 603
+  journal_id: 454
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details215:
+  id: 604
+  journal_id: 455
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details216:
+  id: 605
+  journal_id: 456
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '90'
+
+
+journal_details217:
+  id: 606
+  journal_id: 457
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '5'
+  value: '6'
+
+
+journal_details218:
+  id: 607
+  journal_id: 458
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '5'
+  value: 
+
+
+journal_details219:
+  id: 608
+  journal_id: 459
+  property: attr
+  prop_key: assigned_to_id
+  old_value: 
+  value: '6'
+
+
+journal_details220:
+  id: 609
+  journal_id: 460
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details221:
+  id: 610
+  journal_id: 461
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '93'
+
+
+journal_details222:
+  id: 611
+  journal_id: 462
+  property: attr
+  prop_key: done_ratio
+  old_value: '93'
+  value: '100'
+
+
+journal_details223:
+  id: 612
+  journal_id: 463
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details224:
+  id: 613
+  journal_id: 464
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '7'
+
+
+journal_details225:
+  id: 614
+  journal_id: 465
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '12'
+
+
+journal_details226:
+  id: 615
+  journal_id: 466
+  property: attr
+  prop_key: done_ratio
+  old_value: '7'
+  value: '11'
+
+
+journal_details227:
+  id: 616
+  journal_id: 467
+  property: attr
+  prop_key: done_ratio
+  old_value: '12'
+  value: '19'
+
+
+journal_details228:
+  id: 617
+  journal_id: 468
+  property: attr
+  prop_key: done_ratio
+  old_value: '11'
+  value: '19'
+
+
+journal_details229:
+  id: 618
+  journal_id: 469
+  property: attr
+  prop_key: done_ratio
+  old_value: '19'
+  value: '27'
+
+
+journal_details230:
+  id: 619
+  journal_id: 470
+  property: attr
+  prop_key: done_ratio
+  old_value: '19'
+  value: '35'
+
+
+journal_details231:
+  id: 620
+  journal_id: 471
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '11'
+
+
+journal_details232:
+  id: 621
+  journal_id: 472
+  property: attr
+  prop_key: done_ratio
+  old_value: '11'
+  value: '12'
+
+
+journal_details233:
+  id: 622
+  journal_id: 473
+  property: attr
+  prop_key: done_ratio
+  old_value: '27'
+  value: '37'
+
+
+journal_details234:
+  id: 623
+  journal_id: 474
+  property: attr
+  prop_key: done_ratio
+  old_value: '35'
+  value: '45'
+
+
+journal_details235:
+  id: 624
+  journal_id: 475
+  property: attr
+  prop_key: done_ratio
+  old_value: '12'
+  value: '40'
+
+
+journal_details236:
+  id: 625
+  journal_id: 476
+  property: attr
+  prop_key: done_ratio
+  old_value: '37'
+  value: '80'
+
+
+journal_details237:
+  id: 626
+  journal_id: 477
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '80'
+
+
+journal_details238:
+  id: 627
+  journal_id: 478
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '90'
+
+
+journal_details239:
+  id: 628
+  journal_id: 479
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details240:
+  id: 629
+  journal_id: 480
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details241:
+  id: 630
+  journal_id: 481
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details242:
+  id: 631
+  journal_id: 482
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details243:
+  id: 632
+  journal_id: 482
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '100'
+
+
+journal_details244:
+  id: 633
+  journal_id: 483
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details245:
+  id: 634
+  journal_id: 483
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '100'
+
+
+journal_details246:
+  id: 635
+  journal_id: 484
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details247:
+  id: 636
+  journal_id: 484
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '100'
+
+
+journal_details248:
+  id: 637
+  journal_id: 485
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '3'
+
+
+journal_details249:
+  id: 638
+  journal_id: 485
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details250:
+  id: 639
+  journal_id: 486
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '3'
+
+
+journal_details251:
+  id: 640
+  journal_id: 486
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details252:
+  id: 641
+  journal_id: 487
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '3'
+
+
+journal_details253:
+  id: 642
+  journal_id: 487
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details254:
+  id: 643
+  journal_id: 488
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '3'
+
+
+journal_details255:
+  id: 644
+  journal_id: 488
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details256:
+  id: 645
+  journal_id: 489
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details257:
+  id: 646
+  journal_id: 489
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '80'
+
+
+journal_details258:
+  id: 647
+  journal_id: 490
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details259:
+  id: 648
+  journal_id: 490
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '90'
+
+
+journal_details260:
+  id: 649
+  journal_id: 491
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details261:
+  id: 650
+  journal_id: 491
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '80'
+
+
+journal_details262:
+  id: 651
+  journal_id: 492
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details263:
+  id: 652
+  journal_id: 492
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '80'
+
+
+journal_details264:
+  id: 653
+  journal_id: 493
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details265:
+  id: 654
+  journal_id: 493
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '80'
+
+
+journal_details266:
+  id: 655
+  journal_id: 494
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details267:
+  id: 656
+  journal_id: 494
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '70'
+
+
+journal_details268:
+  id: 657
+  journal_id: 495
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '85'
+
+
+journal_details269:
+  id: 658
+  journal_id: 496
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '92'
+
+
+journal_details270:
+  id: 659
+  journal_id: 497
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '83'
+
+
+journal_details271:
+  id: 660
+  journal_id: 497
+  property: cf
+  prop_key: '7'
+  old_value: ''
+  value: '0'
+
+
+journal_details272:
+  id: 661
+  journal_id: 498
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details273:
+  id: 662
+  journal_id: 498
+  property: attr
+  prop_key: done_ratio
+  old_value: '83'
+  value: '100'
+
+
+journal_details274:
+  id: 663
+  journal_id: 499
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details275:
+  id: 664
+  journal_id: 499
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details276:
+  id: 665
+  journal_id: 500
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '74'
+
+
+journal_details277:
+  id: 666
+  journal_id: 501
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details278:
+  id: 667
+  journal_id: 501
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details279:
+  id: 668
+  journal_id: 502
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details280:
+  id: 669
+  journal_id: 502
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '15'
+
+
+journal_details281:
+  id: 670
+  journal_id: 503
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details282:
+  id: 671
+  journal_id: 503
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '6'
+
+
+journal_details283:
+  id: 672
+  journal_id: 504
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details284:
+  id: 673
+  journal_id: 505
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details285:
+  id: 674
+  journal_id: 506
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details286:
+  id: 675
+  journal_id: 507
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details287:
+  id: 676
+  journal_id: 508
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details288:
+  id: 677
+  journal_id: 509
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details289:
+  id: 678
+  journal_id: 510
+  property: attr
+  prop_key: status_id
+  old_value: '3'
+  value: '5'
+
+
+journal_details290:
+  id: 679
+  journal_id: 511
+  property: attr
+  prop_key: done_ratio
+  old_value: '85'
+  value: '90'
+
+
+journal_details291:
+  id: 680
+  journal_id: 512
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details292:
+  id: 681
+  journal_id: 512
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '100'
+
+
+journal_details293:
+  id: 682
+  journal_id: 513
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details294:
+  id: 683
+  journal_id: 513
+  property: attr
+  prop_key: done_ratio
+  old_value: '74'
+  value: '100'
+
+
+journal_details295:
+  id: 684
+  journal_id: 514
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details296:
+  id: 685
+  journal_id: 514
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '100'
+
+
+journal_details297:
+  id: 686
+  journal_id: 515
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details298:
+  id: 687
+  journal_id: 515
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '100'
+
+
+journal_details299:
+  id: 688
+  journal_id: 516
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details300:
+  id: 689
+  journal_id: 516
+  property: attr
+  prop_key: done_ratio
+  old_value: '80'
+  value: '100'
+
+
+journal_details301:
+  id: 690
+  journal_id: 517
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '60'
+
+
+journal_details302:
+  id: 691
+  journal_id: 518
+  property: attr
+  prop_key: done_ratio
+  old_value: '60'
+  value: '100'
+
+
+journal_details303:
+  id: 692
+  journal_id: 519
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '50'
+
+
+journal_details304:
+  id: 693
+  journal_id: 520
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details305:
+  id: 694
+  journal_id: 521
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '40'
+
+
+journal_details306:
+  id: 695
+  journal_id: 522
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details307:
+  id: 696
+  journal_id: 522
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '100'
+
+
+journal_details308:
+  id: 697
+  journal_id: 523
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '6'
+
+
+journal_details309:
+  id: 698
+  journal_id: 523
+  property: attr
+  prop_key: done_ratio
+  old_value: '92'
+  value: '100'
+
+
+journal_details310:
+  id: 699
+  journal_id: 524
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details311:
+  id: 700
+  journal_id: 524
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details312:
+  id: 701
+  journal_id: 525
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details313:
+  id: 702
+  journal_id: 525
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details314:
+  id: 703
+  journal_id: 526
+  property: attr
+  prop_key: done_ratio
+  old_value: '6'
+  value: '30'
+
+
+journal_details315:
+  id: 704
+  journal_id: 527
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details316:
+  id: 705
+  journal_id: 528
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details317:
+  id: 706
+  journal_id: 529
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '70'
+
+
+journal_details318:
+  id: 707
+  journal_id: 530
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '45'
+
+
+journal_details319:
+  id: 708
+  journal_id: 531
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '50'
+
+
+journal_details320:
+  id: 709
+  journal_id: 532
+  property: attr
+  prop_key: done_ratio
+  old_value: '15'
+  value: '30'
+
+
+journal_details321:
+  id: 710
+  journal_id: 533
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details322:
+  id: 711
+  journal_id: 534
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details323:
+  id: 712
+  journal_id: 535
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '45'
+
+
+journal_details324:
+  id: 713
+  journal_id: 536
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details325:
+  id: 714
+  journal_id: 537
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '40'
+
+
+journal_details326:
+  id: 715
+  journal_id: 538
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '40'
+
+
+journal_details327:
+  id: 716
+  journal_id: 539
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '40'
+
+
+journal_details328:
+  id: 717
+  journal_id: 540
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '40'
+
+
+journal_details329:
+  id: 718
+  journal_id: 541
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '41'
+
+
+journal_details330:
+  id: 719
+  journal_id: 542
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details331:
+  id: 720
+  journal_id: 543
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details332:
+  id: 721
+  journal_id: 544
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details333:
+  id: 722
+  journal_id: 545
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '40'
+
+
+journal_details334:
+  id: 723
+  journal_id: 546
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '45'
+
+
+journal_details335:
+  id: 724
+  journal_id: 547
+  property: attr
+  prop_key: done_ratio
+  old_value: '41'
+  value: '45'
+
+
+journal_details336:
+  id: 725
+  journal_id: 548
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '42'
+
+
+journal_details337:
+  id: 726
+  journal_id: 549
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '41'
+
+
+journal_details338:
+  id: 727
+  journal_id: 550
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '10'
+
+
+journal_details339:
+  id: 728
+  journal_id: 551
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '90'
+
+
+journal_details340:
+  id: 729
+  journal_id: 552
+  property: attr
+  prop_key: done_ratio
+  old_value: '90'
+  value: '99'
+
+
+journal_details341:
+  id: 730
+  journal_id: 553
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '100'
+
+
+journal_details342:
+  id: 731
+  journal_id: 554
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '99'
+
+
+journal_details343:
+  id: 732
+  journal_id: 555
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '1'
+
+
+journal_details344:
+  id: 733
+  journal_id: 556
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-09'
+  value: '2016-12-25'
+
+
+journal_details345:
+  id: 734
+  journal_id: 557
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-25'
+  value: '2016-12-16'
+
+
+journal_details346:
+  id: 735
+  journal_id: 558
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-16'
+  value: '2016-12-01'
+
+
+journal_details347:
+  id: 736
+  journal_id: 559
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-01'
+  value: '2016-12-17'
+
+
+journal_details348:
+  id: 737
+  journal_id: 560
+  property: attr
+  prop_key: done_ratio
+  old_value: '1'
+  value: '10'
+
+
+journal_details349:
+  id: 738
+  journal_id: 561
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-17'
+  value: '2016-12-23'
+
+
+journal_details350:
+  id: 739
+  journal_id: 562
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-23'
+  value: '2016-12-17'
+
+
+journal_details351:
+  id: 740
+  journal_id: 563
+  property: attr
+  prop_key: start_date
+  old_value: '2016-12-17'
+  value: '2016-12-19'
+
+
+journal_details352:
+  id: 741
+  journal_id: 564
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '35'
+
+
+journal_details353:
+  id: 742
+  journal_id: 565
+  property: attr
+  prop_key: done_ratio
+  old_value: '35'
+  value: '59'
+
+
+journal_details354:
+  id: 743
+  journal_id: 566
+  property: attr
+  prop_key: done_ratio
+  old_value: '59'
+  value: '50'
+
+
+journal_details355:
+  id: 744
+  journal_id: 567
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '55'
+
+
+journal_details356:
+  id: 745
+  journal_id: 568
+  property: attr
+  prop_key: done_ratio
+  old_value: '55'
+  value: '70'
+
+
+journal_details357:
+  id: 746
+  journal_id: 569
+  property: attr
+  prop_key: done_ratio
+  old_value: '45'
+  value: '65'
+
+
+journal_details358:
+  id: 747
+  journal_id: 570
+  property: attr
+  prop_key: done_ratio
+  old_value: '42'
+  value: '65'
+
+
+journal_details359:
+  id: 748
+  journal_id: 571
+  property: attr
+  prop_key: done_ratio
+  old_value: '41'
+  value: '65'
+
+
+journal_details360:
+  id: 749
+  journal_id: 572
+  property: attr
+  prop_key: done_ratio
+  old_value: '65'
+  value: '73'
+
+
+journal_details361:
+  id: 750
+  journal_id: 573
+  property: attr
+  prop_key: done_ratio
+  old_value: '73'
+  value: '77'
+
+
+journal_details362:
+  id: 751
+  journal_id: 574
+  property: attr
+  prop_key: done_ratio
+  old_value: '77'
+  value: '72'
+
+
+journal_details363:
+  id: 752
+  journal_id: 575
+  property: attr
+  prop_key: done_ratio
+  old_value: '65'
+  value: '70'
+
+
+journal_details364:
+  id: 753
+  journal_id: 576
+  property: attr
+  prop_key: done_ratio
+  old_value: '65'
+  value: '73'
+
+
+journal_details365:
+  id: 754
+  journal_id: 577
+  property: attr
+  prop_key: done_ratio
+  old_value: '73'
+  value: '69'
+
+
+journal_details366:
+  id: 755
+  journal_id: 578
+  property: attr
+  prop_key: status_id
+  old_value: '6'
+  value: '5'
+
+
+journal_details367:
+  id: 756
+  journal_id: 579
+  property: attr
+  prop_key: done_ratio
+  old_value: '69'
+  value: '74'
+
+
+journal_details368:
+  id: 757
+  journal_id: 580
+  property: attr
+  prop_key: done_ratio
+  old_value: '74'
+  value: '72'
+
+
+journal_details369:
+  id: 758
+  journal_id: 581
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '67'
+
+
+journal_details370:
+  id: 759
+  journal_id: 582
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '66'
+
+
+journal_details371:
+  id: 760
+  journal_id: 583
+  property: attr
+  prop_key: done_ratio
+  old_value: '66'
+  value: '67'
+
+
+journal_details372:
+  id: 761
+  journal_id: 584
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '99'
+
+
+journal_details373:
+  id: 762
+  journal_id: 585
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '99'
+
+
+journal_details374:
+  id: 763
+  journal_id: 586
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '100'
+
+
+journal_details375:
+  id: 764
+  journal_id: 587
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '67'
+
+
+journal_details376:
+  id: 765
+  journal_id: 588
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '67'
+
+
+journal_details377:
+  id: 766
+  journal_id: 589
+  property: attr
+  prop_key: estimated_hours
+  old_value: '16.0'
+  value: '22.0'
+
+
+journal_details378:
+  id: 767
+  journal_id: 590
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '66'
+
+
+journal_details379:
+  id: 768
+  journal_id: 591
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '66'
+
+
+journal_details380:
+  id: 769
+  journal_id: 592
+  property: attr
+  prop_key: estimated_hours
+  old_value: '15.0'
+  value: '30.0'
+
+
+journal_details381:
+  id: 770
+  journal_id: 593
+  property: attr
+  prop_key: done_ratio
+  old_value: '72'
+  value: '97'
+
+
+journal_details382:
+  id: 771
+  journal_id: 594
+  property: attr
+  prop_key: done_ratio
+  old_value: '72'
+  value: '97'
+
+
+journal_details383:
+  id: 772
+  journal_id: 595
+  property: attr
+  prop_key: done_ratio
+  old_value: '97'
+  value: '100'
+
+
+journal_details384:
+  id: 773
+  journal_id: 596
+  property: attr
+  prop_key: done_ratio
+  old_value: '97'
+  value: '100'
+
+
+journal_details385:
+  id: 774
+  journal_id: 597
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '99'
+
+
+journal_details386:
+  id: 775
+  journal_id: 598
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '99'
+
+
+journal_details387:
+  id: 776
+  journal_id: 599
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '70'
+
+
+journal_details388:
+  id: 777
+  journal_id: 600
+  property: attr
+  prop_key: done_ratio
+  old_value: '99'
+  value: '65'
+
+
+journal_details389:
+  id: 778
+  journal_id: 601
+  property: attr
+  prop_key: done_ratio
+  old_value: '65'
+  value: '67'
+
+
+journal_details390:
+  id: 779
+  journal_id: 602
+  property: attr
+  prop_key: done_ratio
+  old_value: '66'
+  value: '70'
+
+
+journal_details391:
+  id: 780
+  journal_id: 603
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '84'
+
+
+journal_details392:
+  id: 781
+  journal_id: 604
+  property: attr
+  prop_key: done_ratio
+  old_value: '84'
+  value: '67'
+
+
+journal_details393:
+  id: 782
+  journal_id: 605
+  property: attr
+  prop_key: priority_id
+  old_value: '3'
+  value: '2'
+
+
+journal_details394:
+  id: 783
+  journal_id: 606
+  property: attr
+  prop_key: priority_id
+  old_value: '3'
+  value: '2'
+
+
+journal_details395:
+  id: 784
+  journal_id: 607
+  property: attr
+  prop_key: done_ratio
+  old_value: '67'
+  value: '75'
+
+
+journal_details396:
+  id: 785
+  journal_id: 608
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '73'
+
+
+journal_details397:
+  id: 786
+  journal_id: 609
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details398:
+  id: 787
+  journal_id: 609
+  property: attr
+  prop_key: done_ratio
+  old_value: '66'
+  value: '100'
+
+
+journal_details399:
+  id: 788
+  journal_id: 610
+  property: attr
+  prop_key: done_ratio
+  old_value: '75'
+  value: '100'
+
+
+journal_details400:
+  id: 789
+  journal_id: 611
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '100'
+
+
+journal_details401:
+  id: 790
+  journal_id: 612
+  property: attr
+  prop_key: done_ratio
+  old_value: '73'
+  value: '100'
+
+
+journal_details402:
+  id: 791
+  journal_id: 613
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details403:
+  id: 792
+  journal_id: 614
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details404:
+  id: 793
+  journal_id: 615
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details405:
+  id: 794
+  journal_id: 616
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details406:
+  id: 795
+  journal_id: 617
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details407:
+  id: 796
+  journal_id: 618
+  property: attr
+  prop_key: due_date
+  old_value: '2016-11-08'
+  value: 
+
+
+journal_details408:
+  id: 797
+  journal_id: 619
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104277'
+
+
+journal_details409:
+  id: 798
+  journal_id: 620
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104276'
+
+
+journal_details410:
+  id: 799
+  journal_id: 621
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104278'
+
+
+journal_details411:
+  id: 800
+  journal_id: 622
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104277'
+
+
+journal_details412:
+  id: 801
+  journal_id: 623
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104279'
+
+
+journal_details413:
+  id: 802
+  journal_id: 624
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104278'
+
+
+journal_details414:
+  id: 803
+  journal_id: 625
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '18'
+  value: '16'
+
+
+journal_details415:
+  id: 804
+  journal_id: 626
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104280'
+
+
+journal_details416:
+  id: 805
+  journal_id: 627
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104279'
+
+
+journal_details417:
+  id: 806
+  journal_id: 628
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104281'
+
+
+journal_details418:
+  id: 807
+  journal_id: 629
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104280'
+
+
+journal_details419:
+  id: 808
+  journal_id: 630
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104282'
+
+
+journal_details420:
+  id: 809
+  journal_id: 631
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104281'
+
+
+journal_details421:
+  id: 810
+  journal_id: 632
+  property: attr
+  prop_key: subject
+  old_value: "[step2] undefined local variable or method `a'"
+  value: "[step2] system stack error"
+
+
+journal_details422:
+  id: 811
+  journal_id: 632
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '11'
+  value: '9'
+
+
+journal_details423:
+  id: 812
+  journal_id: 632
+  property: attr
+  prop_key: priority_id
+  old_value: '3'
+  value: '4'
+
+
+journal_details424:
+  id: 813
+  journal_id: 633
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104283'
+
+
+journal_details425:
+  id: 814
+  journal_id: 634
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104282'
+
+
+journal_details426:
+  id: 815
+  journal_id: 635
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104284'
+
+
+journal_details427:
+  id: 816
+  journal_id: 636
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104283'
+
+
+journal_details428:
+  id: 817
+  journal_id: 637
+  property: attr
+  prop_key: priority_id
+  old_value: '4'
+  value: '2'
+
+
+journal_details429:
+  id: 818
+  journal_id: 638
+  property: attr
+  prop_key: priority_id
+  old_value: '4'
+  value: '2'
+
+
+journal_details430:
+  id: 819
+  journal_id: 639
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104285'
+
+
+journal_details431:
+  id: 820
+  journal_id: 640
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104284'
+
+
+journal_details432:
+  id: 821
+  journal_id: 641
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104286'
+
+
+journal_details433:
+  id: 822
+  journal_id: 642
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104285'
+
+
+journal_details434:
+  id: 823
+  journal_id: 643
+  property: attr
+  prop_key: tracker_id
+  old_value: '2'
+  value: '3'
+
+
+journal_details435:
+  id: 824
+  journal_id: 643
+  property: attr
+  prop_key: subject
+  old_value: "[step3]DB スキーマ設計"
+  value: "[step3]開発環境構築"
+
+
+journal_details436:
+  id: 825
+  journal_id: 643
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '7'
+  value: '13'
+
+
+journal_details437:
+  id: 826
+  journal_id: 643
+  property: attr
+  prop_key: start_date
+  old_value: '2017-03-22'
+  value: '2017-03-20'
+
+
+journal_details438:
+  id: 827
+  journal_id: 643
+  property: attr
+  prop_key: estimated_hours
+  old_value: '18.0'
+  value: '30.0'
+
+
+journal_details439:
+  id: 828
+  journal_id: 644
+  property: attr
+  prop_key: assigned_to_id
+  old_value: '9'
+  value: '11'
+
+
+journal_details440:
+  id: 829
+  journal_id: 645
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104287'
+
+
+journal_details441:
+  id: 830
+  journal_id: 646
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104286'
+
+
+journal_details442:
+  id: 831
+  journal_id: 647
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details443:
+  id: 832
+  journal_id: 648
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '20'
+
+
+journal_details444:
+  id: 833
+  journal_id: 649
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details445:
+  id: 834
+  journal_id: 649
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details446:
+  id: 835
+  journal_id: 650
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details447:
+  id: 836
+  journal_id: 651
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details448:
+  id: 837
+  journal_id: 651
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details449:
+  id: 838
+  journal_id: 652
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details450:
+  id: 839
+  journal_id: 652
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details451:
+  id: 840
+  journal_id: 653
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '15'
+
+
+journal_details452:
+  id: 841
+  journal_id: 654
+  property: attr
+  prop_key: done_ratio
+  old_value: '15'
+  value: '20'
+
+
+journal_details453:
+  id: 842
+  journal_id: 655
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '30'
+
+
+journal_details454:
+  id: 843
+  journal_id: 656
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details455:
+  id: 844
+  journal_id: 656
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '50'
+
+
+journal_details456:
+  id: 845
+  journal_id: 657
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details457:
+  id: 846
+  journal_id: 657
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '40'
+
+
+journal_details458:
+  id: 847
+  journal_id: 658
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104288'
+
+
+journal_details459:
+  id: 848
+  journal_id: 659
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104282'
+
+
+journal_details460:
+  id: 849
+  journal_id: 660
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details461:
+  id: 850
+  journal_id: 660
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details462:
+  id: 851
+  journal_id: 661
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details463:
+  id: 852
+  journal_id: 661
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '50'
+
+
+journal_details464:
+  id: 853
+  journal_id: 662
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details465:
+  id: 854
+  journal_id: 662
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details466:
+  id: 855
+  journal_id: 663
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details467:
+  id: 856
+  journal_id: 663
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '50'
+
+
+journal_details468:
+  id: 857
+  journal_id: 664
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details469:
+  id: 858
+  journal_id: 664
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details470:
+  id: 859
+  journal_id: 665
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details471:
+  id: 860
+  journal_id: 665
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '50'
+
+
+journal_details472:
+  id: 861
+  journal_id: 666
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details473:
+  id: 862
+  journal_id: 666
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details474:
+  id: 863
+  journal_id: 667
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details475:
+  id: 864
+  journal_id: 667
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '50'
+
+
+journal_details476:
+  id: 865
+  journal_id: 668
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details477:
+  id: 866
+  journal_id: 668
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '100'
+
+
+journal_details478:
+  id: 867
+  journal_id: 669
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '70'
+
+
+journal_details479:
+  id: 868
+  journal_id: 670
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '40'
+
+
+journal_details480:
+  id: 869
+  journal_id: 671
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '40'
+
+
+journal_details481:
+  id: 870
+  journal_id: 672
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '30'
+
+
+journal_details482:
+  id: 871
+  journal_id: 673
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details483:
+  id: 872
+  journal_id: 673
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '30'
+
+
+journal_details484:
+  id: 873
+  journal_id: 674
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details485:
+  id: 874
+  journal_id: 674
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '20'
+
+
+journal_details486:
+  id: 875
+  journal_id: 675
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details487:
+  id: 876
+  journal_id: 675
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '10'
+
+
+journal_details488:
+  id: 877
+  journal_id: 676
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details489:
+  id: 878
+  journal_id: 676
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details490:
+  id: 879
+  journal_id: 677
+  property: attr
+  prop_key: done_ratio
+  old_value: '10'
+  value: '30'
+
+
+journal_details491:
+  id: 880
+  journal_id: 678
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '50'
+
+
+journal_details492:
+  id: 881
+  journal_id: 679
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '40'
+
+
+journal_details493:
+  id: 882
+  journal_id: 680
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '60'
+
+
+journal_details494:
+  id: 883
+  journal_id: 681
+  property: attr
+  prop_key: done_ratio
+  old_value: '60'
+  value: '50'
+
+
+journal_details495:
+  id: 884
+  journal_id: 682
+  property: attr
+  prop_key: done_ratio
+  old_value: '20'
+  value: '30'
+
+
+journal_details496:
+  id: 885
+  journal_id: 683
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '5'
+
+
+journal_details497:
+  id: 886
+  journal_id: 683
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details498:
+  id: 887
+  journal_id: 684
+  property: attr
+  prop_key: due_date
+  old_value: '2017-03-21'
+  value: 
+
+
+journal_details499:
+  id: 888
+  journal_id: 684
+  property: attr
+  prop_key: priority_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details500:
+  id: 889
+  journal_id: 685
+  property: attr
+  prop_key: due_date
+  old_value: 
+  value: '2017-03-24'
+
+
+journal_details501:
+  id: 890
+  journal_id: 685
+  property: attr
+  prop_key: status_id
+  old_value: '5'
+  value: '2'
+
+
+journal_details502:
+  id: 891
+  journal_id: 685
+  property: attr
+  prop_key: done_ratio
+  old_value: '100'
+  value: '0'
+
+
+journal_details503:
+  id: 892
+  journal_id: 686
+  property: relation
+  prop_key: copied_to
+  old_value: 
+  value: '104292'
+
+
+journal_details504:
+  id: 893
+  journal_id: 687
+  property: relation
+  prop_key: copied_from
+  old_value: 
+  value: '104291'
+
+
+journal_details505:
+  id: 894
+  journal_id: 688
+  property: attr
+  prop_key: subject
+  old_value: "[step3] 画面入力項目に解答要旨を追加"
+  value: "[step3] 画面入力項目に回答要旨を追加"
+
+
+journal_details506:
+  id: 895
+  journal_id: 689
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details507:
+  id: 896
+  journal_id: 690
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details508:
+  id: 897
+  journal_id: 691
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details509:
+  id: 898
+  journal_id: 692
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details510:
+  id: 899
+  journal_id: 693
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details511:
+  id: 900
+  journal_id: 694
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details512:
+  id: 901
+  journal_id: 695
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details513:
+  id: 902
+  journal_id: 696
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details514:
+  id: 903
+  journal_id: 697
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details515:
+  id: 904
+  journal_id: 698
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details516:
+  id: 905
+  journal_id: 699
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details517:
+  id: 906
+  journal_id: 700
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details518:
+  id: 907
+  journal_id: 701
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details519:
+  id: 908
+  journal_id: 702
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details520:
+  id: 909
+  journal_id: 703
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details521:
+  id: 910
+  journal_id: 704
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details522:
+  id: 911
+  journal_id: 705
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details523:
+  id: 912
+  journal_id: 706
+  property: attr
+  prop_key: category_id
+  old_value: '5'
+  value: '1'
+
+
+journal_details524:
+  id: 913
+  journal_id: 707
+  property: attr
+  prop_key: tracker_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details525:
+  id: 914
+  journal_id: 707
+  property: attr
+  prop_key: fixed_version_id
+  old_value: 
+  value: '4'
+
+
+journal_details526:
+  id: 915
+  journal_id: 708
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '70'
+
+
+journal_details527:
+  id: 916
+  journal_id: 709
+  property: attr
+  prop_key: done_ratio
+  old_value: '40'
+  value: '65'
+
+
+journal_details528:
+  id: 917
+  journal_id: 710
+  property: attr
+  prop_key: done_ratio
+  old_value: '50'
+  value: '60'
+
+
+journal_details529:
+  id: 918
+  journal_id: 710
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details530:
+  id: 919
+  journal_id: 711
+  property: attr
+  prop_key: done_ratio
+  old_value: '70'
+  value: '95'
+
+
+journal_details531:
+  id: 920
+  journal_id: 712
+  property: attr
+  prop_key: status_id
+  old_value: '2'
+  value: '5'
+
+
+journal_details532:
+  id: 921
+  journal_id: 712
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '100'
+
+
+journal_details533:
+  id: 922
+  journal_id: 713
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '55'
+
+
+journal_details534:
+  id: 923
+  journal_id: 714
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '60'
+
+
+journal_details535:
+  id: 924
+  journal_id: 714
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details536:
+  id: 925
+  journal_id: 715
+  property: attr
+  prop_key: done_ratio
+  old_value: '30'
+  value: '50'
+
+
+journal_details537:
+  id: 926
+  journal_id: 715
+  property: cf
+  prop_key: '6'
+  old_value: ''
+  value: vv
+
+
+journal_details538:
+  id: 927
+  journal_id: 716
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details539:
+  id: 928
+  journal_id: 716
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '40'
+
+
+journal_details540:
+  id: 929
+  journal_id: 717
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details541:
+  id: 930
+  journal_id: 717
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '40'
+
+
+journal_details542:
+  id: 931
+  journal_id: 718
+  property: attr
+  prop_key: status_id
+  old_value: '1'
+  value: '2'
+
+
+journal_details543:
+  id: 932
+  journal_id: 718
+  property: attr
+  prop_key: done_ratio
+  old_value: '0'
+  value: '40'
+

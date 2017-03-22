@@ -19,3 +19,15 @@ text {
     stroke: #000000;
     stroke-width: 0.5px;
 }
+
+.line1 {
+    fill: none;
+    stroke: #ff4b4b;
+    stroke-width: 2px;
+    opacity: 0.6;
+}
+
+.circle1{
+    fill: #ff4b4b;
+    opacity: 0.6;
+}

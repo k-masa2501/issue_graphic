@@ -1,0 +1,150 @@
+
+email_addresses0:
+  id: 1
+  user_id: 1
+  address: admin@example.net
+  is_default: 1
+  notify: 1
+  created_on: 2016-08-13 14:57:51.000000000 +09:00
+  updated_on: 2016-08-13 14:57:51.000000000 +09:00
+
+
+email_addresses1:
+  id: 2
+  user_id: 5
+  address: kita2501@gmail.com
+  is_default: 1
+  notify: 1
+  created_on: 2016-08-20 20:56:17.000000000 +09:00
+  updated_on: 2016-08-20 20:56:17.000000000 +09:00
+
+
+email_addresses2:
+  id: 3
+  user_id: 6
+  address: kita2502@gmail.com
+  is_default: 1
+  notify: 1
+  created_on: 2016-08-20 20:56:51.000000000 +09:00
+  updated_on: 2016-08-20 20:56:51.000000000 +09:00
+
+
+email_addresses3:
+  id: 4
+  user_id: 7
+  address: sample@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2016-10-09 14:43:29.000000000 +09:00
+  updated_on: 2016-10-09 14:43:29.000000000 +09:00
+
+
+email_addresses4:
+  id: 5
+  user_id: 8
+  address: yamada@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:05:58.000000000 +09:00
+  updated_on: 2017-03-09 22:05:58.000000000 +09:00
+
+
+email_addresses5:
+  id: 6
+  user_id: 9
+  address: yuko@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:06:53.000000000 +09:00
+  updated_on: 2017-03-09 22:06:53.000000000 +09:00
+
+
+email_addresses6:
+  id: 7
+  user_id: 10
+  address: amina@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:07:40.000000000 +09:00
+  updated_on: 2017-03-09 22:07:40.000000000 +09:00
+
+
+email_addresses7:
+  id: 8
+  user_id: 11
+  address: yuki@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:08:20.000000000 +09:00
+  updated_on: 2017-03-09 22:08:20.000000000 +09:00
+
+
+email_addresses8:
+  id: 9
+  user_id: 12
+  address: mike@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:09:21.000000000 +09:00
+  updated_on: 2017-03-09 22:09:21.000000000 +09:00
+
+
+email_addresses9:
+  id: 10
+  user_id: 13
+  address: maria@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:09:51.000000000 +09:00
+  updated_on: 2017-03-09 22:09:51.000000000 +09:00
+
+
+email_addresses10:
+  id: 11
+  user_id: 14
+  address: Michael@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:11:05.000000000 +09:00
+  updated_on: 2017-03-09 22:11:05.000000000 +09:00
+
+
+email_addresses11:
+  id: 12
+  user_id: 15
+  address: koroku@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:12:00.000000000 +09:00
+  updated_on: 2017-03-09 22:12:00.000000000 +09:00
+
+
+email_addresses12:
+  id: 13
+  user_id: 16
+  address: asahina@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:12:28.000000000 +09:00
+  updated_on: 2017-03-09 22:12:28.000000000 +09:00
+
+
+email_addresses13:
+  id: 14
+  user_id: 17
+  address: kimura@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:13:34.000000000 +09:00
+  updated_on: 2017-03-09 22:13:34.000000000 +09:00
+
+
+email_addresses14:
+  id: 15
+  user_id: 18
+  address: naotora@sample.com
+  is_default: 1
+  notify: 1
+  created_on: 2017-03-09 22:16:26.000000000 +09:00
+  updated_on: 2017-03-09 22:16:26.000000000 +09:00
+

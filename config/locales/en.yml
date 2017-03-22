@@ -32,6 +32,10 @@ en:
       per_period_work: "work amount per unit"
       legend_total: 'total'
       uncomplete: 'uncomplete：'
+      selected: 'selected'
+      unselected: 'unselected'
+      allselected: 'all selected'
+      unAllselected: 'un all selected'
   burn_down_charts:
     sun: '(sun)'
     mon: '(mon)'
@@ -55,6 +59,10 @@ en:
         gap: "gap"
         not_assigned: "not assigned"
     version_not exist: "The page can not be displayed because the target version does not exist. \nDefine the target version and set the target version in each ticket."
+    js:
+      work: "workload"
+      plan: "plan results"
+      act: "actual results"
   time_series_charts:
     unselected: '-- unselected --'
     incomplete: 'incomplete'
@@ -62,14 +70,22 @@ en:
       process:
     index:
       view_h2: "Time series chart"
+  stacked_bar_charts:
+    occurrence: ":Number of occurrences"
+    closed: ":Number of closed"
+    index:
+      view_h2: "Stacked bar chart"
   view_hooks:
     view_issues_form_details_bottom:
       remaining: 'remaining'
   layouts:
     cahnge_view:
-      burn_down_charts: "burn down charts"
-      time_series_charts: "time series charts"
-      gantt_charts: "gantt charts"
+      issue: "Issue"
+      burn_down_chart: "Burn down chart"
+      time_series_chart: "Time series chart"
+      gantt_chart: "Gantt chart"
+      stacked_bar_chart: "Stacked bar chart"
+      view: "view:"
   gantt_charts:
     index:
-      view_h2: "gantt charts"
+      view_h2: "Gantt chart"

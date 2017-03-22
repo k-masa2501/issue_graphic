@@ -1,3 +1,6 @@
+div#content{
+    visibility: hidden;
+}
 h2.redmine_chart{
     float:left;
 }

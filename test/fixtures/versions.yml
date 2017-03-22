@@ -1,0 +1,52 @@
+
+versions0:
+  id: 1
+  project_id: 1
+  name: 対象バージョン1
+  description: ''
+  effective_date: 
+  created_on: 2016-10-02 19:05:58.000000000 +09:00
+  updated_on: 2016-11-27 14:56:02.000000000 +09:00
+  wiki_page_title: ''
+  status: closed
+  sharing: none
+
+
+versions1:
+  id: 2
+  project_id: 1
+  name: 対象バージョン2
+  description: ''
+  effective_date: 2016-12-31
+  created_on: 2016-10-09 14:38:31.000000000 +09:00
+  updated_on: 2017-03-09 22:03:23.000000000 +09:00
+  wiki_page_title: ''
+  status: closed
+  sharing: none
+
+
+versions2:
+  id: 3
+  project_id: 2
+  name: バージョン1
+  description: ''
+  effective_date: 
+  created_on: 2016-12-03 11:55:56.000000000 +09:00
+  updated_on: 2016-12-03 11:55:56.000000000 +09:00
+  wiki_page_title: ''
+  status: open
+  sharing: none
+
+
+versions3:
+  id: 4
+  project_id: 1
+  name: 対象バージョン3
+  description: ''
+  effective_date: 2017-08-31
+  created_on: 2017-03-09 22:04:04.000000000 +09:00
+  updated_on: 2017-03-09 22:04:04.000000000 +09:00
+  wiki_page_title: ''
+  status: open
+  sharing: none
+

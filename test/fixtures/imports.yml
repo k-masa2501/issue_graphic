@@ -1,0 +1,469 @@
+
+imports0:
+  id: 1
+  type: IssueImport
+  user_id: 1
+  filename: c51d54caf3709a680fd9feb89e80ee71
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: ISO-8859-1
+    date_format: "%m/%d/%Y"
+  total_items: 
+  finished: 0
+  created_at: 2016-08-20 18:35:04.000000000 +09:00
+  updated_at: 2016-08-20 18:35:04.000000000 +09:00
+
+
+imports1:
+  id: 2
+  type: IssueImport
+  user_id: 1
+  filename: e47bc69402dd7e20553c680d4a24bd20
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: ISO-8859-1
+    date_format: "%m/%d/%Y"
+  total_items: 
+  finished: 0
+  created_at: 2016-08-20 18:36:21.000000000 +09:00
+  updated_at: 2016-08-20 18:36:21.000000000 +09:00
+
+
+imports2:
+  id: 3
+  type: IssueImport
+  user_id: 1
+  filename: 200e6f8781965cc828d966b7703f0b2e
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: ''
+      status: ''
+      subject: ''
+      description: ''
+      priority: ''
+      category: ''
+      assigned_to: ''
+      fixed_version: ''
+      is_private: ''
+      parent_issue_id: ''
+      start_date: ''
+      due_date: ''
+      estimated_hours: ''
+      done_ratio: ''
+  total_items: 4
+  finished: 1
+  created_at: 2016-08-20 18:36:51.000000000 +09:00
+  updated_at: 2016-08-20 18:37:36.000000000 +09:00
+
+
+imports3:
+  id: 4
+  type: IssueImport
+  user_id: 1
+  filename: 3e1a21e3a1c9be59cf63b35f90d1e4e2
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '2'
+      status: '4'
+      subject: '6'
+      description: ''
+      priority: '5'
+      category: '10'
+      create_categories: '1'
+      assigned_to: '8'
+      fixed_version: '11'
+      create_versions: '1'
+      is_private: '22'
+      parent_issue_id: '3'
+      start_date: '12'
+      due_date: '13'
+      estimated_hours: '14'
+      done_ratio: '18'
+  total_items: 4
+  finished: 1
+  created_at: 2016-08-20 18:37:58.000000000 +09:00
+  updated_at: 2016-08-20 18:40:03.000000000 +09:00
+
+
+imports4:
+  id: 5
+  type: IssueImport
+  user_id: 1
+  filename: c2cbf7c5aeab85641b07293c90c873c1
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '2'
+      status: ''
+      subject: ''
+      description: ''
+      priority: ''
+      category: ''
+      assigned_to: ''
+      fixed_version: ''
+      is_private: ''
+      parent_issue_id: ''
+      start_date: ''
+      due_date: ''
+      estimated_hours: ''
+      done_ratio: ''
+  total_items: 4
+  finished: 0
+  created_at: 2016-08-20 18:40:46.000000000 +09:00
+  updated_at: 2016-08-20 18:41:03.000000000 +09:00
+
+
+imports5:
+  id: 6
+  type: IssueImport
+  user_id: 1
+  filename: db6b141f240c53ee01932ba7286b0207
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      create_categories: '1'
+      assigned_to: '7'
+      fixed_version: '10'
+      create_versions: '1'
+      is_private: '21'
+      parent_issue_id: '2'
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 1248
+  finished: 1
+  created_at: 2016-08-20 18:43:15.000000000 +09:00
+  updated_at: 2016-08-20 18:46:33.000000000 +09:00
+
+
+imports6:
+  id: 7
+  type: IssueImport
+  user_id: 1
+  filename: bd6126220892419a5eef5d3ae7801de6
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      create_categories: '1'
+      assigned_to: '7'
+      fixed_version: '10'
+      create_versions: '1'
+      is_private: '21'
+      parent_issue_id: '2'
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 109824
+  finished: 0
+  created_at: 2016-08-20 19:09:56.000000000 +09:00
+  updated_at: 2016-08-20 19:10:52.000000000 +09:00
+
+
+imports7:
+  id: 8
+  type: IssueImport
+  user_id: 1
+  filename: 0512c578c43ddf569e741354084ae59b
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      create_categories: '1'
+      assigned_to: '7'
+      fixed_version: '10'
+      create_versions: '1'
+      is_private: '21'
+      parent_issue_id: '2'
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-08-20 21:01:07.000000000 +09:00
+  updated_at: 2016-08-20 21:02:07.000000000 +09:00
+
+
+imports8:
+  id: 9
+  type: IssueImport
+  user_id: 1
+  filename: 4ae05a319c336875a97d139b51980fce
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%m/%d/%Y"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: ''
+      status: ''
+      subject: ''
+      description: ''
+      priority: ''
+      category: ''
+      assigned_to: ''
+      fixed_version: ''
+      cf_1: ''
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: ''
+      parent_issue_id: ''
+      start_date: ''
+      due_date: ''
+      estimated_hours: ''
+      done_ratio: ''
+  total_items: 19
+  finished: 0
+  created_at: 2016-10-09 14:45:25.000000000 +09:00
+  updated_at: 2016-10-09 14:45:54.000000000 +09:00
+
+
+imports9:
+  id: 10
+  type: IssueImport
+  user_id: 1
+  filename: c8cbd8c91ea8d24d12146fcd0c789d83
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%m/%d/%Y"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      assigned_to: '7'
+      fixed_version: '10'
+      cf_1: ''
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: '21'
+      parent_issue_id: ''
+      start_date: '11'
+      due_date: '11'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-10-09 14:49:02.000000000 +09:00
+  updated_at: 2016-10-09 14:50:32.000000000 +09:00
+
+
+imports10:
+  id: 11
+  type: IssueImport
+  user_id: 1
+  filename: 3bf51b3ad336097ec562c17214affea5
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      assigned_to: '7'
+      fixed_version: '10'
+      cf_1: ''
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: '21'
+      parent_issue_id: ''
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-10-09 14:50:50.000000000 +09:00
+  updated_at: 2016-10-09 14:55:08.000000000 +09:00
+
+
+imports11:
+  id: 12
+  type: IssueImport
+  user_id: 1
+  filename: 43efe41d3261bcb614985a003d3f2299
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: ''
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      assigned_to: '7'
+      fixed_version: '10'
+      cf_1: ''
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: '21'
+      parent_issue_id: ''
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-10-09 14:53:24.000000000 +09:00
+  updated_at: 2016-10-09 14:54:14.000000000 +09:00
+
+
+imports12:
+  id: 13
+  type: IssueImport
+  user_id: 1
+  filename: 17cc4987c33f448776c0ab9c03f7416b
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '9'
+      assigned_to: '7'
+      fixed_version: '10'
+      cf_1: '10'
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: ''
+      parent_issue_id: ''
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-10-09 14:55:27.000000000 +09:00
+  updated_at: 2016-10-09 14:56:16.000000000 +09:00
+
+
+imports13:
+  id: 14
+  type: IssueImport
+  user_id: 1
+  filename: f88d2cfac8232be7a6a8db9d131a83b6
+  settings: |
+    ---
+    separator: ","
+    wrapper: "\""
+    encoding: Shift_JIS
+    date_format: "%Y-%m-%d"
+    mapping: !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+      project_id: '1'
+      tracker: '1'
+      status: '3'
+      subject: '5'
+      description: ''
+      priority: '4'
+      category: '8'
+      create_categories: '1'
+      assigned_to: '7'
+      fixed_version: '10'
+      cf_1: '22'
+      cf_4: ''
+      cf_5: ''
+      cf_6: ''
+      cf_7: ''
+      is_private: ''
+      parent_issue_id: ''
+      start_date: '11'
+      due_date: '12'
+      estimated_hours: '13'
+      done_ratio: '17'
+  total_items: 19
+  finished: 1
+  created_at: 2016-10-09 14:57:09.000000000 +09:00
+  updated_at: 2016-10-09 15:00:09.000000000 +09:00
+

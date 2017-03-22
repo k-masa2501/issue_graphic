@@ -1,0 +1,206 @@
+
+settings0:
+  id: 1
+  name: cross_project_issue_relations
+  value: '0'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings1:
+  id: 2
+  name: link_copied_issue
+  value: ask
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings2:
+  id: 3
+  name: cross_project_subtasks
+  value: tree
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings3:
+  id: 4
+  name: issue_group_assignment
+  value: '0'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings4:
+  id: 5
+  name: default_issue_start_date_to_creation_date
+  value: '1'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings5:
+  id: 6
+  name: display_subprojects_issues
+  value: '1'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings6:
+  id: 7
+  name: issue_done_ratio
+  value: issue_field
+  updated_on: 2016-09-25 12:28:07.000000000 +09:00
+
+
+settings7:
+  id: 8
+  name: non_working_week_days
+  value: |
+    ---
+    - '6'
+    - '7'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings8:
+  id: 9
+  name: issues_export_limit
+  value: '500'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings9:
+  id: 10
+  name: gantt_items_limit
+  value: '500'
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings10:
+  id: 11
+  name: parent_issue_dates
+  value: derived
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings11:
+  id: 12
+  name: parent_issue_priority
+  value: derived
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings12:
+  id: 13
+  name: parent_issue_done_ratio
+  value: derived
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings13:
+  id: 14
+  name: issue_list_default_columns
+  value: |
+    ---
+    - tracker
+    - status
+    - priority
+    - subject
+    - assigned_to
+    - updated_on
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings14:
+  id: 15
+  name: issue_list_default_totals
+  value: "--- []\n"
+  updated_on: 2016-09-17 14:15:27.000000000 +09:00
+
+
+settings15:
+  id: 16
+  name: ui_theme
+  value: ''
+  updated_on: 2017-03-09 22:29:51.000000000 +09:00
+
+
+settings16:
+  id: 17
+  name: default_language
+  value: en
+  updated_on: 2017-03-09 22:29:51.000000000 +09:00
+
+
+settings17:
+  id: 18
+  name: force_default_language_for_anonymous
+  value: '0'
+  updated_on: 2017-03-09 22:29:51.000000000 +09:00
+
+
+settings18:
+  id: 19
+  name: force_default_language_for_loggedin
+  value: '0'
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings19:
+  id: 20
+  name: start_of_week
+  value: ''
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings20:
+  id: 21
+  name: date_format
+  value: ''
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings21:
+  id: 22
+  name: time_format
+  value: ''
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings22:
+  id: 23
+  name: user_format
+  value: lastname_firstname
+  updated_on: 2017-03-09 22:36:50.000000000 +09:00
+
+
+settings23:
+  id: 24
+  name: gravatar_enabled
+  value: '0'
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings24:
+  id: 25
+  name: gravatar_default
+  value: ''
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings25:
+  id: 26
+  name: thumbnails_enabled
+  value: '0'
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings26:
+  id: 27
+  name: thumbnails_size
+  value: '100'
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+
+
+settings27:
+  id: 28
+  name: new_item_menu_tab
+  value: '2'
+  updated_on: 2017-03-09 22:29:52.000000000 +09:00
+

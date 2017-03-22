@@ -1,0 +1,48 @@
+
+issue_statuses0:
+  id: 1
+  name: 新規
+  is_closed: 0
+  position: 1
+  default_done_ratio: 
+
+
+issue_statuses1:
+  id: 2
+  name: 進行中
+  is_closed: 0
+  position: 2
+  default_done_ratio: 
+
+
+issue_statuses2:
+  id: 3
+  name: 解決
+  is_closed: 0
+  position: 3
+  default_done_ratio: 
+
+
+issue_statuses3:
+  id: 4
+  name: フィードバック
+  is_closed: 0
+  position: 4
+  default_done_ratio: 
+
+
+issue_statuses4:
+  id: 5
+  name: 終了
+  is_closed: 1
+  position: 5
+  default_done_ratio: 
+
+
+issue_statuses5:
+  id: 6
+  name: 却下
+  is_closed: 1
+  position: 6
+  default_done_ratio: 
+

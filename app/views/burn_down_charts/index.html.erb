@@ -16,11 +16,16 @@
     :project_identifier => @project.identifier
 } ) %>
 
+<%= cell("cells/filter").(:filter, project_id: @project.id) %>
+
 <%= cell("cells/filter").(:sum, {project_id: @project.id,
                                  params: params, filter: @filter,
                                  member: @send_data[:member]}) %>
 
-<%= cell("cells/filter").(:filter, project_id: @project.id) %>
+<%= cell("cells/filter").(:sum_assigned, {project_id: @project.id,
+                                 params: params, filter: @filter,
+                                 member: @send_data[:member]}) %>
+
 
 <svg id="MyGraph" class="svg_main"></svg>
 
@@ -32,6 +37,8 @@
 <script>
   var $p = {};
 
+  $p.label = <%== JSON.generate(@js_labels) %>;
+
   $p.index = new IndexController({
     burndown: new BurnDownsChart({
       o_dset1: <%== @send_data[:estimated].to_json %>,
@@ -40,5 +47,12 @@
     url: '<%= get_process_project_burn_down_charts_path %>',
     url2: '<%= get_burn_down_data_project_burn_down_charts_path %>'
   });
+
+  window.onload = function () {
+    setTimeout((function(){
+      // コンテンツの表示
+      $('div#content').css('visibility', 'visible');
+    }) , 50);
+  };
 
 </script>

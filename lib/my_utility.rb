@@ -5,7 +5,7 @@ module MyUtility
     result = Array.new
     member = Member.joins(:user)
                  .where(project_id: pjid)
-                 .pluck("concat(users.firstname,' ',users.lastname) as name, users.id")
+                 .pluck("concat(users.lastname,' ',users.firstname) as name, users.id")
                  .push([nil, nil])
 
     if params[:f_assigned_to].present? and 0 < params[:f_assigned_to].length

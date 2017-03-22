@@ -1,0 +1,156 @@
+
+custom_fields0:
+  id: 1
+  type: IssueCustomField
+  name: スプリント
+  field_format: enumeration
+  possible_values: 
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 1
+  searchable: 0
+  default_value: ''
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    url_pattern: ''
+    edit_tag_style: ''
+  description: ''
+
+
+custom_fields1:
+  id: 4
+  type: IssueCustomField
+  name: nnnnnn
+  field_format: version
+  possible_values: 
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 2
+  searchable: 0
+  default_value: 
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    version_status: []
+    edit_tag_style: ''
+  description: ''
+
+
+custom_fields2:
+  id: 5
+  type: IssueCustomField
+  name: mmmmmm
+  field_format: user
+  possible_values: 
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 3
+  searchable: 0
+  default_value: 
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    user_role: []
+    edit_tag_style: ''
+  description: ''
+
+
+custom_fields3:
+  id: 6
+  type: IssueCustomField
+  name: vv
+  field_format: list
+  possible_values: |
+    ---
+    - vv
+    - vv
+    - fff
+    - fff
+    - hhhhh
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 4
+  searchable: 0
+  default_value: ''
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    url_pattern: ''
+    edit_tag_style: ''
+  description: ''
+
+
+custom_fields4:
+  id: 7
+  type: IssueCustomField
+  name: iiiiiii
+  field_format: bool
+  possible_values: 
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 5
+  searchable: 0
+  default_value: ''
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    url_pattern: ''
+    edit_tag_style: ''
+  description: ''
+
+
+custom_fields5:
+  id: 8
+  type: TimeEntryCustomField
+  name: '6666666'
+  field_format: enumeration
+  possible_values: 
+  regexp: ''
+  min_length: 
+  max_length: 
+  is_required: 0
+  is_for_all: 0
+  is_filter: 0
+  position: 1
+  searchable: 0
+  default_value: 
+  editable: 1
+  visible: 1
+  multiple: 0
+  format_store: |
+    --- !ruby/hash:ActiveSupport::HashWithIndifferentAccess
+    url_pattern: ''
+    edit_tag_style: ''
+  description: ''
+

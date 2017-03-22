@@ -1,0 +1,126 @@
+
+tokens0:
+  id: 3
+  user_id: 1
+  action: feeds
+  value: 65740c3f48d9e666eda62cc8b608089ed063dac2
+  created_on: 2016-08-13 15:13:34.000000000 +09:00
+  updated_on: 2016-08-13 15:13:34.000000000 +09:00
+
+
+tokens1:
+  id: 21
+  user_id: 5
+  action: feeds
+  value: 2f65dbb21d289d2e28c3a740fde96c3757d143af
+  created_on: 2016-09-19 06:48:24.000000000 +09:00
+  updated_on: 2016-09-19 06:48:24.000000000 +09:00
+
+
+tokens2:
+  id: 23
+  user_id: 5
+  action: session
+  value: 529bd39d971b97d4cdbb126a3c36130b5b0b71e0
+  created_on: 2016-09-19 06:50:23.000000000 +09:00
+  updated_on: 2016-09-19 09:08:53.000000000 +09:00
+
+
+tokens3:
+  id: 75
+  user_id: 1
+  action: session
+  value: aced4d9802264ae3f8a5c010b0242753bfc5eff1
+  created_on: 2017-01-29 22:29:16.000000000 +09:00
+  updated_on: 2017-01-30 02:16:37.000000000 +09:00
+
+
+tokens4:
+  id: 76
+  user_id: 1
+  action: session
+  value: e09562a6e94dc109c921096377c67e22e0ac3089
+  created_on: 2017-01-30 02:46:28.000000000 +09:00
+  updated_on: 2017-01-30 02:47:04.000000000 +09:00
+
+
+tokens5:
+  id: 77
+  user_id: 1
+  action: session
+  value: 6b019f147935bdb7f0fecca32de0a2ccda4b5c64
+  created_on: 2017-02-05 10:59:06.000000000 +09:00
+  updated_on: 2017-02-05 22:26:51.000000000 +09:00
+
+
+tokens6:
+  id: 78
+  user_id: 1
+  action: session
+  value: b870a8da296e00883d0bf38fa765d69c0c254895
+  created_on: 2017-02-06 23:04:40.000000000 +09:00
+  updated_on: 2017-02-06 23:32:57.000000000 +09:00
+
+
+tokens7:
+  id: 79
+  user_id: 1
+  action: session
+  value: 60f8b146609874519f3a4153eb5e34453853b45b
+  created_on: 2017-02-07 00:06:43.000000000 +09:00
+  updated_on: 2017-02-12 22:11:55.000000000 +09:00
+
+
+tokens8:
+  id: 80
+  user_id: 1
+  action: session
+  value: 7ef2aaeff8b34dce5b32b1cf2d59cf68d02a1d0f
+  created_on: 2017-02-07 00:30:42.000000000 +09:00
+  updated_on: 2017-02-07 00:31:35.000000000 +09:00
+
+
+tokens9:
+  id: 81
+  user_id: 1
+  action: session
+  value: 00086b1fb80246b3875bb14158b1e149532645c8
+  created_on: 2017-02-18 16:17:35.000000000 +09:00
+  updated_on: 2017-02-19 10:46:33.000000000 +09:00
+
+
+tokens10:
+  id: 82
+  user_id: 1
+  action: session
+  value: 3ff9c99fe255d3e0696f01291d9838b21977f595
+  created_on: 2017-02-19 11:46:37.000000000 +09:00
+  updated_on: 2017-02-27 03:36:24.000000000 +09:00
+
+
+tokens11:
+  id: 83
+  user_id: 1
+  action: session
+  value: 8d14db3e219547d90b204eea2782717490a8f59a
+  created_on: 2017-02-26 21:19:35.000000000 +09:00
+  updated_on: 2017-03-21 16:15:15.000000000 +09:00
+
+
+tokens12:
+  id: 87
+  user_id: 5
+  action: session
+  value: 2d0d872aabdefd6a5a2e4c7917ac2bf0dde48870
+  created_on: 2017-03-09 22:36:38.000000000 +09:00
+  updated_on: 2017-03-15 00:16:39.000000000 +09:00
+
+
+tokens13:
+  id: 88
+  user_id: 5
+  action: session
+  value: 65c006cfb36122e1dfcceb414bb27855436d27c9
+  created_on: 2017-03-15 00:20:24.000000000 +09:00
+  updated_on: 2017-03-22 20:14:20.000000000 +09:00
+

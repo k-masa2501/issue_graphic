@@ -1,0 +1,224 @@
+
+member_roles0:
+  id: 1
+  member_id: 1
+  role_id: 3
+  inherited_from: 
+
+
+member_roles1:
+  id: 2
+  member_id: 1
+  role_id: 4
+  inherited_from: 
+
+
+member_roles2:
+  id: 3
+  member_id: 1
+  role_id: 5
+  inherited_from: 
+
+
+member_roles3:
+  id: 4
+  member_id: 2
+  role_id: 3
+  inherited_from: 
+
+
+member_roles4:
+  id: 5
+  member_id: 2
+  role_id: 4
+  inherited_from: 
+
+
+member_roles5:
+  id: 6
+  member_id: 2
+  role_id: 5
+  inherited_from: 
+
+
+member_roles6:
+  id: 8
+  member_id: 4
+  role_id: 5
+  inherited_from: 
+
+
+member_roles7:
+  id: 12
+  member_id: 4
+  role_id: 4
+  inherited_from: 
+
+
+member_roles8:
+  id: 13
+  member_id: 5
+  role_id: 4
+  inherited_from: 
+
+
+member_roles9:
+  id: 14
+  member_id: 5
+  role_id: 5
+  inherited_from: 
+
+
+member_roles10:
+  id: 15
+  member_id: 6
+  role_id: 4
+  inherited_from: 
+
+
+member_roles11:
+  id: 16
+  member_id: 6
+  role_id: 5
+  inherited_from: 
+
+
+member_roles12:
+  id: 17
+  member_id: 7
+  role_id: 4
+  inherited_from: 
+
+
+member_roles13:
+  id: 18
+  member_id: 7
+  role_id: 5
+  inherited_from: 
+
+
+member_roles14:
+  id: 32
+  member_id: 12
+  role_id: 4
+  inherited_from: 
+
+
+member_roles15:
+  id: 33
+  member_id: 12
+  role_id: 5
+  inherited_from: 
+
+
+member_roles16:
+  id: 35
+  member_id: 13
+  role_id: 4
+  inherited_from: 
+
+
+member_roles17:
+  id: 36
+  member_id: 13
+  role_id: 5
+  inherited_from: 
+
+
+member_roles18:
+  id: 38
+  member_id: 14
+  role_id: 4
+  inherited_from: 
+
+
+member_roles19:
+  id: 39
+  member_id: 14
+  role_id: 5
+  inherited_from: 
+
+
+member_roles20:
+  id: 41
+  member_id: 15
+  role_id: 4
+  inherited_from: 
+
+
+member_roles21:
+  id: 42
+  member_id: 15
+  role_id: 5
+  inherited_from: 
+
+
+member_roles22:
+  id: 44
+  member_id: 16
+  role_id: 4
+  inherited_from: 
+
+
+member_roles23:
+  id: 45
+  member_id: 16
+  role_id: 5
+  inherited_from: 
+
+
+member_roles24:
+  id: 47
+  member_id: 17
+  role_id: 4
+  inherited_from: 
+
+
+member_roles25:
+  id: 48
+  member_id: 17
+  role_id: 5
+  inherited_from: 
+
+
+member_roles26:
+  id: 50
+  member_id: 18
+  role_id: 4
+  inherited_from: 
+
+
+member_roles27:
+  id: 51
+  member_id: 18
+  role_id: 5
+  inherited_from: 
+
+
+member_roles28:
+  id: 52
+  member_id: 19
+  role_id: 4
+  inherited_from: 
+
+
+member_roles29:
+  id: 53
+  member_id: 19
+  role_id: 5
+  inherited_from: 
+
+
+member_roles30:
+  id: 54
+  member_id: 20
+  role_id: 4
+  inherited_from: 
+
+
+member_roles31:
+  id: 55
+  member_id: 20
+  role_id: 5
+  inherited_from: 
+

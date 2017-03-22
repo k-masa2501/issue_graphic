@@ -15,7 +15,7 @@ GanttChart.prototype.draw = function(){
   $('#gantchart').empty();
   $('#svg_footer').empty();
 
-  var fmtFunc = d3.timeParse("%Y-%m-%d %H:%M");
+  var fmtFunc = d3.timeParse("%Y-%m-%d");
   var svg = d3.select('#gantchart');
   var margin = {top: 40, right: 40, bottom: 80, left: 40};
   var svg_height = (this.data.length*30) + margin.top + margin.bottom;
@@ -30,8 +30,6 @@ GanttChart.prototype.draw = function(){
       .domain([fmtFunc(this.start_date), fmtFunc(this.due_date)])
       .nice();
 
-  var tickLen = Math.floor((fmtFunc(this.due_date)-fmtFunc(this.start_date))/(1000 * 60 * 60 * 24));
-
   svg.append("g")
       .attr("class", "axis-tick")
       .attr( "stroke-width" , 1)
@@ -39,14 +37,13 @@ GanttChart.prototype.draw = function(){
       .call(
           d3.axisBottom(time_scale)
               .tickSizeInner(-$('#gantchart').height())
-              .ticks(tickLen)
+              .ticks(Math.floor((fmtFunc(this.due_date)-fmtFunc(this.start_date))/(1000 * 60 * 60 * 24)))
       );
 
   var svg_g = svg.append("g").attr("transform", "translate(" + margin.left + "," + margin.top + ")");
 
   var today = new Date();
-  today.setDate(today.getDate()+1);
-  today = formatDate(today, "YYYY-MM-DD") + " 00:00";
+  today = formatDate(today, "YYYY-MM-DD");
 
   // 縦軸のスケール関数を生成
   var y_scale = d3.scaleLinear()
@@ -106,6 +103,8 @@ GanttChart.prototype.draw = function(){
       .attr("d", line1);
 
   $('.div_svg_footer').width(String($('#gantchart').width()) + 'px');
+  
+  var days = new Array();
 
   d3.select('#svg_footer')
       .append("g")
@@ -114,13 +113,16 @@ GanttChart.prototype.draw = function(){
       .attr( "stroke-width" , 2)
       .call(d3.axisBottom(time_scale)
           .tickFormat(function(d,i){
-            return formatDate(d,'YYYY/MM/DD');})
-
+            return (function(d){
+              if (-1 >= days.indexOf(d)){days.push(d);return d;}
+            })(formatDate(d,'YYYY/MM/DD'));})
       )
       .selectAll("text")
       .attr("transform", "rotate(45)")
       .attr("dy", 10)
       .attr("dx", 10)
       .style("text-anchor", "start");
+
+  days = null;
 
 };

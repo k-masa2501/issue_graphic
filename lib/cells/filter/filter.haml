@@ -6,7 +6,7 @@
       %div{class: "chkbox-filter"}
         %label{for: "uncomplete"}
           = t('.uncomplete')
-          = check_box_tag 'c_status', @status[0][1], false, {:class => 'filter-change multi'}
+          = check_box_tag 'c_status', @status[0][1], false, {:class => 'filter-change'}
       %div{class: "select-filter"}
         %label{for: "assigned_to"}
           = t('.assigned_to')
@@ -37,10 +37,10 @@
         delay: 300,
         width: 170,
         textlen: 3,
-        selected: '個選択',
-        defalult: '-- 未選択 --',
-        check_all: 'すべて選択',
-        uncheck_all: 'すべて選択解除',
+        selected: '#{t('.selected')}',
+        defalult: '#{t('.unselected')}',
+        check_all: '#{t('.allselected')}',
+        uncheck_all: '#{t('.unAllselected')}',
         filter: false
       });
     });

@@ -1,0 +1,378 @@
+
+users0:
+  id: 1
+  login: admin
+  hashed_password: c3070c827caab0d5cd48932bdfb8f837f272ce16
+  firstname: Redmine
+  lastname: Admin
+  admin: 1
+  status: 1
+  last_login_on: 2017-03-09 22:36:17.000000000 +09:00
+  language: ''
+  auth_source_id: 
+  created_on: 2016-08-13 14:57:41.000000000 +09:00
+  updated_on: 2016-09-01 15:28:46.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: all
+  salt: 82543a88049a1946632cb54761b111b8
+  must_change_passwd: 0
+  passwd_changed_on: 2016-09-01 15:28:46.000000000 +09:00
+
+
+users1:
+  id: 2
+  login: ''
+  hashed_password: ''
+  firstname: ''
+  lastname: Anonymous users
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ''
+  auth_source_id: 
+  created_on: 2016-08-13 14:57:51.000000000 +09:00
+  updated_on: 2016-08-13 14:57:51.000000000 +09:00
+  type: GroupAnonymous
+  identity_url: 
+  mail_notification: ''
+  salt: 
+  must_change_passwd: 0
+  passwd_changed_on: 
+
+
+users2:
+  id: 3
+  login: ''
+  hashed_password: ''
+  firstname: ''
+  lastname: Non member users
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ''
+  auth_source_id: 
+  created_on: 2016-08-13 14:57:51.000000000 +09:00
+  updated_on: 2016-08-13 14:57:51.000000000 +09:00
+  type: GroupNonMember
+  identity_url: 
+  mail_notification: ''
+  salt: 
+  must_change_passwd: 0
+  passwd_changed_on: 
+
+
+users3:
+  id: 4
+  login: ''
+  hashed_password: ''
+  firstname: ''
+  lastname: Anonymous
+  admin: 0
+  status: 0
+  last_login_on: 
+  language: ''
+  auth_source_id: 
+  created_on: 2016-08-13 15:12:45.000000000 +09:00
+  updated_on: 2016-08-13 15:12:45.000000000 +09:00
+  type: AnonymousUser
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 
+  must_change_passwd: 0
+  passwd_changed_on: 
+
+
+users4:
+  id: 5
+  login: kitajima
+  hashed_password: 21973fb1db240f97d98df3db126eedb9aa7afe34
+  firstname: 匡訓
+  lastname: 北島
+  admin: 1
+  status: 1
+  last_login_on: 2017-03-15 00:20:24.000000000 +09:00
+  language: ja
+  auth_source_id: 
+  created_on: 2016-08-20 20:56:17.000000000 +09:00
+  updated_on: 2017-03-09 22:36:29.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 93c7db1fa5c743c3511266bb7e42a1ff
+  must_change_passwd: 0
+  passwd_changed_on: 2016-09-19 06:48:12.000000000 +09:00
+
+
+users5:
+  id: 6
+  login: '222'
+  hashed_password: 5cbcea636ca6beed1b501cfc74983a05d44357bd
+  firstname: 敦
+  lastname: 田中
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: en
+  auth_source_id: 
+  created_on: 2016-08-20 20:56:51.000000000 +09:00
+  updated_on: 2017-03-15 09:00:54.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 9e0440d1bea0a6dc74a64dc537ddedbf
+  must_change_passwd: 0
+  passwd_changed_on: 2016-08-20 20:57:44.000000000 +09:00
+
+
+users6:
+  id: 7
+  login: suzuki
+  hashed_password: 64ea9419068b18e116e8e454a06b7f5306b19f0a
+  firstname: 健司
+  lastname: 鈴木
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2016-10-09 14:43:29.000000000 +09:00
+  updated_on: 2017-03-15 09:00:37.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 80168dda0063188fe857bc0f4016c934
+  must_change_passwd: 0
+  passwd_changed_on: 2016-10-09 14:43:29.000000000 +09:00
+
+
+users7:
+  id: 8
+  login: yamada
+  hashed_password: 3fa9a04c1b30d30863a7cf2688f4308b753b92b0
+  firstname: 智
+  lastname: 山田
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:05:58.000000000 +09:00
+  updated_on: 2017-03-15 09:00:46.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 5f44bf7bbad5511a620c8d7e3c553194
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:05:58.000000000 +09:00
+
+
+users8:
+  id: 9
+  login: hashimoto
+  hashed_password: e72e70306b70e88f35d4f44f711e916177e11dd3
+  firstname: 優子
+  lastname: 橋本
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:06:53.000000000 +09:00
+  updated_on: 2017-03-09 22:06:53.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 5b7769b57f8e16be453c9dbc3f57fb1b
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:06:53.000000000 +09:00
+
+
+users9:
+  id: 10
+  login: asami
+  hashed_password: 44e02ae61067cb4eda16c080a1c5b77d45dd22b8
+  firstname: 麻美
+  lastname: 佐藤
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:07:40.000000000 +09:00
+  updated_on: 2017-03-15 08:59:46.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: ed03413478f612deefc3f2da400fb085
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:07:40.000000000 +09:00
+
+
+users10:
+  id: 11
+  login: yuki
+  hashed_password: b3a3f54163ed3079d09ecdd6e7871be3066a9011
+  firstname: 由紀
+  lastname: 柏木
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:08:20.000000000 +09:00
+  updated_on: 2017-03-09 22:08:20.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: e5b6422b0009512cacfe4be5f2f11df4
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:08:20.000000000 +09:00
+
+
+users11:
+  id: 12
+  login: naoki
+  hashed_password: ce962cba4276c494cc8206f41e6d66d9c695c4ac
+  firstname: 直樹
+  lastname: 田原
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:09:21.000000000 +09:00
+  updated_on: 2017-03-15 09:01:09.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 420ccfdf1d16942fe6919fd4b729ef0c
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:09:21.000000000 +09:00
+
+
+users12:
+  id: 13
+  login: sayuri
+  hashed_password: 0a430932001079ae51496c07ec7c8049c2f2b79d
+  firstname: 小百合
+  lastname: 高城
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:09:51.000000000 +09:00
+  updated_on: 2017-03-15 09:00:22.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: fb37aa011882999ff5ff6c6752d9e0dc
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:09:51.000000000 +09:00
+
+
+users13:
+  id: 14
+  login: Michael
+  hashed_password: b67230ca7f391dd5d147dcdc3878f15129cfd701
+  firstname: マイケル
+  lastname: デサンタ
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:11:05.000000000 +09:00
+  updated_on: 2017-03-09 22:11:05.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 6561d78cf9b3cfa476482a88cbe8b57f
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:11:05.000000000 +09:00
+
+
+users14:
+  id: 15
+  login: yoshiyuki
+  hashed_password: 7c97a0297553c0c3b2b2eb5b718e94d6df38866b
+  firstname: 義之
+  lastname: 蜂須賀
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:12:00.000000000 +09:00
+  updated_on: 2017-03-15 09:00:05.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: f5a892a221d60fe388277be937d189cf
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:12:00.000000000 +09:00
+
+
+users15:
+  id: 16
+  login: asahina
+  hashed_password: ec46c9b9cbcb0a909387597933c3869d9ac02232
+  firstname: 泰幸
+  lastname: 朝比奈
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:12:28.000000000 +09:00
+  updated_on: 2017-03-09 22:12:28.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: e512fd1b376784a210e4adb09c21ae9b
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:12:28.000000000 +09:00
+
+
+users16:
+  id: 17
+  login: kimura
+  hashed_password: 592a23a24d29f55b5d669cce4b66501319a187b0
+  firstname: 正義
+  lastname: 木村
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:13:34.000000000 +09:00
+  updated_on: 2017-03-09 22:13:34.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 029c6af74403bcd49f9f64e4964be0d2
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:13:34.000000000 +09:00
+
+
+users17:
+  id: 18
+  login: naotora
+  hashed_password: 188fc9bdab5cbae698e87b4ba56ba62fd895bec0
+  firstname: 聡
+  lastname: 井伊
+  admin: 0
+  status: 1
+  last_login_on: 
+  language: ja
+  auth_source_id: 
+  created_on: 2017-03-09 22:16:26.000000000 +09:00
+  updated_on: 2017-03-15 08:59:26.000000000 +09:00
+  type: User
+  identity_url: 
+  mail_notification: only_my_events
+  salt: 8e2ffa493fb843facca15e5a3087ba85
+  must_change_passwd: 0
+  passwd_changed_on: 2017-03-09 22:16:26.000000000 +09:00
+

@@ -1,14 +1,14 @@
 <%
   @change_view = [
-      ['チケット', project_issues_path(project_identifier)],
-      [I18n.t('layouts.cahnge_view.burn_down_charts'),project_burn_down_charts_path(project_identifier)],
-      [I18n.t('layouts.cahnge_view.gantt_charts'),project_gantt_charts_path(project_identifier)],
-      [I18n.t('layouts.cahnge_view.time_series_charts'),project_time_series_charts_path(project_identifier)],
-      ['積み上げチャート',project_stacked_bar_charts_path(project_identifier)]
+      [I18n.t('layouts.cahnge_view.issue'), project_issues_path(project_identifier)],
+      [I18n.t('layouts.cahnge_view.burn_down_chart'), project_burn_down_charts_path(project_identifier)],
+      [I18n.t('layouts.cahnge_view.gantt_chart'), project_gantt_charts_path(project_identifier)],
+      [I18n.t('layouts.cahnge_view.time_series_chart'), project_time_series_charts_path(project_identifier)],
+      [I18n.t('layouts.cahnge_view.stacked_bar_chart'), project_stacked_bar_charts_path(project_identifier)]
   ]
 %>
 <div class="change_view">
-  <label for="change_view">表示:
+  <label for="change_view"> <%= I18n.t('layouts.cahnge_view.view') %>
     <%= select_tag 'change_view', options_for_select(@change_view, index),{:class => 'select_view'} %>
   </label>
 </div>

@@ -27,7 +27,7 @@ class Aggregation < ActiveRecord::Base
   def self.get_aggs_each_assigned(where) # fetch_cost_each_assigned
 
     record = self.select(
-                            "concat(users.firstname,' ',users.lastname) as name",
+                            "concat(users.lastname,' ',users.firstname) as name",
                             self.arel_table[:estimated_hours].sum().as('estimated_sum'),
                             self.arel_table[:act_value].sum().as('actual_sum'))
                     .joins('left join users on users.id = aggregations.assigned_to_id')
@@ -44,10 +44,10 @@ class Aggregation < ActiveRecord::Base
 
   end
 
-  def self.get_aggs_each_daily_assigned(where) # fetch_cost_each_assigned
+  def self.get_aggs_each_daily_assigned(where)
 
     record = self.select('aggregations.today as today',
-                            "concat(users.firstname,' ',users.lastname) as name",
+                            "concat(users.lastname,' ',users.firstname) as name",
                             self.arel_table[:estimated_hours].sum().as('estimated_sum'),
                             self.arel_table[:act_value].sum().as('actual_sum'),
                             self.arel_table[:progress].sum().as('progress'))
@@ -90,7 +90,7 @@ class Aggregation < ActiveRecord::Base
   def self.get_progress_each_assigned(where) # fetch_progress_each_operator
 
     data = self.select(
-        "concat(users.firstname,' ',users.lastname) user_name",
+        "concat(users.lastname,' ',users.firstname) user_name",
         'aggregations.issue_id issue_id',
         'aggregations.project_id project_id',
         'issue_statuses.name status_name',

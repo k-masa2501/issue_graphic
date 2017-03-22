@@ -1,0 +1,112 @@
+
+issue_relations0:
+  id: 1
+  issue_from_id: 104210
+  issue_to_id: 104256
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations1:
+  id: 2
+  issue_from_id: 104276
+  issue_to_id: 104277
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations2:
+  id: 3
+  issue_from_id: 104277
+  issue_to_id: 104278
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations3:
+  id: 4
+  issue_from_id: 104278
+  issue_to_id: 104279
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations4:
+  id: 5
+  issue_from_id: 104279
+  issue_to_id: 104280
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations5:
+  id: 6
+  issue_from_id: 104280
+  issue_to_id: 104281
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations6:
+  id: 7
+  issue_from_id: 104281
+  issue_to_id: 104282
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations7:
+  id: 8
+  issue_from_id: 104282
+  issue_to_id: 104283
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations8:
+  id: 9
+  issue_from_id: 104283
+  issue_to_id: 104284
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations9:
+  id: 10
+  issue_from_id: 104284
+  issue_to_id: 104285
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations10:
+  id: 11
+  issue_from_id: 104285
+  issue_to_id: 104286
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations11:
+  id: 12
+  issue_from_id: 104286
+  issue_to_id: 104287
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations12:
+  id: 13
+  issue_from_id: 104282
+  issue_to_id: 104288
+  relation_type: copied_to
+  delay: 
+
+
+issue_relations13:
+  id: 14
+  issue_from_id: 104291
+  issue_to_id: 104292
+  relation_type: copied_to
+  delay: 
+

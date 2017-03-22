@@ -1,0 +1,30 @@
+
+trackers0:
+  id: 1
+  name: バグ
+  is_in_chlog: 1
+  position: 1
+  is_in_roadmap: 0
+  fields_bits: 0
+  default_status_id: 1
+
+
+trackers1:
+  id: 2
+  name: 開発
+  is_in_chlog: 1
+  position: 2
+  is_in_roadmap: 1
+  fields_bits: 0
+  default_status_id: 1
+
+
+trackers2:
+  id: 3
+  name: 運用サポート
+  is_in_chlog: 0
+  position: 3
+  is_in_roadmap: 0
+  fields_bits: 0
+  default_status_id: 1
+

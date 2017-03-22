@@ -1,0 +1,215 @@
+
+roles0:
+  id: 1
+  name: Non member
+  position: 0
+  assignable: 1
+  builtin: 1
+  permissions: |
+    ---
+    - :add_messages
+    - :view_calendar
+    - :view_documents
+    - :view_files
+    - :view_gantt
+    - :view_issues
+    - :add_issues
+    - :add_issue_notes
+    - :save_queries
+    - :comment_news
+    - :view_changesets
+    - :browse_repository
+    - :view_time_entries
+    - :view_wiki_pages
+    - :view_wiki_edits
+  issues_visibility: default
+  users_visibility: all
+  time_entries_visibility: all
+  all_roles_managed: 1
+  settings: 
+
+
+roles1:
+  id: 2
+  name: Anonymous
+  position: 0
+  assignable: 1
+  builtin: 2
+  permissions: |
+    ---
+    - :view_calendar
+    - :view_documents
+    - :view_files
+    - :view_gantt
+    - :view_issues
+    - :view_changesets
+    - :browse_repository
+    - :view_time_entries
+    - :view_wiki_pages
+    - :view_wiki_edits
+  issues_visibility: default
+  users_visibility: all
+  time_entries_visibility: all
+  all_roles_managed: 1
+  settings: 
+
+
+roles2:
+  id: 3
+  name: 管理者
+  position: 1
+  assignable: 1
+  builtin: 0
+  permissions: |
+    ---
+    - :add_project
+    - :edit_project
+    - :close_project
+    - :select_project_modules
+    - :manage_members
+    - :manage_versions
+    - :add_subprojects
+    - :add_messages
+    - :edit_messages
+    - :edit_own_messages
+    - :delete_messages
+    - :delete_own_messages
+    - :manage_boards
+    - :view_calendar
+    - :view_documents
+    - :add_documents
+    - :edit_documents
+    - :delete_documents
+    - :view_files
+    - :manage_files
+    - :view_gantt
+    - :view_issue_graphics
+    - :view_issues
+    - :add_issues
+    - :edit_issues
+    - :copy_issues
+    - :manage_issue_relations
+    - :manage_subtasks
+    - :set_issues_private
+    - :set_own_issues_private
+    - :add_issue_notes
+    - :edit_issue_notes
+    - :edit_own_issue_notes
+    - :view_private_notes
+    - :set_notes_private
+    - :delete_issues
+    - :manage_public_queries
+    - :save_queries
+    - :view_issue_watchers
+    - :add_issue_watchers
+    - :delete_issue_watchers
+    - :import_issues
+    - :manage_categories
+    - :manage_news
+    - :comment_news
+    - :view_burn_down_chart
+    - :view_changesets
+    - :browse_repository
+    - :commit_access
+    - :manage_related_issues
+    - :manage_repository
+    - :view_time_entries
+    - :log_time
+    - :edit_time_entries
+    - :edit_own_time_entries
+    - :manage_project_activities
+    - :view_wiki_pages
+    - :view_wiki_edits
+    - :export_wiki_pages
+    - :edit_wiki_pages
+    - :rename_wiki_pages
+    - :delete_wiki_pages
+    - :delete_wiki_pages_attachments
+    - :protect_wiki_pages
+    - :manage_wiki
+  issues_visibility: all
+  users_visibility: all
+  time_entries_visibility: all
+  all_roles_managed: 1
+  settings: 
+
+
+roles3:
+  id: 4
+  name: 開発者
+  position: 2
+  assignable: 1
+  builtin: 0
+  permissions: |
+    ---
+    - :manage_versions
+    - :add_messages
+    - :edit_own_messages
+    - :view_calendar
+    - :view_documents
+    - :view_files
+    - :manage_files
+    - :view_gantt
+    - :view_issue_graphics
+    - :view_issues
+    - :add_issues
+    - :edit_issues
+    - :manage_issue_relations
+    - :manage_subtasks
+    - :add_issue_notes
+    - :view_private_notes
+    - :set_notes_private
+    - :save_queries
+    - :manage_categories
+    - :comment_news
+    - :view_burn_down_chart
+    - :view_changesets
+    - :browse_repository
+    - :commit_access
+    - :manage_related_issues
+    - :view_time_entries
+    - :log_time
+    - :view_wiki_pages
+    - :view_wiki_edits
+    - :edit_wiki_pages
+    - :delete_wiki_pages
+  issues_visibility: default
+  users_visibility: all
+  time_entries_visibility: all
+  all_roles_managed: 1
+  settings: 
+
+
+roles4:
+  id: 5
+  name: 報告者
+  position: 3
+  assignable: 1
+  builtin: 0
+  permissions: |
+    ---
+    - :add_messages
+    - :edit_own_messages
+    - :view_calendar
+    - :view_documents
+    - :view_files
+    - :view_gantt
+    - :view_issue_graphics
+    - :view_issues
+    - :add_issues
+    - :add_issue_notes
+    - :save_queries
+    - :comment_news
+    - :view_burn_down_chart
+    - :view_changesets
+    - :browse_repository
+    - :view_time_entries
+    - :log_time
+    - :view_wiki_pages
+    - :view_wiki_edits
+  issues_visibility: default
+  users_visibility: all
+  time_entries_visibility: all
+  all_roles_managed: 1
+  settings: 
+

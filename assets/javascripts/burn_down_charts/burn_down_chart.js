@@ -75,8 +75,7 @@ BurnDownsChart.prototype.draw = function(){
   });
 
   time_scale
-      .domain(d3.extent(data_set.dset1, function(d){ return d.date; }))
-      .nice();
+      .domain(d3.extent(data_set.dset1, function(d){ return d.date; }));
 
   // 予定
   svg.append("path")
@@ -131,14 +130,18 @@ BurnDownsChart.prototype.draw = function(){
       .attr("class", "line4")
       .attr("d", line1);
 
+  var days = new Array();
+
   // Ｘ軸を描画
   svg.append("g")
       .attr("class", "axis")
       .attr("transform", "translate(0," + height + ")")
       .call(d3.axisBottom(time_scale)
           .tickFormat(function(d,i){
-            return formatDate(d, "MM/DD");
-          }).tickSizeInner(-height)
+            return (function(d){
+              if (-1 >= days.indexOf(d)){days.push(d);return d;}
+            })(formatDate(d,"MM/DD"));})
+          .tickSizeInner(-height)
       )
       .selectAll("text")
       .attr("transform", "rotate(45)")
@@ -146,6 +149,8 @@ BurnDownsChart.prototype.draw = function(){
       .attr("dx", 10)
       .style("text-anchor", "start");
 
+  days = null;
+  
   // Ｙ軸を描画
   svg.append("g")
       .attr("class", "axis")
@@ -174,7 +179,7 @@ BurnDownsChart.prototype.draw = function(){
       .attr("x", x_legend(104.5))
       .attr("y", y_legend(95))
       .attr("dy", "0.32em")
-      .text("作業量");
+      .text($p.label.work);
 
   legend.append("path")
       .datum([{x: 102,y: 85}, {x: 104,y: 85}])
@@ -185,7 +190,7 @@ BurnDownsChart.prototype.draw = function(){
       .attr("x", x_legend(104.5))
       .attr("y", y_legend(85))
       .attr("dy", "0.32em")
-      .text("予定実績");
+      .text($p.label.plan);
 
   legend.append("path")
       .datum([{x: 102,y: 75}, {x: 104,y: 75}])
@@ -196,7 +201,7 @@ BurnDownsChart.prototype.draw = function(){
       .attr("x", x_legend(104.5))
       .attr("y", y_legend(75))
       .attr("dy", "0.32em")
-      .text("実績");
+      .text($p.label.act);
 
 };
 

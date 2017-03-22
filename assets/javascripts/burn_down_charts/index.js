@@ -59,6 +59,7 @@ IndexController.prototype._change_selectBox = function(e){
     
     $("#daily_act_view").html(recv.render_table);
     $("#cost_summarys_view").html(recv.render_summary);
+    $("#cost_assigned_summarys_view").html(recv.render_assigned_summary);
 
   }
   

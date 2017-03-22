@@ -86,7 +86,7 @@ private
     unClosed_id = IssueStatus.where(is_closed: 0).pluck("id").join(",")
 
     view_map = {
-        'assigned_to' => {:joins => :assigned_to, :pluck => "concat(firstname,' ', lastname)"},
+        'assigned_to' => {:joins => :assigned_to, :pluck => "concat(lastname,' ',firstname)"},
         'tracker' => {:joins => :tracker, :pluck => "name"},
         'status' => {:joins => :status, :pluck => "name"},
         'priority' => {:joins => :priority, :pluck => "name"},

@@ -1,0 +1,40 @@
+
+custom_field_enumerations0:
+  id: 1
+  custom_field_id: 1
+  name: スプリント1
+  active: 1
+  position: 0
+
+
+custom_field_enumerations1:
+  id: 2
+  custom_field_id: 1
+  name: スプリント2
+  active: 1
+  position: 1
+
+
+custom_field_enumerations2:
+  id: 7
+  custom_field_id: 8
+  name: ";;;;;"
+  active: 1
+  position: 0
+
+
+custom_field_enumerations3:
+  id: 8
+  custom_field_id: 8
+  name: '7777'
+  active: 1
+  position: 1
+
+
+custom_field_enumerations4:
+  id: 9
+  custom_field_id: 1
+  name: スプリント3
+  active: 1
+  position: 2
+

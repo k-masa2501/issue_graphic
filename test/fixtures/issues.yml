@@ -1,0 +1,1998 @@
+
+issues0:
+  id: 104205
+  tracker_id: 2
+  project_id: 1
+  subject: sanple1
+  description: ''
+  due_date: 2016-10-07
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 3
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 17
+  created_on: 2016-08-20 21:02:05.000000000 +09:00
+  updated_on: 2016-10-09 18:00:34.000000000 +09:00
+  start_date: 2016-10-03
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104205
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 18:00:34.000000000 +09:00
+
+
+issues1:
+  id: 104206
+  tracker_id: 1
+  project_id: 2
+  subject: sanple2
+  description: 
+  due_date: 2016-09-02
+  category_id: 2
+  status_id: 3
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:05.000000000 +09:00
+  updated_on: 2016-08-20 21:02:05.000000000 +09:00
+  start_date: 2016-08-02
+  done_ratio: 0
+  estimated_hours: 2.0
+  parent_id: 
+  root_id: 104206
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues2:
+  id: 104207
+  tracker_id: 2
+  project_id: 1
+  subject: sanple3
+  description: ''
+  due_date: 2016-10-07
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 3
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 10
+  created_on: 2016-08-20 21:02:05.000000000 +09:00
+  updated_on: 2016-10-09 12:16:29.000000000 +09:00
+  start_date: 2016-10-03
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104207
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 12:16:29.000000000 +09:00
+
+
+issues3:
+  id: 104208
+  tracker_id: 1
+  project_id: 2
+  subject: sanple4
+  description: 
+  due_date: 2016-09-04
+  category_id: 2
+  status_id: 2
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:05.000000000 +09:00
+  updated_on: 2016-08-20 21:02:05.000000000 +09:00
+  start_date: 2016-08-04
+  done_ratio: 0
+  estimated_hours: 4.0
+  parent_id: 
+  root_id: 104208
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues4:
+  id: 104209
+  tracker_id: 2
+  project_id: 1
+  subject: sanple5
+  description: ''
+  due_date: 2016-10-07
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 3
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 13
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-10-09 12:16:29.000000000 +09:00
+  start_date: 2016-10-03
+  done_ratio: 100
+  estimated_hours: 14.0
+  parent_id: 
+  root_id: 104209
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 12:16:29.000000000 +09:00
+
+
+issues5:
+  id: 104210
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]issuesテーブルとガントチャートの連携"
+  description: ''
+  due_date: 2016-10-07
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 3
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 16
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-10-09 12:16:29.000000000 +09:00
+  start_date: 2016-09-19
+  done_ratio: 100
+  estimated_hours: 50.0
+  parent_id: 
+  root_id: 104210
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 12:16:29.000000000 +09:00
+
+
+issues6:
+  id: 104211
+  tracker_id: 2
+  project_id: 1
+  subject: sanple7
+  description: ''
+  due_date: 2016-09-30
+  category_id: 2
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 8
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-10-09 12:16:29.000000000 +09:00
+  start_date: 2016-09-26
+  done_ratio: 100
+  estimated_hours: 14.0
+  parent_id: 
+  root_id: 104211
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 12:16:29.000000000 +09:00
+
+
+issues7:
+  id: 104212
+  tracker_id: 2
+  project_id: 2
+  subject: sanple8
+  description: 
+  due_date: 2016-09-08
+  category_id: 2
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-08-20 21:02:06.000000000 +09:00
+  start_date: 2016-08-08
+  done_ratio: 0
+  estimated_hours: 8.0
+  parent_id: 
+  root_id: 104212
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues8:
+  id: 104213
+  tracker_id: 2
+  project_id: 1
+  subject: sanple9
+  description: ''
+  due_date: 2016-09-30
+  category_id: 2
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 11
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-10-09 12:16:30.000000000 +09:00
+  start_date: 2016-09-26
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104213
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-09 12:16:30.000000000 +09:00
+
+
+issues9:
+  id: 104214
+  tracker_id: 1
+  project_id: 2
+  subject: sanple10
+  description: 
+  due_date: 2016-09-10
+  category_id: 2
+  status_id: 2
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-08-20 21:02:06.000000000 +09:00
+  start_date: 2016-08-10
+  done_ratio: 0
+  estimated_hours: 10.0
+  parent_id: 
+  root_id: 104214
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues10:
+  id: 104215
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]チケット登録画面にプルダウン追加"
+  description: ''
+  due_date: 2016-09-30
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 13
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-10-02 23:11:33.000000000 +09:00
+  start_date: 2016-09-26
+  done_ratio: 100
+  estimated_hours: 14.0
+  parent_id: 
+  root_id: 104215
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-02 23:11:33.000000000 +09:00
+
+
+issues11:
+  id: 104216
+  tracker_id: 2
+  project_id: 2
+  subject: sanple12
+  description: 
+  due_date: 2016-09-12
+  category_id: 3
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 1
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:06.000000000 +09:00
+  updated_on: 2016-08-20 21:02:06.000000000 +09:00
+  start_date: 2016-08-12
+  done_ratio: 0
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104216
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues12:
+  id: 104217
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]wikiの参照更新画面に担当者欄を追加"
+  description: ''
+  due_date: 2016-09-30
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 18
+  created_on: 2016-08-20 21:02:07.000000000 +09:00
+  updated_on: 2016-10-02 23:11:14.000000000 +09:00
+  start_date: 2016-09-26
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104217
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-02 23:11:14.000000000 +09:00
+
+
+issues13:
+  id: 104219
+  tracker_id: 2
+  project_id: 2
+  subject: sanple15
+  description: 
+  due_date: 2016-09-15
+  category_id: 3
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 5
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:07.000000000 +09:00
+  updated_on: 2016-08-20 21:02:07.000000000 +09:00
+  start_date: 2016-08-15
+  done_ratio: 0
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104219
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues14:
+  id: 104221
+  tracker_id: 2
+  project_id: 2
+  subject: sanple17
+  description: 
+  due_date: 2016-09-17
+  category_id: 4
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 1
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-08-20 21:02:07.000000000 +09:00
+  updated_on: 2016-08-20 21:02:07.000000000 +09:00
+  start_date: 2016-08-17
+  done_ratio: 0
+  estimated_hours: 17.0
+  parent_id: 
+  root_id: 104221
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues15:
+  id: 104224
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:05:24.000000000 +09:00
+  updated_on: 2016-09-02 06:05:24.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104224
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues16:
+  id: 104225
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:08:26.000000000 +09:00
+  updated_on: 2016-09-02 06:08:26.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104225
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues17:
+  id: 104226
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:10:06.000000000 +09:00
+  updated_on: 2016-09-02 06:10:06.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104226
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues18:
+  id: 104227
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:11:08.000000000 +09:00
+  updated_on: 2016-09-02 06:11:08.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104227
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues19:
+  id: 104228
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:14:42.000000000 +09:00
+  updated_on: 2016-09-02 06:14:42.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104228
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues20:
+  id: 104229
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:15:39.000000000 +09:00
+  updated_on: 2016-09-02 06:15:39.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104229
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues21:
+  id: 104230
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:16:47.000000000 +09:00
+  updated_on: 2016-09-02 06:16:47.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104230
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues22:
+  id: 104231
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 1
+  created_on: 2016-09-02 06:17:54.000000000 +09:00
+  updated_on: 2016-09-17 14:11:19.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104231
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues23:
+  id: 104232
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:17:59.000000000 +09:00
+  updated_on: 2016-09-02 06:17:59.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104232
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues24:
+  id: 104233
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:18:16.000000000 +09:00
+  updated_on: 2016-09-02 06:18:16.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104233
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues25:
+  id: 104234
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:20:08.000000000 +09:00
+  updated_on: 2016-09-02 06:20:08.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104234
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues26:
+  id: 104235
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:36:19.000000000 +09:00
+  updated_on: 2016-09-02 06:36:19.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104235
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues27:
+  id: 104236
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-02 06:43:04.000000000 +09:00
+  updated_on: 2016-09-02 06:43:04.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104236
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues28:
+  id: 104237
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-09-02 06:43:58.000000000 +09:00
+  updated_on: 2016-09-17 14:00:49.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104237
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues29:
+  id: 104238
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 0
+  created_on: 2016-09-10 15:51:14.000000000 +09:00
+  updated_on: 2016-09-10 15:51:14.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104238
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues30:
+  id: 104239
+  tracker_id: 1
+  project_id: 2
+  subject: aaaaaaaaaaa
+  description: bbbbbbbb
+  due_date: 2016-09-13
+  category_id: 
+  status_id: 1
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-09-10 15:51:42.000000000 +09:00
+  updated_on: 2016-09-17 14:00:17.000000000 +09:00
+  start_date: 2016-08-16
+  done_ratio: 0
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104239
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues31:
+  id: 104240
+  tracker_id: 1
+  project_id: 2
+  subject: aaa
+  description: ''
+  due_date: 2016-09-16
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 1
+  created_on: 2016-09-10 15:52:47.000000000 +09:00
+  updated_on: 2016-09-17 13:59:17.000000000 +09:00
+  start_date: 2016-09-10
+  done_ratio: 0
+  estimated_hours: 20.0
+  parent_id: 
+  root_id: 104240
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues32:
+  id: 104241
+  tracker_id: 1
+  project_id: 2
+  subject: aaa
+  description: ''
+  due_date: 2016-09-16
+  category_id: 
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 1
+  lock_version: 19
+  created_on: 2016-09-10 15:54:05.000000000 +09:00
+  updated_on: 2016-09-17 14:10:35.000000000 +09:00
+  start_date: 2016-09-09
+  done_ratio: 0
+  estimated_hours: 20.0
+  parent_id: 
+  root_id: 104241
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues33:
+  id: 104253
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]issuesテーブルにupdate_dateカラムを追加"
+  description: ''
+  due_date: 2016-09-23
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 104
+  created_on: 2016-09-25 13:43:22.000000000 +09:00
+  updated_on: 2016-10-02 21:43:38.000000000 +09:00
+  start_date: 2016-09-19
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104253
+  lft: 1
+  rgt: 6
+  is_private: 0
+  closed_on: 2016-09-25 16:52:04.000000000 +09:00
+
+
+issues34:
+  id: 104254
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]issuesテーブルにupdate_dateカラムを追加"
+  description: ''
+  due_date: 2016-09-23
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 72
+  created_on: 2016-09-25 13:43:23.000000000 +09:00
+  updated_on: 2016-10-02 21:43:38.000000000 +09:00
+  start_date: 2016-09-19
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 104253
+  root_id: 104253
+  lft: 2
+  rgt: 3
+  is_private: 0
+  closed_on: 2016-09-25 15:47:26.000000000 +09:00
+
+
+issues35:
+  id: 104255
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]トップ画面にredmineの更新履歴を出力"
+  description: ''
+  due_date: 2016-09-23
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 4
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 74
+  created_on: 2016-09-25 16:51:47.000000000 +09:00
+  updated_on: 2016-10-02 22:50:01.000000000 +09:00
+  start_date: 2016-09-19
+  done_ratio: 100
+  estimated_hours: 14.0
+  parent_id: 104253
+  root_id: 104253
+  lft: 4
+  rgt: 5
+  is_private: 0
+  closed_on: 2016-09-25 16:51:47.000000000 +09:00
+
+
+issues36:
+  id: 104256
+  tracker_id: 2
+  project_id: 1
+  subject: "[開発]issuesテーブルとガントチャートの連携"
+  description: ''
+  due_date: 2016-10-07
+  category_id: 3
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 3
+  fixed_version_id: 1
+  author_id: 1
+  lock_version: 16
+  created_on: 2016-10-02 23:06:47.000000000 +09:00
+  updated_on: 2016-10-02 23:09:53.000000000 +09:00
+  start_date: 2016-09-19
+  done_ratio: 100
+  estimated_hours: 50.0
+  parent_id: 
+  root_id: 104256
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-10-02 23:09:53.000000000 +09:00
+
+
+issues37:
+  id: 104257
+  tracker_id: 2
+  project_id: 1
+  subject: システムクロックの時刻を合わせる
+  description: ''
+  due_date: 
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 5
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 3
+  created_on: 2016-10-09 15:00:05.000000000 +09:00
+  updated_on: 2017-03-14 23:06:41.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104257
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:46.000000000 +09:00
+
+
+issues38:
+  id: 104258
+  tracker_id: 1
+  project_id: 1
+  subject: ntpd が起動している場合は停止する（ntpd が入っていない場合はインストールする）
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 1
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-10-09 15:00:05.000000000 +09:00
+  updated_on: 2016-12-04 12:15:46.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 25.0
+  parent_id: 
+  root_id: 104258
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:46.000000000 +09:00
+
+
+issues39:
+  id: 104259
+  tracker_id: 2
+  project_id: 1
+  subject: ntpdate コマンドを実行するとエラーが発生するため、先に ntpd を停止させます。
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 4
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 3
+  created_on: 2016-10-09 15:00:06.000000000 +09:00
+  updated_on: 2016-12-04 12:15:46.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 18.0
+  parent_id: 
+  root_id: 104259
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:46.000000000 +09:00
+
+
+issues40:
+  id: 104260
+  tracker_id: 2
+  project_id: 1
+  subject: ntpdate コマンドでシステムクロックの時刻を合わせる
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-10-09 15:00:06.000000000 +09:00
+  updated_on: 2016-12-04 12:15:47.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 15.0
+  parent_id: 
+  root_id: 104260
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:47.000000000 +09:00
+
+
+issues41:
+  id: 104261
+  tracker_id: 2
+  project_id: 1
+  subject: テンプレートエンジンにerbを指定
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 8
+  created_on: 2016-10-09 15:00:06.000000000 +09:00
+  updated_on: 2016-12-23 16:24:16.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 10.0
+  parent_id: 
+  root_id: 104261
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:47.000000000 +09:00
+
+
+issues42:
+  id: 104262
+  tracker_id: 2
+  project_id: 1
+  subject: 部分テンプレートで使用するモデルの属性を書く
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 9
+  created_on: 2016-10-09 15:00:06.000000000 +09:00
+  updated_on: 2016-12-04 12:15:47.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 35.0
+  parent_id: 
+  root_id: 104262
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:47.000000000 +09:00
+
+
+issues43:
+  id: 104263
+  tracker_id: 1
+  project_id: 1
+  subject: CommentsCellクラスでpropertyに指定した値や、メソッドをそのまま使用できる
+  description: ''
+  due_date: 2016-11-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 11
+  created_on: 2016-10-09 15:00:06.000000000 +09:00
+  updated_on: 2016-12-04 12:15:47.000000000 +09:00
+  start_date: 2016-10-09
+  done_ratio: 100
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104263
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-04 12:15:47.000000000 +09:00
+
+
+issues44:
+  id: 104264
+  tracker_id: 2
+  project_id: 1
+  subject: app/views/comments/show.html.erbに下記を一行追加する
+  description: ''
+  due_date: 2016-12-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 3
+  created_on: 2016-10-09 15:00:07.000000000 +09:00
+  updated_on: 2016-12-11 16:59:29.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 23.0
+  parent_id: 
+  root_id: 104264
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-11 16:59:29.000000000 +09:00
+
+
+issues45:
+  id: 104265
+  tracker_id: 1
+  project_id: 1
+  subject: 上記の呼び出しはCommentsCell.new(@comment).showを内部的に呼び出している
+  description: ''
+  due_date: 2016-12-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 1
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-10-09 15:00:07.000000000 +09:00
+  updated_on: 2016-12-11 17:00:59.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 10.0
+  parent_id: 
+  root_id: 104265
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-11 17:00:59.000000000 +09:00
+
+
+issues46:
+  id: 104266
+  tracker_id: 2
+  project_id: 1
+  subject: ループが必要な処理を一つにまとめる
+  description: ''
+  due_date: 2016-12-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-10-09 15:00:07.000000000 +09:00
+  updated_on: 2016-12-11 17:01:13.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 10.0
+  parent_id: 
+  root_id: 104266
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-11 17:01:13.000000000 +09:00
+
+
+issues47:
+  id: 104267
+  tracker_id: 2
+  project_id: 1
+  subject: indexページにモデルの要素をループさせて表示させるような処理をかく場合があると思う
+  description: ''
+  due_date: 2016-12-08
+  category_id: 5
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 2
+  created_on: 2016-10-09 15:00:07.000000000 +09:00
+  updated_on: 2016-12-11 16:58:49.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104267
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-11 16:58:49.000000000 +09:00
+
+
+issues48:
+  id: 104268
+  tracker_id: 2
+  project_id: 1
+  subject: selectメソッドは、条件に合う要素を探して集めます。
+  description: ''
+  due_date: 2016-12-08
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 4
+  created_on: 2016-10-09 15:00:07.000000000 +09:00
+  updated_on: 2017-03-21 09:24:17.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104268
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-03 10:56:56.000000000 +09:00
+
+
+issues49:
+  id: 104269
+  tracker_id: 2
+  project_id: 1
+  subject: ブロックが返す値からなる配列を作成。
+  description: ''
+  due_date: 2016-12-08
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 5
+  created_on: 2016-10-09 15:00:08.000000000 +09:00
+  updated_on: 2017-03-21 09:24:17.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 13.0
+  parent_id: 
+  root_id: 104269
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-17 23:08:41.000000000 +09:00
+
+
+issues50:
+  id: 104270
+  tracker_id: 1
+  project_id: 1
+  subject: ブロックが偽を返す要素からなる配列を作成。
+  description: ''
+  due_date: 2016-12-08
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 4
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 11
+  created_on: 2016-12-21 15:13:01.000000000 +09:00
+  updated_on: 2017-03-21 09:24:17.000000000 +09:00
+  start_date: 2016-11-09
+  done_ratio: 100
+  estimated_hours: 40.0
+  parent_id: 
+  root_id: 104270
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2016-12-21 15:13:01.000000000 +09:00
+
+
+issues51:
+  id: 104271
+  tracker_id: 2
+  project_id: 1
+  subject: ブロックが真を返す要素を残し、偽を返す要素を削除。Ruby 1.9.2
+  description: ''
+  due_date: 2016-12-31
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 5
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 23
+  created_on: 2017-01-15 06:51:30.000000000 +09:00
+  updated_on: 2017-03-21 09:24:18.000000000 +09:00
+  start_date: 2016-12-09
+  done_ratio: 100
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104271
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-01-15 06:51:30.000000000 +09:00
+
+
+issues52:
+  id: 104272
+  tracker_id: 2
+  project_id: 1
+  subject: ブロックが真を返す要素を先頭から取り出して配列を作成。Ruby 1.8.7
+  description: ''
+  due_date: 2016-12-31
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 3
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 18
+  created_on: 2017-01-16 06:51:30.000000000 +09:00
+  updated_on: 2017-03-21 09:24:18.000000000 +09:00
+  start_date: 2016-12-09
+  done_ratio: 100
+  estimated_hours: 22.0
+  parent_id: 
+  root_id: 104272
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-01-16 06:51:30.000000000 +09:00
+
+
+issues53:
+  id: 104273
+  tracker_id: 1
+  project_id: 1
+  subject: mapメソッドは、要素の数だけ繰り返しブロックを実行
+  description: ''
+  due_date: 2016-12-31
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 6
+  priority_id: 1
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 18
+  created_on: 2016-10-09 15:00:08.000000000 +09:00
+  updated_on: 2017-03-21 09:24:18.000000000 +09:00
+  start_date: 2016-12-09
+  done_ratio: 100
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104273
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-01-16 06:51:30.000000000 +09:00
+
+
+issues54:
+  id: 104274
+  tracker_id: 2
+  project_id: 1
+  subject: 各要素をブロックの戻り値と入れ替えます
+  description: ''
+  due_date: 2016-12-31
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 7
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 28
+  created_on: 2016-10-09 15:00:09.000000000 +09:00
+  updated_on: 2017-03-21 09:24:18.000000000 +09:00
+  start_date: 2016-12-19
+  done_ratio: 100
+  estimated_hours: 34.0
+  parent_id: 
+  root_id: 104274
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-01-16 06:51:30.000000000 +09:00
+
+
+issues55:
+  id: 104275
+  tracker_id: 2
+  project_id: 1
+  subject: ブロックが返す値からなる配列を作成。
+  description: ''
+  due_date: 2016-12-31
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 2
+  author_id: 1
+  lock_version: 13
+  created_on: 2016-10-09 15:00:09.000000000 +09:00
+  updated_on: 2017-03-21 09:24:18.000000000 +09:00
+  start_date: 2016-12-09
+  done_ratio: 100
+  estimated_hours: 22.0
+  parent_id: 
+  root_id: 104275
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-01-16 06:50:59.000000000 +09:00
+
+
+issues56:
+  id: 104276
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 通信IF_1"
+  description: ''
+  due_date: 2017-03-22
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 18
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 20:17:58.000000000 +09:00
+  updated_on: 2017-03-22 20:11:30.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 95
+  estimated_hours: 18.0
+  parent_id: 
+  root_id: 104276
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues57:
+  id: 104277
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 通信IF_2"
+  description: ''
+  due_date: 2017-03-21
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 16
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 12
+  created_on: 2017-03-20 20:18:24.000000000 +09:00
+  updated_on: 2017-03-21 09:24:19.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 100
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104277
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-03-20 23:59:23.000000000 +09:00
+
+
+issues58:
+  id: 104278
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 通信IF_3"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 10
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 8
+  created_on: 2017-03-20 20:18:49.000000000 +09:00
+  updated_on: 2017-03-21 09:24:19.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 50
+  estimated_hours: 24.0
+  parent_id: 
+  root_id: 104278
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues59:
+  id: 104279
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 通信IF_4"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 5
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 20:20:10.000000000 +09:00
+  updated_on: 2017-03-22 20:13:01.000000000 +09:00
+  start_date: 2017-03-21
+  done_ratio: 50
+  estimated_hours: 24.0
+  parent_id: 
+  root_id: 104279
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues60:
+  id: 104280
+  tracker_id: 3
+  project_id: 1
+  subject: "[step3]MySQLチューニング 4バイト文字入力を許容する"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 8
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 20:22:00.000000000 +09:00
+  updated_on: 2017-03-22 20:12:42.000000000 +09:00
+  start_date: 2017-03-21
+  done_ratio: 60
+  estimated_hours: 24.0
+  parent_id: 
+  root_id: 104280
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues61:
+  id: 104281
+  tracker_id: 3
+  project_id: 1
+  subject: "[step3]CentOsメモリ増設"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 17
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 3
+  created_on: 2017-03-20 20:22:44.000000000 +09:00
+  updated_on: 2017-03-22 20:12:18.000000000 +09:00
+  start_date: 2017-03-21
+  done_ratio: 55
+  estimated_hours: 24.0
+  parent_id: 
+  root_id: 104281
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues62:
+  id: 104282
+  tracker_id: 1
+  project_id: 1
+  subject: "[step2] system stack error"
+  description: ''
+  due_date: 2017-03-23
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 11
+  priority_id: 4
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 20:23:58.000000000 +09:00
+  updated_on: 2017-03-22 20:14:18.000000000 +09:00
+  start_date: 2017-03-22
+  done_ratio: 40
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104282
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues63:
+  id: 104283
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 UI _1"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 9
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 7
+  created_on: 2017-03-20 20:25:56.000000000 +09:00
+  updated_on: 2017-03-22 20:11:05.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 60
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104283
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues64:
+  id: 104284
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 UI _2"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 1
+  assigned_to_id: 6
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 3
+  created_on: 2017-03-20 20:26:09.000000000 +09:00
+  updated_on: 2017-03-21 09:24:20.000000000 +09:00
+  start_date: 2017-03-23
+  done_ratio: 0
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104284
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues65:
+  id: 104285
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]IVRシステム開発 UI _3"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 15
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 20:26:56.000000000 +09:00
+  updated_on: 2017-03-22 20:13:52.000000000 +09:00
+  start_date: 2017-03-22
+  done_ratio: 40
+  estimated_hours: 18.0
+  parent_id: 
+  root_id: 104285
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues66:
+  id: 104286
+  tracker_id: 3
+  project_id: 1
+  subject: "[step3]開発環境構築"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 13
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 7
+  created_on: 2017-03-20 20:27:29.000000000 +09:00
+  updated_on: 2017-03-22 20:10:35.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 65
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104286
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues67:
+  id: 104287
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3]DB スキーマ設計"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 7
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 9
+  created_on: 2017-03-20 20:31:36.000000000 +09:00
+  updated_on: 2017-03-22 20:10:03.000000000 +09:00
+  start_date: 2017-03-20
+  done_ratio: 70
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104287
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues68:
+  id: 104288
+  tracker_id: 1
+  project_id: 1
+  subject: "[step2] undefined local variable or method `a'"
+  description: ''
+  due_date: 2017-03-23
+  category_id: 1
+  status_id: 2
+  assigned_to_id: 11
+  priority_id: 4
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 4
+  created_on: 2017-03-20 22:47:21.000000000 +09:00
+  updated_on: 2017-03-22 20:13:27.000000000 +09:00
+  start_date: 2017-03-22
+  done_ratio: 40
+  estimated_hours: 12.0
+  parent_id: 
+  root_id: 104288
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues69:
+  id: 104289
+  tracker_id: 1
+  project_id: 1
+  subject: "[step2] undefined local variable or method `now_data'"
+  description: ''
+  due_date: 2017-03-21
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 5
+  priority_id: 4
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 2
+  created_on: 2017-03-21 08:31:56.000000000 +09:00
+  updated_on: 2017-03-21 09:24:21.000000000 +09:00
+  start_date: 2017-03-21
+  done_ratio: 100
+  estimated_hours: 4.0
+  parent_id: 
+  root_id: 104289
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-03-21 08:32:11.000000000 +09:00
+
+
+issues70:
+  id: 104290
+  tracker_id: 1
+  project_id: 1
+  subject: "[step2] 受付要旨未入力だとColumn 'accepted_summary' cannot be null"
+  description: ''
+  due_date: 2017-03-24
+  category_id: 1
+  status_id: 5
+  assigned_to_id: 8
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 5
+  created_on: 2017-03-21 09:17:57.000000000 +09:00
+  updated_on: 2017-03-22 20:11:52.000000000 +09:00
+  start_date: 2017-03-21
+  done_ratio: 100
+  estimated_hours: 4.0
+  parent_id: 
+  root_id: 104290
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 2017-03-22 20:11:52.000000000 +09:00
+
+
+issues71:
+  id: 104291
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3] 画面入力項目に回答要旨を追加"
+  description: ''
+  due_date: 2017-03-28
+  category_id: 1
+  status_id: 1
+  assigned_to_id: 13
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 5
+  lock_version: 2
+  created_on: 2017-03-21 09:22:45.000000000 +09:00
+  updated_on: 2017-03-21 09:24:21.000000000 +09:00
+  start_date: 2017-03-27
+  done_ratio: 0
+  estimated_hours: 
+  parent_id: 
+  root_id: 104291
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues72:
+  id: 104292
+  tracker_id: 2
+  project_id: 1
+  subject: "[step3] 画面入力項目に回答詳細を追加"
+  description: ''
+  due_date: 2017-03-29
+  category_id: 1
+  status_id: 1
+  assigned_to_id: 13
+  priority_id: 2
+  fixed_version_id: 
+  author_id: 5
+  lock_version: 1
+  created_on: 2017-03-21 09:23:15.000000000 +09:00
+  updated_on: 2017-03-21 09:24:21.000000000 +09:00
+  start_date: 2017-03-29
+  done_ratio: 0
+  estimated_hours: 
+  parent_id: 
+  root_id: 104292
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+
+
+issues73:
+  id: 104293
+  tracker_id: 2
+  project_id: 1
+  subject: "[step4]時期IVRシステム画面検討"
+  description: ''
+  due_date: 2017-03-31
+  category_id: 5
+  status_id: 1
+  assigned_to_id: 18
+  priority_id: 2
+  fixed_version_id: 4
+  author_id: 5
+  lock_version: 1
+  created_on: 2017-03-21 09:26:39.000000000 +09:00
+  updated_on: 2017-03-21 09:27:29.000000000 +09:00
+  start_date: 2017-03-27
+  done_ratio: 0
+  estimated_hours: 30.0
+  parent_id: 
+  root_id: 104293
+  lft: 1
+  rgt: 2
+  is_private: 0
+  closed_on: 
+

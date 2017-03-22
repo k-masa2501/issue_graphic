@@ -45,7 +45,7 @@ TimeSeriesChart.prototype.draw = function(){
       .range([height, 0])
       .nice();
 
-  var z = d3.scaleOrdinal(d3.schemeCategory10)
+  var z = d3.scaleOrdinal(d3.schemeCategory20)
       .domain(this.keys);
 
   var stack = d3.stack();

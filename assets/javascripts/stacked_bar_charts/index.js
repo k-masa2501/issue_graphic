@@ -14,8 +14,6 @@ var IndexController = function(arg){
     showButtonPanel: true
   });
 
-  $('#f_kind').focus();
-
 };
 
 IndexController.prototype.destroy = function(){

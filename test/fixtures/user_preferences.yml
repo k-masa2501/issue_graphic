@@ -1,0 +1,182 @@
+
+user_preferences0:
+  id: 1
+  user_id: 1
+  others: |
+    ---
+    :no_self_notified: true
+    :gantt_zoom: 4
+    :gantt_months: 3
+  hide_mail: 1
+  time_zone: 
+
+
+user_preferences1:
+  id: 2
+  user_id: 5
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+    :gantt_zoom: 2
+    :gantt_months: 6
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences2:
+  id: 3
+  user_id: 6
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences3:
+  id: 4
+  user_id: 7
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences4:
+  id: 5
+  user_id: 8
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences5:
+  id: 6
+  user_id: 9
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences6:
+  id: 7
+  user_id: 10
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences7:
+  id: 8
+  user_id: 11
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences8:
+  id: 9
+  user_id: 12
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences9:
+  id: 10
+  user_id: 13
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences10:
+  id: 11
+  user_id: 14
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences11:
+  id: 12
+  user_id: 15
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences12:
+  id: 13
+  user_id: 16
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences13:
+  id: 14
+  user_id: 17
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+
+
+user_preferences14:
+  id: 15
+  user_id: 18
+  others: |
+    ---
+    :no_self_notified: '1'
+    :comments_sorting: asc
+    :warn_on_leaving_unsaved: '1'
+  hide_mail: 1
+  time_zone: ''
+

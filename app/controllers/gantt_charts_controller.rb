@@ -73,8 +73,8 @@ class GanttChartsController < ApplicationController
       chart_data[i][1][:pos] =  pos
       chart_data[i][0][:color] =  "#DFDFDF"
       chart_data[i][1][:color] =  gantt_color(v, is_closed)
-      chart_data[i][0][:date] =  v.start_date.to_s + " 00:00"
-      chart_data[i][1][:date] =  v.start_date.to_s + " 00:00"
+      chart_data[i][0][:date] =  v.start_date
+      chart_data[i][1][:date] =  v.start_date
       pos +=30
     end
 
@@ -101,15 +101,15 @@ class GanttChartsController < ApplicationController
       chart_data[aP][1][:pos] =  pos
       chart_data[aP][0][:color] =  "#DFDFDF"
       chart_data[aP][1][:color] =  gantt_color(v, is_closed)
-      chart_data[aP][0][:date] =  v.start_date.to_s + " 00:00"
-      chart_data[aP][1][:date] =  v.start_date.to_s + " 00:00"
+      chart_data[aP][0][:date] =  v.start_date
+      chart_data[aP][1][:date] =  v.start_date
       pos +=30
 
       min = v.start_date if min > v.start_date
       max = v.due_date if max < v.due_date
 
     end
-    return {:data => chart_data, :start_date => min.to_s+" 00:00", :due_date => (max+1).to_s+" 00:00"}
+    return {:data => chart_data, :start_date => min, :due_date => (max+1)}
   end
 
   def set_filter

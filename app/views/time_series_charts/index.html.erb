@@ -16,13 +16,13 @@
     :project_identifier => @project.identifier
 } ) %>
 
-<%= cell("cells/filter").(:sum, {project_id: @project.id,
-                                 params: params, filter: @filter,
-                                 member: @member}) %>
-
 <%= cell("cells/filter").(:filter, project_id: @project.id) %>
 
 <%= cell("cells/filter").(:timeSeries_filter) %>
+
+<%= cell("cells/filter").(:sum, {project_id: @project.id,
+                                 params: params, filter: @filter,
+                                 member: @member}) %>
 
 <svg id="MyGraph" class="svg_main"></svg>
 
@@ -32,4 +32,12 @@
     chart: new TimeSeriesChart(<%== JSON.generate(@chart_data) %>),
     url: '<%= get_time_series_data_project_time_series_charts_path %>'
   });
+
+  window.onload = function () {
+    setTimeout((function(){
+      // コンテンツの表示
+      $('div#content').css('visibility', 'visible');
+    }) , 50);
+  };
+
 </script>

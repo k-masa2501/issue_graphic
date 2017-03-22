@@ -1,0 +1,58 @@
+
+queries0:
+  id: 1
+  project_id: 1
+  name: vvvvv
+  filters: |
+    ---
+    status_id:
+      :operator: "*"
+      :values:
+      - ''
+  user_id: 1
+  column_names: |
+    ---
+    - :tracker
+    - :status
+    - :priority
+    - :subject
+    - :assigned_to
+    - :updated_on
+    - :start_date
+    - :due_date
+    - :done_ratio
+  sort_criteria: 
+  group_by: ''
+  type: IssueQuery
+  visibility: 0
+  options: "---\n:totalable_names: []\n:draw_relations: \n:draw_progress_line: \n"
+
+
+queries1:
+  id: 2
+  project_id: 1
+  name: フィルター1
+  filters: |
+    ---
+    status_id:
+      :operator: o
+      :values:
+      - ''
+  user_id: 5
+  column_names: |
+    ---
+    - :tracker
+    - :status
+    - :priority
+    - :subject
+    - :assigned_to
+    - :updated_on
+    - :start_date
+    - :due_date
+    - :done_ratio
+  sort_criteria: 
+  group_by: ''
+  type: IssueQuery
+  visibility: 0
+  options: "---\n:totalable_names: []\n:draw_relations: \n:draw_progress_line: \n"
+

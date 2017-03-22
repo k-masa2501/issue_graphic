@@ -44,7 +44,7 @@ class RedmineChartIssue < Issue
   def self.get_total_each_assigned(where)
 
     record = Issue.select(
-        "concat(users.firstname,' ',users.lastname) as name",
+        "concat(users.lastname,' ',users.firstname) as name",
         "sum(estimated_hours) as estimated_total",
         "(sum(estimated_hours) - (sum(estimated_hours)*(avg(done_ratio)*0.01))) remaining_total")
                  .joins('left join users on users.id = issues.assigned_to_id')
@@ -81,7 +81,7 @@ class RedmineChartIssue < Issue
     unClosed_id = IssueStatus.where(is_closed: 0).pluck("id").join(",")
 
     record = Issue.select(
-        "concat(users.firstname,' ',users.lastname) name",
+        "concat(users.lastname,' ',users.firstname) name",
         "count(status_id) count_total",
         "sum(case when status_id in (#{unClosed_id}) then 1 else 0 end) count")
                  .joins('left join users on users.id = issues.assigned_to_id')

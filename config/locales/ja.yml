@@ -32,6 +32,10 @@ ja:
       per_period_work: "期間ごとの作業量"
       legend_total: '合計'
       uncomplete: '未完了：'
+      selected: '個選択'
+      unselected: '-- 未選択 --'
+      allselected: 'すべて選択'
+      unAllselected: 'すべて選択解除'
   burn_down_charts:
     sun: '(日)'
     mon: '(月)'
@@ -55,6 +59,10 @@ ja:
         gap: "差異"
         not_assigned: "担当なし"
     version_not exist: "対象バージョンが存在しないため、ページを表示できません。\n対象バージョンを定義し、各チケットに対象バージョンを設定してください。"
+    js:
+      work: "作業量"
+      plan: "予定"
+      act: "実績"
   time_series_charts:
     unselected: '-- 未選択 --'
     incomplete: '未完了'
@@ -62,14 +70,22 @@ ja:
       process:
     index:
       view_h2: "時系列チャート"
+  stacked_bar_charts:
+    occurrence: ":発生件数"
+    closed: ":クローズ件数"
+    index:
+      view_h2: "積み上げチャート"
   view_hooks:
     view_issues_form_details_bottom:
       remaining: '残工数'
   layouts:
     cahnge_view:
-      burn_down_charts: "バーンダウンチャート"
-      time_series_charts: "時系列チャート"
-      gantt_charts: "ガントチャート"
+      issue: "チケット"
+      burn_down_chart: "バーンダウンチャート"
+      time_series_chart: "時系列チャート"
+      gantt_chart: "ガントチャート"
+      stacked_bar_chart: "積み上げチャート"
+      view: "表示:"
   gantt_charts:
     index:
       view_h2: "ガントチャート"

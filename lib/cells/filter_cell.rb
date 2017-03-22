@@ -18,7 +18,7 @@ class Cells::FilterCell <  Cell::ViewModel
     # プロジェクトに所属するメンバー
     @assigned_to = Member.joins(:user)
                        .where(project_id: args[:project_id])
-                       .pluck("concat(users.firstname,' ',users.lastname) as name, users.id")
+                       .pluck("concat(users.lastname,' ',users.firstname) as name, users.id")
 
     # トラッカー
     @tracker = Tracker
@@ -43,9 +43,16 @@ class Cells::FilterCell <  Cell::ViewModel
 
   def sum(args)
 
+    @act_total, @count_total = collect_total(args[:filter])
+
+    render
+  end
+
+  def sum_assigned(args)
+
     args[:member] ||= MyUtility.get_project_menber(args[:project_id], args[:params])
 
-    @act_total, @count_total = collect_assigned_total(args[:member], args[:filter])
+    @act_total, @count_total = collect_assigned(args[:member], args[:filter])
 
     render
   end
@@ -99,36 +106,30 @@ class Cells::FilterCell <  Cell::ViewModel
     options_for_select(array, default)
   end
 
-  def collect_assigned_total(memer, filter)
+  def collect_total(filter)
 
-    act_total = get_act_total(memer, filter)
+    act_total = get_act_total(filter)
 
-    count_total = get_count_total(memer, filter)
+    count_total = get_count_total(filter)
 
     return act_total, count_total
 
   end
 
-  def get_act_total(memer, filter)
+  def collect_assigned(member, filter)
+
+    act_total = get_act_assigned(member, filter)
+
+    count_total = get_count_assigned(member, filter)
+
+    return act_total, count_total
+
+  end
+
+  def get_act_total(filter)
 
     estimated = Array.new
     remaining = Array.new
-
-    act_total = RedmineChartIssue.get_total_each_assigned(filter)
-
-    memer.each do |v|
-      item = act_total.find { |item| item.name == v[0] }
-      if nil != item
-        estimated_tmp = item.estimated_total.round(1)
-        remaining_tmp = item.remaining_total.round(1)
-        estimated.push([item.name, estimated_tmp])
-        remaining.push([item.name, remaining_tmp])
-      else
-        estimated.push([v[0], 0])
-        remaining.push([v[0], 0])
-      end
-    end
-
     estimated_total =0
     remaining_total =0
 
@@ -144,32 +145,69 @@ class Cells::FilterCell <  Cell::ViewModel
 
   end
 
-  def get_count_total(memer, filter)
+  def get_count_total(filter)
 
     estimated = Array.new
     remaining = Array.new
     estimated_total = 0
     remaining_total = 0
 
-    count_total = RedmineChartIssue.get_count_each_assigned(filter)
+    RedmineChartIssue.get_count_each_assigned(filter).each do |v|
+      estimated_total += v.count_total.round(0)
+      remaining_total += v.count.round(0)
+    end
 
-    memer.each do |v|
-      item = count_total.find { |item| item.name == v[0] }
+    estimated.unshift([I18n.t('cells.filter.total'), estimated_total.round(0)])
+    remaining.unshift([I18n.t('cells.filter.total'), remaining_total.round(0)])
+
+    return {:estimated => estimated, :remaining => remaining}
+
+  end
+
+
+  def get_act_assigned(member, filter)
+
+    estimated = Array.new
+    remaining = Array.new
+
+    act_total = RedmineChartIssue.get_total_each_assigned(filter)
+
+    member.each do |v|
+      item = act_total.find { |item| item.name == v[0] }
       if nil != item
-        count_total_tmp = item.count_total.round(0)
-        count_tmp = item.count.round(0)
-        estimated.push([item.name, count_total_tmp])
-        remaining.push([item.name, count_tmp])
-        estimated_total += count_total_tmp
-        remaining_total += count_tmp
+        estimated_tmp = item.estimated_total.round(1)
+        remaining_tmp = item.remaining_total.round(1)
+        estimated.push([item.name, estimated_tmp])
+        remaining.push([item.name, remaining_tmp])
       else
         estimated.push([v[0], 0])
         remaining.push([v[0], 0])
       end
     end
 
-    estimated.unshift([I18n.t('cells.filter.total'), estimated_total.round(0)])
-    remaining.unshift([I18n.t('cells.filter.total'), remaining_total.round(0)])
+    return {:estimated => estimated, :remaining => remaining }
+
+  end
+
+  def get_count_assigned(member, filter)
+
+    estimated = Array.new
+    remaining = Array.new
+
+    count_total = RedmineChartIssue.get_count_each_assigned(filter)
+
+    member.each do |v|
+      item = count_total.find { |item| item.name == v[0] }
+      if nil != item
+        count_total_tmp = item.count_total.round(0)
+        count_tmp = item.count.round(0)
+        estimated.push([item.name, count_total_tmp])
+        remaining.push([item.name, count_tmp])
+      else
+        estimated.push([v[0], 0])
+        remaining.push([v[0], 0])
+      end
+    end
 
     return {:estimated => estimated, :remaining => remaining}
 

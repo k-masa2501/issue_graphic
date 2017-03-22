@@ -27,6 +27,8 @@ class BurnDownChartsController < ApplicationController
 
     @send_data[:day_names] = DAY_NAMES
 
+    @js_labels = I18n.t('burn_down_charts.js')
+
   end
 
   def get_process
@@ -54,6 +56,9 @@ class BurnDownChartsController < ApplicationController
 
     data[:render_table] = render_to_string(partial: "burn_down_charts/index_t/table",:locals => {:data => data} )
     data[:render_summary] = cell("cells/filter").(:sum, {project_id: @project.id,
+                                                         params: params, filter: @filter,
+                                                         member: data[:member]})
+    data[:render_assigned_summary] = cell("cells/filter").(:sum_assigned, {project_id: @project.id,
                                                          params: params, filter: @filter,
                                                          member: data[:member]})
 
@@ -90,7 +95,7 @@ private
 
       data.each_with_index do |v, i|
         estimated.push({date: v.today, value: v.estimated_sum})
-        atual.push({date: v.today, value: v.estimated_sum - v.actual_sum})
+        atual.push({date: v.today, value: v.estimated_sum - v.actual_sum}) if (i <= 20)
         plan.push({date: v.today, value:v.estimated_sum - v.plan_value_sum})
         daily_gap.push(v.actual_sum - v.plan_value_sum)
       end

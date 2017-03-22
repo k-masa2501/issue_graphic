@@ -39,7 +39,7 @@ StackedBarChart.prototype.draw = function(){
   var y = d3.scaleLinear()
       .rangeRound([height, 0]);
 
-  var z = d3.scaleOrdinal(d3.schemeCategory10);
+  var z = d3.scaleOrdinal(d3.schemeCategory20);
 
   var keys = this.keys;
 
@@ -140,18 +140,21 @@ StackedBarOcChart.prototype.set = function(arg){
   this.data = new Array();
   this.k_oc = new Array();
   this.oc_desc = new Array();
+  this.diff = null;
   this.keys = null;
 
-  for(var key in arg['d']){
-    this.data.push(arg['d'][key].data);
+  for(var key in arg.d){
+    this.data.push(arg.d[key].data);
   }
 
-  for(var key in arg['k1']){
+  for(var key in arg.k1){
     this.k_oc.push(key);
-    this.oc_desc.push(arg['k1'][key]);
+    this.oc_desc.push(arg.k1[key]);
   }
 
-   this.keys = arg['k2'];
+  this.keys = arg.k2;
+  this.diff = arg.diff;
+  console.log(this.diff);
 
 };
 
@@ -190,7 +193,7 @@ StackedBarOcChart.prototype.draw = function(){
   var y = d3.scaleLinear()
       .rangeRound([height, 0]);
 
-  var z = d3.scaleOrdinal(d3.schemeCategory10);
+  var z = d3.scaleOrdinal(d3.schemeCategory20);
 
   var keys = this.keys;
 
@@ -204,8 +207,10 @@ StackedBarOcChart.prototype.draw = function(){
     return tmp;
   }(this.k_oc, this.data[0].length)));
 
+  var max = d3.max(this.diff, function(d){return d.value});
+
   y.domain([0, d3.max(this.data, function(d){
-    for(var i1=0,len1=d.length,max=0; i1 < len1; i1++){
+    for(var i1=0,len1=d.length; i1 < len1; i1++){
       for(var i=0,len=keys.length,cnt=0;i<len;i++)
       {if (null != d[i1][keys[i]]) cnt += d[i1][keys[i]];}
       if (max < cnt) max = cnt;
@@ -214,7 +219,7 @@ StackedBarOcChart.prototype.draw = function(){
   })]).nice();
 
   z.domain(keys);
-
+  
   var fill = null;
 
   for(var index=0,len=this.data.length; index < len; index++){
@@ -252,8 +257,6 @@ StackedBarOcChart.prototype.draw = function(){
           var num = d[1]-d[0];
           return  num > 0 ? num:'';});
   }
-
-  console.log(d3.stack().keys(keys)(this.data[0]));
 
   for(var index=0,len=this.data.length; index < len; index++){
     g.append("g")
@@ -294,6 +297,50 @@ StackedBarOcChart.prototype.draw = function(){
       .attr("font-weight", "bold")
       .attr("text-anchor", "start");
 
+  // 折れ線
+  var line1 = d3.line()
+      .x(function(d,i){return x(d.date)+(x.bandwidth()/2);})
+      .y(function(d,i){return y(d.value);});
+
+  g.append("path")
+      .attr("transform", "translate(10,0)")
+      .datum(this.diff)
+      .attr("class", "line1")
+      .attr("d", line1);
+
+  g.selectAll("circle1")
+      .data(this.diff)
+      .enter()
+      .append("circle")
+      .attr("class", "circle1")
+      .attr("transform", "translate(10,0)")
+      .attr("r",3)
+      .attr("cx", function(d){ return x(d.date)+(x.bandwidth()/2); })
+      .attr("cy", function(d){ return y(d.value); });
+
+  var path_legend = g.append("g");
+
+  path_legend.append("circle")
+      .attr("class", "circle1")
+      .attr("transform", "translate("+ (width+margin.right - 15) + ", 45)")
+      .attr("r",4);
+
+  path_legend.append("text")
+      .attr("transform", "translate("+ (width+margin.right - 100) + ", 45)")
+      .attr("dy", "0.32em")
+      .text('チケット残件数');
+
+  g.append("g")
+      .attr("font-family", "sans-serif")
+      .attr("font-size", 10)
+      .attr("text-anchor", "end")
+      .selectAll("text")
+      .data(this.oc_desc)
+      .enter().append("text")
+      .attr("transform", function(d, i)
+      { return "translate("+ (width+margin.right- 10) + "," + (10 + (i * 20)) + ")"; })
+      .text(function(d) { return d; });
+
   var legend = g.append("g")
       .attr("font-family", "sans-serif")
       .attr("font-size", 10)
@@ -301,7 +348,7 @@ StackedBarOcChart.prototype.draw = function(){
       .selectAll("g")
       .data(keys.slice().reverse())
       .enter().append("g")
-      .attr("transform", function(d, i) { return "translate(0," + i * 20 + ")"; });
+      .attr("transform", function(d, i) { return "translate(0," + (60 + (i * 20)) + ")"; });
 
   legend.append("rect")
       .attr("x", width+margin.right- 25)
@@ -313,17 +360,6 @@ StackedBarOcChart.prototype.draw = function(){
       .attr("x", width+margin.right- 30)
       .attr("y", 9.5)
       .attr("dy", "0.32em")
-      .text(function(d) { return d; });
-
-  g.append("g")
-      .attr("font-family", "sans-serif")
-      .attr("font-size", 10)
-      .attr("text-anchor", "end")
-      .selectAll("text")
-      .data(this.oc_desc)
-      .enter().append("text")
-      .attr("transform", function(d, i)
-      { return "translate("+ (width+margin.right- 10) + "," + (80 + (i * 20)) + ")"; })
       .text(function(d) { return d; });
   
 };

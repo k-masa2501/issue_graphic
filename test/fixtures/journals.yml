@@ -1,0 +1,3860 @@
+
+journals0:
+  id: 1
+  journalized_id: 1
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-13 15:19:14.000000000 +09:00
+  private_notes: 0
+
+
+journals1:
+  id: 2
+  journalized_id: 1
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-13 15:21:34.000000000 +09:00
+  private_notes: 0
+
+
+journals2:
+  id: 3
+  journalized_id: 1
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-20 09:12:04.000000000 +09:00
+  private_notes: 0
+
+
+journals3:
+  id: 4
+  journalized_id: 2
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-20 15:40:43.000000000 +09:00
+  private_notes: 0
+
+
+journals4:
+  id: 5
+  journalized_id: 2
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-20 15:41:08.000000000 +09:00
+  private_notes: 0
+
+
+journals5:
+  id: 6
+  journalized_id: 2
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-20 15:41:31.000000000 +09:00
+  private_notes: 0
+
+
+journals6:
+  id: 7
+  journalized_id: 2
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-08-20 15:41:39.000000000 +09:00
+  private_notes: 0
+
+
+journals7:
+  id: 11
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 12:06:10.000000000 +09:00
+  private_notes: 0
+
+
+journals8:
+  id: 12
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 12:10:12.000000000 +09:00
+  private_notes: 0
+
+
+journals9:
+  id: 13
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 13:45:03.000000000 +09:00
+  private_notes: 0
+
+
+journals10:
+  id: 14
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 13:56:01.000000000 +09:00
+  private_notes: 0
+
+
+journals11:
+  id: 15
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 13:59:04.000000000 +09:00
+  private_notes: 0
+
+
+journals12:
+  id: 16
+  journalized_id: 104240
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 13:59:17.000000000 +09:00
+  private_notes: 0
+
+
+journals13:
+  id: 17
+  journalized_id: 104239
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 13:59:42.000000000 +09:00
+  private_notes: 0
+
+
+journals14:
+  id: 18
+  journalized_id: 104239
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:00:17.000000000 +09:00
+  private_notes: 0
+
+
+journals15:
+  id: 19
+  journalized_id: 104237
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:00:33.000000000 +09:00
+  private_notes: 0
+
+
+journals16:
+  id: 20
+  journalized_id: 104237
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:00:49.000000000 +09:00
+  private_notes: 0
+
+
+journals17:
+  id: 21
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:01:52.000000000 +09:00
+  private_notes: 0
+
+
+journals18:
+  id: 22
+  journalized_id: 104241
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:04:27.000000000 +09:00
+  private_notes: 0
+
+
+journals19:
+  id: 23
+  journalized_id: 104231
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:11:19.000000000 +09:00
+  private_notes: 0
+
+
+journals20:
+  id: 36
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:52:41.000000000 +09:00
+  private_notes: 0
+
+
+journals21:
+  id: 39
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:54:10.000000000 +09:00
+  private_notes: 0
+
+
+journals22:
+  id: 40
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:54:39.000000000 +09:00
+  private_notes: 0
+
+
+journals23:
+  id: 41
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:55:04.000000000 +09:00
+  private_notes: 0
+
+
+journals24:
+  id: 42
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:55:31.000000000 +09:00
+  private_notes: 0
+
+
+journals25:
+  id: 43
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:56:11.000000000 +09:00
+  private_notes: 0
+
+
+journals26:
+  id: 44
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:56:45.000000000 +09:00
+  private_notes: 0
+
+
+journals27:
+  id: 45
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:57:14.000000000 +09:00
+  private_notes: 0
+
+
+journals28:
+  id: 46
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:57:27.000000000 +09:00
+  private_notes: 0
+
+
+journals29:
+  id: 47
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:57:55.000000000 +09:00
+  private_notes: 0
+
+
+journals30:
+  id: 48
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:58:17.000000000 +09:00
+  private_notes: 0
+
+
+journals31:
+  id: 49
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:58:29.000000000 +09:00
+  private_notes: 0
+
+
+journals32:
+  id: 50
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 14:59:18.000000000 +09:00
+  private_notes: 0
+
+
+journals33:
+  id: 54
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 15:00:00.000000000 +09:00
+  private_notes: 0
+
+
+journals34:
+  id: 55
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 15:00:11.000000000 +09:00
+  private_notes: 0
+
+
+journals35:
+  id: 57
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 15:01:08.000000000 +09:00
+  private_notes: 0
+
+
+journals36:
+  id: 59
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 15:02:02.000000000 +09:00
+  private_notes: 0
+
+
+journals37:
+  id: 96
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-17 15:49:24.000000000 +09:00
+  private_notes: 0
+
+
+journals38:
+  id: 120
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-18 16:44:54.000000000 +09:00
+  private_notes: 0
+
+
+journals39:
+  id: 142
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-18 22:09:47.000000000 +09:00
+  private_notes: 0
+
+
+journals40:
+  id: 143
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 00:09:53.000000000 +09:00
+  private_notes: 0
+
+
+journals41:
+  id: 144
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 00:10:23.000000000 +09:00
+  private_notes: 0
+
+
+journals42:
+  id: 145
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 00:24:45.000000000 +09:00
+  private_notes: 0
+
+
+journals43:
+  id: 146
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 00:25:34.000000000 +09:00
+  private_notes: 0
+
+
+journals44:
+  id: 156
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 05:50:18.000000000 +09:00
+  private_notes: 0
+
+
+journals45:
+  id: 161
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:05:10.000000000 +09:00
+  private_notes: 0
+
+
+journals46:
+  id: 162
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:05:26.000000000 +09:00
+  private_notes: 0
+
+
+journals47:
+  id: 163
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:05:45.000000000 +09:00
+  private_notes: 0
+
+
+journals48:
+  id: 164
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:06:06.000000000 +09:00
+  private_notes: 0
+
+
+journals49:
+  id: 165
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:06:50.000000000 +09:00
+  private_notes: 0
+
+
+journals50:
+  id: 166
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:07:25.000000000 +09:00
+  private_notes: 0
+
+
+journals51:
+  id: 167
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:07:42.000000000 +09:00
+  private_notes: 0
+
+
+journals52:
+  id: 168
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:08:02.000000000 +09:00
+  private_notes: 0
+
+
+journals53:
+  id: 173
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:11:33.000000000 +09:00
+  private_notes: 0
+
+
+journals54:
+  id: 174
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:11:46.000000000 +09:00
+  private_notes: 0
+
+
+journals55:
+  id: 175
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:11:55.000000000 +09:00
+  private_notes: 0
+
+
+journals56:
+  id: 176
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:12:04.000000000 +09:00
+  private_notes: 0
+
+
+journals57:
+  id: 177
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:12:13.000000000 +09:00
+  private_notes: 0
+
+
+journals58:
+  id: 178
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:12:20.000000000 +09:00
+  private_notes: 0
+
+
+journals59:
+  id: 179
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:13:49.000000000 +09:00
+  private_notes: 0
+
+
+journals60:
+  id: 184
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:27:50.000000000 +09:00
+  private_notes: 0
+
+
+journals61:
+  id: 185
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:27:59.000000000 +09:00
+  private_notes: 0
+
+
+journals62:
+  id: 186
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:28:13.000000000 +09:00
+  private_notes: 0
+
+
+journals63:
+  id: 187
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:28:21.000000000 +09:00
+  private_notes: 0
+
+
+journals64:
+  id: 188
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:28:31.000000000 +09:00
+  private_notes: 0
+
+
+journals65:
+  id: 195
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:34:56.000000000 +09:00
+  private_notes: 0
+
+
+journals66:
+  id: 201
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-19 06:45:28.000000000 +09:00
+  private_notes: 0
+
+
+journals67:
+  id: 202
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-20 23:26:39.000000000 +09:00
+  private_notes: 0
+
+
+journals68:
+  id: 203
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-20 23:27:09.000000000 +09:00
+  private_notes: 0
+
+
+journals69:
+  id: 204
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-20 23:27:52.000000000 +09:00
+  private_notes: 0
+
+
+journals70:
+  id: 205
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-20 23:28:03.000000000 +09:00
+  private_notes: 0
+
+
+journals71:
+  id: 215
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-23 00:11:26.000000000 +09:00
+  private_notes: 0
+
+
+journals72:
+  id: 216
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-23 00:11:38.000000000 +09:00
+  private_notes: 0
+
+
+journals73:
+  id: 217
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-23 00:11:48.000000000 +09:00
+  private_notes: 0
+
+
+journals74:
+  id: 223
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-24 07:32:13.000000000 +09:00
+  private_notes: 0
+
+
+journals75:
+  id: 224
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-24 15:58:58.000000000 +09:00
+  private_notes: 0
+
+
+journals76:
+  id: 237
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-24 19:03:40.000000000 +09:00
+  private_notes: 0
+
+
+journals77:
+  id: 239
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-24 19:03:55.000000000 +09:00
+  private_notes: 0
+
+
+journals78:
+  id: 241
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-24 20:20:32.000000000 +09:00
+  private_notes: 0
+
+
+journals79:
+  id: 269
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 09:41:31.000000000 +09:00
+  private_notes: 0
+
+
+journals80:
+  id: 270
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 09:41:31.000000000 +09:00
+  private_notes: 0
+
+
+journals81:
+  id: 271
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 09:41:32.000000000 +09:00
+  private_notes: 0
+
+
+journals82:
+  id: 272
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 09:41:32.000000000 +09:00
+  private_notes: 0
+
+
+journals83:
+  id: 358
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 12:18:46.000000000 +09:00
+  private_notes: 0
+
+
+journals84:
+  id: 359
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 12:19:00.000000000 +09:00
+  private_notes: 0
+
+
+journals85:
+  id: 360
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 12:19:20.000000000 +09:00
+  private_notes: 0
+
+
+journals86:
+  id: 361
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 12:21:00.000000000 +09:00
+  private_notes: 0
+
+
+journals87:
+  id: 372
+  journalized_id: 104253
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 13:43:23.000000000 +09:00
+  private_notes: 0
+
+
+journals88:
+  id: 374
+  journalized_id: 104254
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 13:43:23.000000000 +09:00
+  private_notes: 0
+
+
+journals89:
+  id: 388
+  journalized_id: 104254
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 15:07:27.000000000 +09:00
+  private_notes: 0
+
+
+journals90:
+  id: 412
+  journalized_id: 104254
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 15:47:26.000000000 +09:00
+  private_notes: 0
+
+
+journals91:
+  id: 421
+  journalized_id: 104255
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 16:51:48.000000000 +09:00
+  private_notes: 0
+
+
+journals92:
+  id: 422
+  journalized_id: 104253
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-25 16:52:04.000000000 +09:00
+  private_notes: 0
+
+
+journals93:
+  id: 425
+  journalized_id: 104255
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-26 01:17:46.000000000 +09:00
+  private_notes: 0
+
+
+journals94:
+  id: 426
+  journalized_id: 104255
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-09-26 01:18:15.000000000 +09:00
+  private_notes: 0
+
+
+journals95:
+  id: 428
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 19:07:07.000000000 +09:00
+  private_notes: 0
+
+
+journals96:
+  id: 429
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:40.000000000 +09:00
+  private_notes: 0
+
+
+journals97:
+  id: 430
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:40.000000000 +09:00
+  private_notes: 0
+
+
+journals98:
+  id: 431
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:40.000000000 +09:00
+  private_notes: 0
+
+
+journals99:
+  id: 432
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:41.000000000 +09:00
+  private_notes: 0
+
+
+journals100:
+  id: 433
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:41.000000000 +09:00
+  private_notes: 0
+
+
+journals101:
+  id: 434
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:41.000000000 +09:00
+  private_notes: 0
+
+
+journals102:
+  id: 435
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:42:41.000000000 +09:00
+  private_notes: 0
+
+
+journals103:
+  id: 436
+  journalized_id: 104253
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:43:38.000000000 +09:00
+  private_notes: 0
+
+
+journals104:
+  id: 437
+  journalized_id: 104254
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:43:38.000000000 +09:00
+  private_notes: 0
+
+
+journals105:
+  id: 438
+  journalized_id: 104255
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 21:43:38.000000000 +09:00
+  private_notes: 0
+
+
+journals106:
+  id: 439
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 22:51:34.000000000 +09:00
+  private_notes: 0
+
+
+journals107:
+  id: 440
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:06:22.000000000 +09:00
+  private_notes: 0
+
+
+journals108:
+  id: 441
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:06:34.000000000 +09:00
+  private_notes: 0
+
+
+journals109:
+  id: 442
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:06:48.000000000 +09:00
+  private_notes: 0
+
+
+journals110:
+  id: 443
+  journalized_id: 104256
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:06:48.000000000 +09:00
+  private_notes: 0
+
+
+journals111:
+  id: 444
+  journalized_id: 104256
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:09:53.000000000 +09:00
+  private_notes: 0
+
+
+journals112:
+  id: 445
+  journalized_id: 104217
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:11:14.000000000 +09:00
+  private_notes: 0
+
+
+journals113:
+  id: 446
+  journalized_id: 104215
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-02 23:11:33.000000000 +09:00
+  private_notes: 0
+
+
+journals114:
+  id: 447
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-06 02:55:13.000000000 +09:00
+  private_notes: 0
+
+
+journals115:
+  id: 448
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:08.000000000 +09:00
+  private_notes: 0
+
+
+journals116:
+  id: 449
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:28.000000000 +09:00
+  private_notes: 0
+
+
+journals117:
+  id: 450
+  journalized_id: 104207
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:29.000000000 +09:00
+  private_notes: 0
+
+
+journals118:
+  id: 451
+  journalized_id: 104209
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:29.000000000 +09:00
+  private_notes: 0
+
+
+journals119:
+  id: 452
+  journalized_id: 104210
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:29.000000000 +09:00
+  private_notes: 0
+
+
+journals120:
+  id: 453
+  journalized_id: 104211
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:29.000000000 +09:00
+  private_notes: 0
+
+
+journals121:
+  id: 454
+  journalized_id: 104213
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:16:30.000000000 +09:00
+  private_notes: 0
+
+
+journals122:
+  id: 455
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 12:45:31.000000000 +09:00
+  private_notes: 0
+
+
+journals123:
+  id: 456
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 13:32:50.000000000 +09:00
+  private_notes: 0
+
+
+journals124:
+  id: 457
+  journalized_id: 104259
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 15:32:38.000000000 +09:00
+  private_notes: 0
+
+
+journals125:
+  id: 458
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 15:33:04.000000000 +09:00
+  private_notes: 0
+
+
+journals126:
+  id: 459
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 15:36:27.000000000 +09:00
+  private_notes: 0
+
+
+journals127:
+  id: 460
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 15:36:53.000000000 +09:00
+  private_notes: 0
+
+
+journals128:
+  id: 461
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 16:42:33.000000000 +09:00
+  private_notes: 0
+
+
+journals129:
+  id: 462
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 18:00:17.000000000 +09:00
+  private_notes: 0
+
+
+journals130:
+  id: 463
+  journalized_id: 104205
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 18:00:34.000000000 +09:00
+  private_notes: 0
+
+
+journals131:
+  id: 464
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 18:00:46.000000000 +09:00
+  private_notes: 0
+
+
+journals132:
+  id: 465
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 18:58:55.000000000 +09:00
+  private_notes: 0
+
+
+journals133:
+  id: 466
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-09 18:59:06.000000000 +09:00
+  private_notes: 0
+
+
+journals134:
+  id: 467
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-10 20:33:18.000000000 +09:00
+  private_notes: 0
+
+
+journals135:
+  id: 468
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-10 20:33:32.000000000 +09:00
+  private_notes: 0
+
+
+journals136:
+  id: 469
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-15 10:38:58.000000000 +09:00
+  private_notes: 0
+
+
+journals137:
+  id: 470
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-15 10:40:08.000000000 +09:00
+  private_notes: 0
+
+
+journals138:
+  id: 471
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-15 10:40:22.000000000 +09:00
+  private_notes: 0
+
+
+journals139:
+  id: 472
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-15 11:28:18.000000000 +09:00
+  private_notes: 0
+
+
+journals140:
+  id: 473
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:12:43.000000000 +09:00
+  private_notes: 0
+
+
+journals141:
+  id: 474
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:12:59.000000000 +09:00
+  private_notes: 0
+
+
+journals142:
+  id: 475
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:13:15.000000000 +09:00
+  private_notes: 0
+
+
+journals143:
+  id: 476
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:14:14.000000000 +09:00
+  private_notes: 0
+
+
+journals144:
+  id: 477
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:14:35.000000000 +09:00
+  private_notes: 0
+
+
+journals145:
+  id: 478
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-10-23 17:14:51.000000000 +09:00
+  private_notes: 0
+
+
+journals146:
+  id: 479
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:36:40.000000000 +09:00
+  private_notes: 0
+
+
+journals147:
+  id: 480
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:36:40.000000000 +09:00
+  private_notes: 0
+
+
+journals148:
+  id: 481
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:36:40.000000000 +09:00
+  private_notes: 0
+
+
+journals149:
+  id: 482
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:37:07.000000000 +09:00
+  private_notes: 0
+
+
+journals150:
+  id: 483
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:37:29.000000000 +09:00
+  private_notes: 0
+
+
+journals151:
+  id: 484
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:37:44.000000000 +09:00
+  private_notes: 0
+
+
+journals152:
+  id: 485
+  journalized_id: 104260
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:38:03.000000000 +09:00
+  private_notes: 0
+
+
+journals153:
+  id: 486
+  journalized_id: 104259
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:38:36.000000000 +09:00
+  private_notes: 0
+
+
+journals154:
+  id: 487
+  journalized_id: 104258
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:38:53.000000000 +09:00
+  private_notes: 0
+
+
+journals155:
+  id: 488
+  journalized_id: 104257
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:39:13.000000000 +09:00
+  private_notes: 0
+
+
+journals156:
+  id: 489
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:40:56.000000000 +09:00
+  private_notes: 0
+
+
+journals157:
+  id: 490
+  journalized_id: 104269
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:41:09.000000000 +09:00
+  private_notes: 0
+
+
+journals158:
+  id: 491
+  journalized_id: 104268
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:41:26.000000000 +09:00
+  private_notes: 0
+
+
+journals159:
+  id: 492
+  journalized_id: 104267
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:41:40.000000000 +09:00
+  private_notes: 0
+
+
+journals160:
+  id: 493
+  journalized_id: 104266
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:41:59.000000000 +09:00
+  private_notes: 0
+
+
+journals161:
+  id: 494
+  journalized_id: 104265
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-27 11:42:18.000000000 +09:00
+  private_notes: 0
+
+
+journals162:
+  id: 495
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-28 22:49:03.000000000 +09:00
+  private_notes: 0
+
+
+journals163:
+  id: 496
+  journalized_id: 104269
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-28 22:49:34.000000000 +09:00
+  private_notes: 0
+
+
+journals164:
+  id: 497
+  journalized_id: 104268
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-11-28 22:49:56.000000000 +09:00
+  private_notes: 0
+
+
+journals165:
+  id: 498
+  journalized_id: 104268
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-03 10:56:56.000000000 +09:00
+  private_notes: 0
+
+
+journals166:
+  id: 499
+  journalized_id: 104264
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-03 10:57:16.000000000 +09:00
+  private_notes: 0
+
+
+journals167:
+  id: 500
+  journalized_id: 104264
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-03 10:58:20.000000000 +09:00
+  private_notes: 0
+
+
+journals168:
+  id: 501
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-04 10:54:16.000000000 +09:00
+  private_notes: 0
+
+
+journals169:
+  id: 502
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-04 10:54:34.000000000 +09:00
+  private_notes: 0
+
+
+journals170:
+  id: 503
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-04 10:54:56.000000000 +09:00
+  private_notes: 0
+
+
+journals171:
+  id: 504
+  journalized_id: 104257
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:46.000000000 +09:00
+  private_notes: 0
+
+
+journals172:
+  id: 505
+  journalized_id: 104258
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:46.000000000 +09:00
+  private_notes: 0
+
+
+journals173:
+  id: 506
+  journalized_id: 104259
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:46.000000000 +09:00
+  private_notes: 0
+
+
+journals174:
+  id: 507
+  journalized_id: 104260
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:47.000000000 +09:00
+  private_notes: 0
+
+
+journals175:
+  id: 508
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:47.000000000 +09:00
+  private_notes: 0
+
+
+journals176:
+  id: 509
+  journalized_id: 104262
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:47.000000000 +09:00
+  private_notes: 0
+
+
+journals177:
+  id: 510
+  journalized_id: 104263
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2016-12-04 12:15:47.000000000 +09:00
+  private_notes: 0
+
+
+journals178:
+  id: 511
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-04 16:37:13.000000000 +09:00
+  private_notes: 0
+
+
+journals179:
+  id: 512
+  journalized_id: 104267
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-11 16:58:49.000000000 +09:00
+  private_notes: 0
+
+
+journals180:
+  id: 513
+  journalized_id: 104264
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-11 16:59:29.000000000 +09:00
+  private_notes: 0
+
+
+journals181:
+  id: 514
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-11 16:59:49.000000000 +09:00
+  private_notes: 0
+
+
+journals182:
+  id: 515
+  journalized_id: 104265
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-11 17:00:59.000000000 +09:00
+  private_notes: 0
+
+
+journals183:
+  id: 516
+  journalized_id: 104266
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-11 17:01:13.000000000 +09:00
+  private_notes: 0
+
+
+journals184:
+  id: 517
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 09:37:50.000000000 +09:00
+  private_notes: 0
+
+
+journals185:
+  id: 518
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 09:39:02.000000000 +09:00
+  private_notes: 0
+
+
+journals186:
+  id: 519
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 09:39:21.000000000 +09:00
+  private_notes: 0
+
+
+journals187:
+  id: 520
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 09:51:03.000000000 +09:00
+  private_notes: 0
+
+
+journals188:
+  id: 521
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 14:28:43.000000000 +09:00
+  private_notes: 0
+
+
+journals189:
+  id: 522
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-14 15:13:01.000000000 +09:00
+  private_notes: 0
+
+
+journals190:
+  id: 523
+  journalized_id: 104269
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-17 23:08:41.000000000 +09:00
+  private_notes: 0
+
+
+journals191:
+  id: 524
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-17 23:09:20.000000000 +09:00
+  private_notes: 0
+
+
+journals192:
+  id: 525
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-17 23:09:37.000000000 +09:00
+  private_notes: 0
+
+
+journals193:
+  id: 526
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-17 23:12:04.000000000 +09:00
+  private_notes: 0
+
+
+journals194:
+  id: 527
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-17 23:15:37.000000000 +09:00
+  private_notes: 0
+
+
+journals195:
+  id: 528
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 09:39:01.000000000 +09:00
+  private_notes: 0
+
+
+journals196:
+  id: 529
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:21:14.000000000 +09:00
+  private_notes: 0
+
+
+journals197:
+  id: 530
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:21:30.000000000 +09:00
+  private_notes: 0
+
+
+journals198:
+  id: 531
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:21:46.000000000 +09:00
+  private_notes: 0
+
+
+journals199:
+  id: 532
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:22:02.000000000 +09:00
+  private_notes: 0
+
+
+journals200:
+  id: 533
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:24:09.000000000 +09:00
+  private_notes: 0
+
+
+journals201:
+  id: 534
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:24:22.000000000 +09:00
+  private_notes: 0
+
+
+journals202:
+  id: 535
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:24:52.000000000 +09:00
+  private_notes: 0
+
+
+journals203:
+  id: 536
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:25:26.000000000 +09:00
+  private_notes: 0
+
+
+journals204:
+  id: 537
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:25:45.000000000 +09:00
+  private_notes: 0
+
+
+journals205:
+  id: 538
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:26:01.000000000 +09:00
+  private_notes: 0
+
+
+journals206:
+  id: 539
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:26:13.000000000 +09:00
+  private_notes: 0
+
+
+journals207:
+  id: 540
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:26:22.000000000 +09:00
+  private_notes: 0
+
+
+journals208:
+  id: 541
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 11:40:28.000000000 +09:00
+  private_notes: 0
+
+
+journals209:
+  id: 542
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:19:32.000000000 +09:00
+  private_notes: 0
+
+
+journals210:
+  id: 543
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:19:45.000000000 +09:00
+  private_notes: 0
+
+
+journals211:
+  id: 544
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:19:56.000000000 +09:00
+  private_notes: 0
+
+
+journals212:
+  id: 545
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:20:25.000000000 +09:00
+  private_notes: 0
+
+
+journals213:
+  id: 546
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:20:38.000000000 +09:00
+  private_notes: 0
+
+
+journals214:
+  id: 547
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:21:10.000000000 +09:00
+  private_notes: 0
+
+
+journals215:
+  id: 548
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:21:33.000000000 +09:00
+  private_notes: 0
+
+
+journals216:
+  id: 549
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:22:20.000000000 +09:00
+  private_notes: 0
+
+
+journals217:
+  id: 550
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:23:17.000000000 +09:00
+  private_notes: 0
+
+
+journals218:
+  id: 551
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:27:09.000000000 +09:00
+  private_notes: 0
+
+
+journals219:
+  id: 552
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:27:38.000000000 +09:00
+  private_notes: 0
+
+
+journals220:
+  id: 553
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:27:55.000000000 +09:00
+  private_notes: 0
+
+
+journals221:
+  id: 554
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:28:17.000000000 +09:00
+  private_notes: 0
+
+
+journals222:
+  id: 555
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:28:42.000000000 +09:00
+  private_notes: 0
+
+
+journals223:
+  id: 556
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:29:23.000000000 +09:00
+  private_notes: 0
+
+
+journals224:
+  id: 557
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:34:35.000000000 +09:00
+  private_notes: 0
+
+
+journals225:
+  id: 558
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:35:11.000000000 +09:00
+  private_notes: 0
+
+
+journals226:
+  id: 559
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:35:44.000000000 +09:00
+  private_notes: 0
+
+
+journals227:
+  id: 560
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:36:02.000000000 +09:00
+  private_notes: 0
+
+
+journals228:
+  id: 561
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-18 12:36:21.000000000 +09:00
+  private_notes: 0
+
+
+journals229:
+  id: 562
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:12:49.000000000 +09:00
+  private_notes: 0
+
+
+journals230:
+  id: 563
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:13:31.000000000 +09:00
+  private_notes: 0
+
+
+journals231:
+  id: 564
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:13:46.000000000 +09:00
+  private_notes: 0
+
+
+journals232:
+  id: 565
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:14:15.000000000 +09:00
+  private_notes: 0
+
+
+journals233:
+  id: 566
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:14:28.000000000 +09:00
+  private_notes: 0
+
+
+journals234:
+  id: 567
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:15:45.000000000 +09:00
+  private_notes: 0
+
+
+journals235:
+  id: 568
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:16:00.000000000 +09:00
+  private_notes: 0
+
+
+journals236:
+  id: 569
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:16:10.000000000 +09:00
+  private_notes: 0
+
+
+journals237:
+  id: 570
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:16:27.000000000 +09:00
+  private_notes: 0
+
+
+journals238:
+  id: 571
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:16:40.000000000 +09:00
+  private_notes: 0
+
+
+journals239:
+  id: 572
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:16:54.000000000 +09:00
+  private_notes: 0
+
+
+journals240:
+  id: 573
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:17:02.000000000 +09:00
+  private_notes: 0
+
+
+journals241:
+  id: 574
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:17:11.000000000 +09:00
+  private_notes: 0
+
+
+journals242:
+  id: 575
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:17:21.000000000 +09:00
+  private_notes: 0
+
+
+journals243:
+  id: 576
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:17:30.000000000 +09:00
+  private_notes: 0
+
+
+journals244:
+  id: 577
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:17:42.000000000 +09:00
+  private_notes: 0
+
+
+journals245:
+  id: 578
+  journalized_id: 104269
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 10:19:55.000000000 +09:00
+  private_notes: 0
+
+
+journals246:
+  id: 579
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:37:07.000000000 +09:00
+  private_notes: 0
+
+
+journals247:
+  id: 580
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:37:57.000000000 +09:00
+  private_notes: 0
+
+
+journals248:
+  id: 581
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:40:21.000000000 +09:00
+  private_notes: 0
+
+
+journals249:
+  id: 582
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:40:38.000000000 +09:00
+  private_notes: 0
+
+
+journals250:
+  id: 583
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:40:56.000000000 +09:00
+  private_notes: 0
+
+
+journals251:
+  id: 584
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:42:33.000000000 +09:00
+  private_notes: 0
+
+
+journals252:
+  id: 585
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:42:44.000000000 +09:00
+  private_notes: 0
+
+
+journals253:
+  id: 586
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:43:19.000000000 +09:00
+  private_notes: 0
+
+
+journals254:
+  id: 587
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:44:03.000000000 +09:00
+  private_notes: 0
+
+
+journals255:
+  id: 588
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:44:15.000000000 +09:00
+  private_notes: 0
+
+
+journals256:
+  id: 589
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:46:15.000000000 +09:00
+  private_notes: 0
+
+
+journals257:
+  id: 590
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:46:55.000000000 +09:00
+  private_notes: 0
+
+
+journals258:
+  id: 591
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 11:47:08.000000000 +09:00
+  private_notes: 0
+
+
+journals259:
+  id: 592
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 12:48:46.000000000 +09:00
+  private_notes: 0
+
+
+journals260:
+  id: 593
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:23:30.000000000 +09:00
+  private_notes: 0
+
+
+journals261:
+  id: 594
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:23:48.000000000 +09:00
+  private_notes: 0
+
+
+journals262:
+  id: 595
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:24:04.000000000 +09:00
+  private_notes: 0
+
+
+journals263:
+  id: 596
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:24:24.000000000 +09:00
+  private_notes: 0
+
+
+journals264:
+  id: 597
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:24:39.000000000 +09:00
+  private_notes: 0
+
+
+journals265:
+  id: 598
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:24:53.000000000 +09:00
+  private_notes: 0
+
+
+journals266:
+  id: 599
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:25:17.000000000 +09:00
+  private_notes: 0
+
+
+journals267:
+  id: 600
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:25:31.000000000 +09:00
+  private_notes: 0
+
+
+journals268:
+  id: 601
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 13:26:03.000000000 +09:00
+  private_notes: 0
+
+
+journals269:
+  id: 602
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 14:03:27.000000000 +09:00
+  private_notes: 0
+
+
+journals270:
+  id: 603
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 16:22:58.000000000 +09:00
+  private_notes: 0
+
+
+journals271:
+  id: 604
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 16:23:21.000000000 +09:00
+  private_notes: 0
+
+
+journals272:
+  id: 605
+  journalized_id: 104261
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 16:24:16.000000000 +09:00
+  private_notes: 0
+
+
+journals273:
+  id: 606
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-23 16:24:51.000000000 +09:00
+  private_notes: 0
+
+
+journals274:
+  id: 607
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-24 11:43:26.000000000 +09:00
+  private_notes: 0
+
+
+journals275:
+  id: 608
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2016-12-24 11:43:44.000000000 +09:00
+  private_notes: 0
+
+
+journals276:
+  id: 609
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 1
+  notes: ''
+  created_on: 2017-01-16 06:50:59.000000000 +09:00
+  private_notes: 0
+
+
+journals277:
+  id: 610
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:18.000000000 +09:00
+  private_notes: 0
+
+
+journals278:
+  id: 611
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:18.000000000 +09:00
+  private_notes: 0
+
+
+journals279:
+  id: 612
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:18.000000000 +09:00
+  private_notes: 0
+
+
+journals280:
+  id: 613
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:19.000000000 +09:00
+  private_notes: 0
+
+
+journals281:
+  id: 614
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:30.000000000 +09:00
+  private_notes: 0
+
+
+journals282:
+  id: 615
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:30.000000000 +09:00
+  private_notes: 0
+
+
+journals283:
+  id: 616
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:30.000000000 +09:00
+  private_notes: 0
+
+
+journals284:
+  id: 617
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 1
+  notes: 
+  created_on: 2017-01-16 06:51:30.000000000 +09:00
+  private_notes: 0
+
+
+journals285:
+  id: 618
+  journalized_id: 104257
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-14 23:06:41.000000000 +09:00
+  private_notes: 0
+
+
+journals286:
+  id: 619
+  journalized_id: 104276
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:18:24.000000000 +09:00
+  private_notes: 0
+
+
+journals287:
+  id: 620
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:18:24.000000000 +09:00
+  private_notes: 0
+
+
+journals288:
+  id: 621
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:18:49.000000000 +09:00
+  private_notes: 0
+
+
+journals289:
+  id: 622
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:18:49.000000000 +09:00
+  private_notes: 0
+
+
+journals290:
+  id: 623
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:20:11.000000000 +09:00
+  private_notes: 0
+
+
+journals291:
+  id: 624
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:20:11.000000000 +09:00
+  private_notes: 0
+
+
+journals292:
+  id: 625
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:20:28.000000000 +09:00
+  private_notes: 0
+
+
+journals293:
+  id: 626
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:22:00.000000000 +09:00
+  private_notes: 0
+
+
+journals294:
+  id: 627
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:22:01.000000000 +09:00
+  private_notes: 0
+
+
+journals295:
+  id: 628
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:22:45.000000000 +09:00
+  private_notes: 0
+
+
+journals296:
+  id: 629
+  journalized_id: 104281
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:22:45.000000000 +09:00
+  private_notes: 0
+
+
+journals297:
+  id: 630
+  journalized_id: 104281
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:23:58.000000000 +09:00
+  private_notes: 0
+
+
+journals298:
+  id: 631
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:23:58.000000000 +09:00
+  private_notes: 0
+
+
+journals299:
+  id: 632
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:24:55.000000000 +09:00
+  private_notes: 0
+
+
+journals300:
+  id: 633
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:25:56.000000000 +09:00
+  private_notes: 0
+
+
+journals301:
+  id: 634
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:25:57.000000000 +09:00
+  private_notes: 0
+
+
+journals302:
+  id: 635
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:09.000000000 +09:00
+  private_notes: 0
+
+
+journals303:
+  id: 636
+  journalized_id: 104284
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:09.000000000 +09:00
+  private_notes: 0
+
+
+journals304:
+  id: 637
+  journalized_id: 104284
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:18.000000000 +09:00
+  private_notes: 0
+
+
+journals305:
+  id: 638
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:30.000000000 +09:00
+  private_notes: 0
+
+
+journals306:
+  id: 639
+  journalized_id: 104284
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:56.000000000 +09:00
+  private_notes: 0
+
+
+journals307:
+  id: 640
+  journalized_id: 104285
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:26:56.000000000 +09:00
+  private_notes: 0
+
+
+journals308:
+  id: 641
+  journalized_id: 104285
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:27:29.000000000 +09:00
+  private_notes: 0
+
+
+journals309:
+  id: 642
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:27:29.000000000 +09:00
+  private_notes: 0
+
+
+journals310:
+  id: 643
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:28:13.000000000 +09:00
+  private_notes: 0
+
+
+journals311:
+  id: 644
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:29:49.000000000 +09:00
+  private_notes: 0
+
+
+journals312:
+  id: 645
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:31:36.000000000 +09:00
+  private_notes: 0
+
+
+journals313:
+  id: 646
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 20:31:36.000000000 +09:00
+  private_notes: 0
+
+
+journals314:
+  id: 647
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:36:37.000000000 +09:00
+  private_notes: 0
+
+
+journals315:
+  id: 648
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:36:56.000000000 +09:00
+  private_notes: 0
+
+
+journals316:
+  id: 649
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:37:23.000000000 +09:00
+  private_notes: 0
+
+
+journals317:
+  id: 650
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:37:39.000000000 +09:00
+  private_notes: 0
+
+
+journals318:
+  id: 651
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:37:54.000000000 +09:00
+  private_notes: 0
+
+
+journals319:
+  id: 652
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:38:10.000000000 +09:00
+  private_notes: 0
+
+
+journals320:
+  id: 653
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:38:18.000000000 +09:00
+  private_notes: 0
+
+
+journals321:
+  id: 654
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:38:27.000000000 +09:00
+  private_notes: 0
+
+
+journals322:
+  id: 655
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:38:36.000000000 +09:00
+  private_notes: 0
+
+
+journals323:
+  id: 656
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:38:57.000000000 +09:00
+  private_notes: 0
+
+
+journals324:
+  id: 657
+  journalized_id: 104276
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:39:12.000000000 +09:00
+  private_notes: 0
+
+
+journals325:
+  id: 658
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:47:22.000000000 +09:00
+  private_notes: 0
+
+
+journals326:
+  id: 659
+  journalized_id: 104288
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 22:47:22.000000000 +09:00
+  private_notes: 0
+
+
+journals327:
+  id: 660
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 23:59:03.000000000 +09:00
+  private_notes: 0
+
+
+journals328:
+  id: 661
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 00:01:06.000000000 +09:00
+  private_notes: 0
+
+
+journals329:
+  id: 662
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 23:59:02.000000000 +09:00
+  private_notes: 0
+
+
+journals330:
+  id: 663
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 00:00:59.000000000 +09:00
+  private_notes: 0
+
+
+journals331:
+  id: 664
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 23:59:30.000000000 +09:00
+  private_notes: 0
+
+
+journals332:
+  id: 665
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 00:28:42.000000000 +09:00
+  private_notes: 0
+
+
+journals333:
+  id: 666
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 23:59:11.000000000 +09:00
+  private_notes: 0
+
+
+journals334:
+  id: 667
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 00:01:44.000000000 +09:00
+  private_notes: 0
+
+
+journals335:
+  id: 668
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-20 23:59:23.000000000 +09:00
+  private_notes: 0
+
+
+journals336:
+  id: 669
+  journalized_id: 104276
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:28:13.000000000 +09:00
+  private_notes: 0
+
+
+journals337:
+  id: 670
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:28:39.000000000 +09:00
+  private_notes: 0
+
+
+journals338:
+  id: 671
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:28:52.000000000 +09:00
+  private_notes: 0
+
+
+journals339:
+  id: 672
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:29:07.000000000 +09:00
+  private_notes: 0
+
+
+journals340:
+  id: 673
+  journalized_id: 104281
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:29:57.000000000 +09:00
+  private_notes: 0
+
+
+journals341:
+  id: 674
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:30:27.000000000 +09:00
+  private_notes: 0
+
+
+journals342:
+  id: 675
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:30:44.000000000 +09:00
+  private_notes: 0
+
+
+journals343:
+  id: 676
+  journalized_id: 104289
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:32:11.000000000 +09:00
+  private_notes: 0
+
+
+journals344:
+  id: 677
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:49:56.000000000 +09:00
+  private_notes: 0
+
+
+journals345:
+  id: 678
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:50:53.000000000 +09:00
+  private_notes: 0
+
+
+journals346:
+  id: 679
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:52:23.000000000 +09:00
+  private_notes: 0
+
+
+journals347:
+  id: 680
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:52:33.000000000 +09:00
+  private_notes: 0
+
+
+journals348:
+  id: 681
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:53:18.000000000 +09:00
+  private_notes: 0
+
+
+journals349:
+  id: 682
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 08:53:46.000000000 +09:00
+  private_notes: 0
+
+
+journals350:
+  id: 683
+  journalized_id: 104290
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:18:05.000000000 +09:00
+  private_notes: 0
+
+
+journals351:
+  id: 684
+  journalized_id: 104290
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:18:55.000000000 +09:00
+  private_notes: 0
+
+
+journals352:
+  id: 685
+  journalized_id: 104290
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:19:34.000000000 +09:00
+  private_notes: 0
+
+
+journals353:
+  id: 686
+  journalized_id: 104291
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:23:16.000000000 +09:00
+  private_notes: 0
+
+
+journals354:
+  id: 687
+  journalized_id: 104292
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:23:16.000000000 +09:00
+  private_notes: 0
+
+
+journals355:
+  id: 688
+  journalized_id: 104291
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:23:29.000000000 +09:00
+  private_notes: 0
+
+
+journals356:
+  id: 689
+  journalized_id: 104268
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:17.000000000 +09:00
+  private_notes: 0
+
+
+journals357:
+  id: 690
+  journalized_id: 104269
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:17.000000000 +09:00
+  private_notes: 0
+
+
+journals358:
+  id: 691
+  journalized_id: 104270
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:17.000000000 +09:00
+  private_notes: 0
+
+
+journals359:
+  id: 692
+  journalized_id: 104271
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:18.000000000 +09:00
+  private_notes: 0
+
+
+journals360:
+  id: 693
+  journalized_id: 104272
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:18.000000000 +09:00
+  private_notes: 0
+
+
+journals361:
+  id: 694
+  journalized_id: 104273
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:18.000000000 +09:00
+  private_notes: 0
+
+
+journals362:
+  id: 695
+  journalized_id: 104274
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:18.000000000 +09:00
+  private_notes: 0
+
+
+journals363:
+  id: 696
+  journalized_id: 104275
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:18.000000000 +09:00
+  private_notes: 0
+
+
+journals364:
+  id: 697
+  journalized_id: 104276
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:19.000000000 +09:00
+  private_notes: 0
+
+
+journals365:
+  id: 698
+  journalized_id: 104277
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:19.000000000 +09:00
+  private_notes: 0
+
+
+journals366:
+  id: 699
+  journalized_id: 104278
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:19.000000000 +09:00
+  private_notes: 0
+
+
+journals367:
+  id: 700
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:19.000000000 +09:00
+  private_notes: 0
+
+
+journals368:
+  id: 701
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:19.000000000 +09:00
+  private_notes: 0
+
+
+journals369:
+  id: 702
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:20.000000000 +09:00
+  private_notes: 0
+
+
+journals370:
+  id: 703
+  journalized_id: 104284
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:20.000000000 +09:00
+  private_notes: 0
+
+
+journals371:
+  id: 704
+  journalized_id: 104285
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:20.000000000 +09:00
+  private_notes: 0
+
+
+journals372:
+  id: 705
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:20.000000000 +09:00
+  private_notes: 0
+
+
+journals373:
+  id: 706
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: 
+  created_on: 2017-03-21 09:24:21.000000000 +09:00
+  private_notes: 0
+
+
+journals374:
+  id: 707
+  journalized_id: 104293
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-21 09:27:29.000000000 +09:00
+  private_notes: 0
+
+
+journals375:
+  id: 708
+  journalized_id: 104287
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:10:03.000000000 +09:00
+  private_notes: 0
+
+
+journals376:
+  id: 709
+  journalized_id: 104286
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:10:35.000000000 +09:00
+  private_notes: 0
+
+
+journals377:
+  id: 710
+  journalized_id: 104283
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:11:05.000000000 +09:00
+  private_notes: 0
+
+
+journals378:
+  id: 711
+  journalized_id: 104276
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:11:30.000000000 +09:00
+  private_notes: 0
+
+
+journals379:
+  id: 712
+  journalized_id: 104290
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:11:52.000000000 +09:00
+  private_notes: 0
+
+
+journals380:
+  id: 713
+  journalized_id: 104281
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:12:18.000000000 +09:00
+  private_notes: 0
+
+
+journals381:
+  id: 714
+  journalized_id: 104280
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:12:42.000000000 +09:00
+  private_notes: 0
+
+
+journals382:
+  id: 715
+  journalized_id: 104279
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:13:01.000000000 +09:00
+  private_notes: 0
+
+
+journals383:
+  id: 716
+  journalized_id: 104288
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:13:28.000000000 +09:00
+  private_notes: 0
+
+
+journals384:
+  id: 717
+  journalized_id: 104285
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:13:52.000000000 +09:00
+  private_notes: 0
+
+
+journals385:
+  id: 718
+  journalized_id: 104282
+  journalized_type: Issue
+  user_id: 5
+  notes: ''
+  created_on: 2017-03-22 20:14:18.000000000 +09:00
+  private_notes: 0
+
