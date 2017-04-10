@@ -27,8 +27,7 @@ GanttChart.prototype.draw = function(){
 
   var time_scale = d3.scaleTime()
       .range([0, width])
-      .domain([fmtFunc(this.start_date), fmtFunc(this.due_date)])
-      .nice();
+      .domain([fmtFunc(this.start_date), fmtFunc(this.due_date)]);
 
   svg.append("g")
       .attr("class", "axis-tick")
