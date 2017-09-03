@@ -8,26 +8,22 @@
           = t('.total')
         - @act_total[:estimated].each do |v|
           %span{style: "margin-left: 5px; display: block; float: left;"}
-            - v[0] == nil ? name = t('.not_assigned') : name = v[0]
-            = '<span style="font-weight: bold;">' + name + '</span>:' + v[1].to_s + 'h'
+            =  + v[1].to_s + 'h'
       %div{class: "cost_summary"}
         %div{class: "remaining_total"}
           = t('.remaining')
         - @act_total[:remaining].each do |v|
           %span{style: "margin-left: 5px; display: block; float: left;"}
-            - v[0] == nil ? name = t('.not_assigned') : name = v[0]
-            = '<span style="font-weight: bold;">' + name + '</span>:' + v[1].to_s + 'h'
+            = v[1].to_s + 'h'
       %div{class: "cost_summary"}
         %div{class: "estimated_total"}
           = t('.item_number')
         - @count_total[:estimated].each do |v|
           %span{style: "margin-left: 5px; display: block; float: left;"}
-            - v[0] == nil ? name = t('.not_assigned') : name = v[0]
-            = '<span style="font-weight: bold;">' + name + '</span>:' + v[1].to_s + t('.item')
+            = v[1].to_s + t('.item')
       %div{class: "cost_summary"}
         %div{class: "remaining_total"}
           = t('.remaining_number')
         - @count_total[:remaining].each do |v|
           %span{style: "margin-left: 5px; display: block; float: left;"}
-            - v[0] == nil ? name = t('.not_assigned') : name = v[0]
-            = '<span style="font-weight: bold;">' + name + '</span>:' + v[1].to_s + t('.item')
+            = v[1].to_s + t('.item')

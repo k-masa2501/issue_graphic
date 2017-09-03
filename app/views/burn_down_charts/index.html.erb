@@ -16,6 +16,8 @@
     :project_identifier => @project.identifier
 } ) %>
 
+<%= link_to 'CSV形式でダウンロード', project_burn_down_charts_path(format: 'zip') %>
+
 <%= cell("cells/filter").(:filter, project_id: @project.id) %>
 
 <%= cell("cells/filter").(:sum, {project_id: @project.id,

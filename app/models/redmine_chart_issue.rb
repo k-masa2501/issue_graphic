@@ -96,4 +96,57 @@ class RedmineChartIssue < Issue
 
   end
 
+  def self.per_period_oc(filter, days, map, format, condition)
+
+    sql = Array.new
+    keyword = ['OP','CL']
+    difference = Array.new
+    result = {keyword[0] => Array.new, keyword[1] => Array.new}
+    keys1 = {keyword[0] => "#{keyword[0]}#{I18n.t('stacked_bar_charts.occurrence')}",
+             keyword[1] => "#{keyword[1]}#{I18n.t('stacked_bar_charts.closed')}"}
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Issue.joins(map[:view][:joins])
+
+    filter.each do |v|
+      query = [Issue.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys2 = record.pluck(query_var1).uniq
+
+    days.each do |v|
+      open_between = "(issues.created_on #{condition.call(v)})"
+      close_between = "(issues.closed_on #{condition.call(v)})"
+      sql.push("("+record.select("DATE_FORMAT(#{v},'#{format}')",
+                                 "ifnull(sum#{open_between},0)",
+                                 "ifnull(sum#{close_between},0)",
+                                 query_var1)
+                       .group(query_var1).to_sql+")")
+    end
+
+    data = ActiveRecord::Base.connection.select_rows(sql.join(" UNION ALL "))
+
+    diff = record.where("issues.created_on > #{days[0]}")
+               .where("issues.closed_on  <= #{days[0]}")
+               .pluck('count(issues.id)')[0]
+
+    (0 < data.length) and days.each do |v1|
+
+      if 0 < (v2 = data.select {|v2| Date.parse(v1).strftime(format) == Date.parse(v2[0]).strftime(format)}).length
+        v2.each do |v3|
+          result[keyword[0]].push([v3[0],v3[3],v3[1]])
+          result[keyword[1]].push([v3[0],v3[3],v3[2]])
+          diff = diff + (v3[1] - v3[2])
+        end
+      else
+        result[keyword[0]].push([Date.parse(v1).strftime(format),keys2[0],0])
+        result[keyword[1]].push([Date.parse(v1).strftime(format),keys2[0],0])
+      end
+      difference.push({:date => Date.parse(v1).strftime(format), :value => diff})
+    end
+
+    return {:data => result, :keys1 => keys1, :keys2 => keys2, :diff => difference}
+
+  end
+
 end

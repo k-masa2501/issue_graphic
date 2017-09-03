@@ -2,8 +2,8 @@ module GanttChartsHelper
 
   def gantt_color(v, is_closed)
 
-    r_day = v.due_date - v.start_date
-    average = v.estimated.quo(v.due_date - (v.start_date-1))
+    r_day = v.due_date - (v.start_date-1)
+    average = v.estimated.quo(r_day)
     if v.due_date < Date.today
       now = r_day
     else

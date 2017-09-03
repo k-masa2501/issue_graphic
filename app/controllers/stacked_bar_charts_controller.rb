@@ -152,195 +152,45 @@ class StackedBarChartsController < ApplicationController
   end
 
   def trend_of_total_progress(days, map, format)
-
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Aggregation.joins(map[:view][:joins])
-
-    @filter.each do |v|
-      query = [Aggregation.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys = record.pluck(query_var1).uniq
-    result = record.where("today in (#{days.join(',')})")
-               .group("aggregations.today", query_var1)
-               .pluck(
-                   "DATE_FORMAT(today,'#{format}')",
-                   query_var1,
-                   "sum(aggregations.act_value)"
-               )
-
-    return {:data => result, :keys => keys}
-
+    return Aggregation.trend_of_total_progress(@filter, days, map, format)
   end
 
   def trend_of_total_count(days, map, format)
-
-    closed_ids = IssueStatus.where(is_closed: 1).pluck("id").join(",")
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Aggregation.joins(map[:view][:joins])
-
-    @filter.each do |v|
-      query = [Aggregation.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys = record.pluck(query_var1).uniq
-    result = record.where("today in (#{days.join(',')})")
-               .group("aggregations.today", query_var1)
-               .pluck(
-                   "DATE_FORMAT(today,'#{format}')",
-                   query_var1,
-                   "sum(aggregations.status_id in (#{closed_ids}))"
-               )
-
-    return {:data => result, :keys => keys}
-
+    return Aggregation.trend_of_total_count(@filter, days, map, format)
   end
 
   def ticket_amount(days, map, format)
-
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Aggregation.joins(map[:view][:joins])
-
-    @filter.each do |v|
-      query = [Aggregation.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys = record.pluck(query_var1).uniq
-    result = record.where("today in (#{days.join(',')})")
-               .group("aggregations.today", query_var1)
-               .pluck(
-                   "DATE_FORMAT(today,'#{format}')",
-                   query_var1,
-                   "count(aggregations.today)"
-               )
-
-    return {:data => result, :keys => keys}
-
+    return Aggregation.ticket_amount(@filter, days, map, format)
   end
 
   def workload(days, map, format)
-
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Aggregation.joins(map[:view][:joins])
-
-    @filter.each do |v|
-      query = [Aggregation.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys = record.pluck(query_var1).uniq
-    result = record.where("today in (#{days.join(',')})")
-               .group("aggregations.today", query_var1)
-               .pluck(
-                   "DATE_FORMAT(today,'#{format}')",
-                   query_var1,
-                   "sum(aggregations.estimated_hours)"
-               )
-
-    return {:data => result, :keys => keys}
-
+    return Aggregation.workload(@filter, days, map, format)
   end
 
   def per_period_work(days, map, format, condition)
-
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Aggregation.joins(map[:view][:joins])
-    sql = Array.new
-
-    @filter.each do |v|
-      query = [Aggregation.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys = record.pluck(query_var1).uniq
-
-    days.each do |v|
-      sql.push("("+record.select(
-          "DATE_FORMAT(#{v},'#{format}')",
-          query_var1,
-          "ifnull(sum(aggregations.progress), 0)"
-      )
-                       .where(condition.call(v))
-                       .group(query_var1).to_sql+")")
-    end
-
-    result = ActiveRecord::Base.connection.select_rows(sql.join(" UNION ALL "))
-
-    return {:data =>  result, :keys => keys}
-
+    return Aggregation.per_period_work(@filter, days, map, format, condition)
   end
 
   def per_period_work_day(days, map, format)
-    condition = ->(v){ return "aggregations.today = #{v}"}
+    condition = ->(v){
+      return "aggregations.today = #{v}"}
     per_period_work(days, map, format, condition)
   end
 
   def per_period_work_week(days, map, format)
-    condition = ->(v){ return "aggregations.today BETWEEN '#{Date.parse(v)-6}' AND #{v}"}
+    condition = ->(v){
+      return "aggregations.today BETWEEN '#{Date.parse(v)-6}' AND #{v}"}
     per_period_work(days, map, format, condition)
   end
 
   def per_period_work_month(days, map, format)
     condition = ->(v){
-      return "aggregations.today BETWEEN '#{Date.parse(v).beginning_of_month}' AND '#{(Date.parse(v))}'"
-    }
+      return "aggregations.today BETWEEN '#{Date.parse(v).beginning_of_month}' AND '#{(Date.parse(v))}'"}
     per_period_work(days, map, format, condition)
   end
 
   def per_period_oc(days, map, format, condition)
-
-    sql = Array.new
-    keyword = ['OP','CL']
-    difference = Array.new
-    result = {keyword[0] => Array.new, keyword[1] => Array.new}
-    keys1 = {keyword[0] => "#{keyword[0]}#{t('stacked_bar_charts.occurrence')}",
-             keyword[1] => "#{keyword[1]}#{t('stacked_bar_charts.closed')}"}
-    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
-    record = Issue.joins(map[:view][:joins])
-
-    @filter.each do |v|
-      query = [Issue.table_name + '.' + v[0],v[1]]
-      record = record.where(query)
-    end
-
-    keys2 = record.pluck(query_var1).uniq
-
-    days.each do |v|
-      open_between = "(issues.created_on #{condition.call(v)})"
-      close_between = "(issues.closed_on #{condition.call(v)})"
-      sql.push("("+record.select("DATE_FORMAT(#{v},'#{format}')",
-                                 "ifnull(sum#{open_between},0)",
-                                 "ifnull(sum#{close_between},0)",
-                                 query_var1)
-                       .group(query_var1).to_sql+")")
-    end
-
-    data = ActiveRecord::Base.connection.select_rows(sql.join(" UNION ALL "))
-
-    diff = record.where("issues.created_on > #{days[0]}")
-               .where("issues.closed_on  <= #{days[0]}")
-               .pluck('count(issues.id)')[0]
-
-    (0 < data.length) and days.each do |v1|
-
-      if 0 < (v2 = data.select {|v2| Date.parse(v1).strftime(format) == Date.parse(v2[0]).strftime(format)}).length
-        v2.each do |v3|
-          result[keyword[0]].push([v3[0],v3[3],v3[1]])
-          result[keyword[1]].push([v3[0],v3[3],v3[2]])
-          diff = diff + (v3[1] - v3[2])
-        end
-      else
-        result[keyword[0]].push([Date.parse(v1).strftime(format),keys2[0],0])
-        result[keyword[1]].push([Date.parse(v1).strftime(format),keys2[0],0])
-      end
-      difference.push({:date => Date.parse(v1).strftime(format), :value => diff})
-    end
-
-    return {:data => result, :keys1 => keys1, :keys2 => keys2, :diff => difference}
-
+    record = RedmineChartIssue.per_period_oc(@filter, days, map, format, condition)
   end
 
   def per_period_oc_day(days, map, format)
@@ -509,7 +359,6 @@ class StackedBarChartsController < ApplicationController
     end
 
     result[:diff].each do |v|
-      logger.debug v
       v[:date] = (Date.parse(v[:date])-6).strftime(factor[:f]) + '-' + Date.parse(v[:date]).strftime('%m/%d')
     end
 

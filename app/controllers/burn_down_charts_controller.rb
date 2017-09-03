@@ -3,32 +3,78 @@ include BurnDownChartsHelper
 class BurnDownChartsController < ApplicationController
   unloadable
   menu_item :redmine_chart
-  before_filter :find_project, :authorize, :find_version, :set_filter
+  before_filter :find_project, :authorize, :find_version, :set_filter, :set_master
 
-  DAY_NAMES = [
-      I18n.t('burn_down_charts.sun'),
-      I18n.t('burn_down_charts.mon'),
-      I18n.t('burn_down_charts.tue'),
-      I18n.t('burn_down_charts.wed'),
-      I18n.t('burn_down_charts.thu'),
-      I18n.t('burn_down_charts.fri'),
-      I18n.t('burn_down_charts.sat')
-  ]
+
 
   def index
 
-    # プロジェクトに所属するメンバー
+    respond_to do |format|
+      format.html{
 
-    @send_data = collect_graph_data
+        # プロジェクトに所属するメンバー
 
-    @send_data[:member] = MyUtility.get_project_menber(@project.id, params)
+        @send_data = collect_graph_data
 
-    @send_data[:daily_aggs] = collect_daily_aggs
+        @send_data[:member] = MyUtility.get_project_menber(@project.id, params)
 
-    @send_data[:day_names] = DAY_NAMES
+        @send_data[:daily_aggs] = collect_daily_aggs
 
-    @js_labels = I18n.t('burn_down_charts.js')
+        @send_data[:day_names] = @day_names
 
+        @js_labels = I18n.t('burn_down_charts.js')
+
+      }
+      format.zip {
+=begin
+        require 'zip'
+        require 'stringio'
+
+        report = Spreadsheet::Workbook.new
+        info = report.create_worksheet :name => 'User Information'
+        info.row(0).push 'User ID', 1,222,333,"ああああああキタジマ匡訓"
+
+        outfile = "Report_for_#{1}.xls"
+
+        data = StringIO.new ''
+
+        report.write data
+
+        new_data = Zip::OutputStream.write_buffer((StringIO.new '').set_encoding(Encoding::CP932),
+                                                  Zip::TraditionalEncrypter.new('1234')) do |out|
+          out.put_next_entry(outfile.encode(Encoding::CP932))
+          out.write data.string
+        end
+
+        send_data new_data.string, :type => 'application/zip',
+                  :disposition => 'attachment',
+                  :filename => "#{outfile}.zip"
+=end
+
+        file_name = "Aggregation_#{Date.today.strftime("%Y-%m-%d")}"
+
+        zipData = store_data_with_encryptZip(
+          Aggregation.store_allRecord_with_excelData,
+          "#{file_name}.xls",
+          '1234'
+        )
+
+        send_data zipData.string, :type => 'application/zip',
+                  :disposition => 'attachment',
+                  :filename => "#{file_name}.zip"
+
+      }
+    end
+
+  end
+
+  def store_data_with_encryptZip(data, filename, encrypt, encoding=Encoding::CP932)
+    require 'zip'
+    Zip::OutputStream.write_buffer((StringIO.new '').set_encoding(encoding),
+                                   Zip::TraditionalEncrypter.new(encrypt)) do |out|
+      out.put_next_entry(filename.encode(encoding))
+      out.write data.string
+    end
   end
 
   def get_process
@@ -52,7 +98,7 @@ class BurnDownChartsController < ApplicationController
 
     data[:daily_aggs] = collect_daily_aggs
 
-    data[:day_names] = DAY_NAMES
+    data[:day_names] = @day_names
 
     data[:render_table] = render_to_string(partial: "burn_down_charts/index_t/table",:locals => {:data => data} )
     data[:render_summary] = cell("cells/filter").(:sum, {project_id: @project.id,
@@ -89,17 +135,15 @@ private
       daily_gap = Array.new
 
       data = Aggregation.get_aggs_each_daily(@filter)
-
       # データが存在しない場合は処理しない
       return {:estimated => nil, :atual => nil, :plan => nil, :daily_gap => nil} if data.length <= 0
 
       data.each_with_index do |v, i|
         estimated.push({date: v.today, value: v.estimated_sum})
-        atual.push({date: v.today, value: v.estimated_sum - v.actual_sum}) if (i <= 20)
+        atual.push({date: v.today, value: v.estimated_sum - v.actual_sum})
         plan.push({date: v.today, value:v.estimated_sum - v.plan_value_sum})
         daily_gap.push(v.actual_sum - v.plan_value_sum)
       end
-
       start_date, due_date = Aggregation.get_both_date(@filter)
 
       count = 0
@@ -163,6 +207,18 @@ private
 
   def set_filter
     @filter = MyUtility.set_filter(params, @project.id)
+  end
+
+  def set_master
+    @day_names = [
+        I18n.t('burn_down_charts.sun'),
+        I18n.t('burn_down_charts.mon'),
+        I18n.t('burn_down_charts.tue'),
+        I18n.t('burn_down_charts.wed'),
+        I18n.t('burn_down_charts.thu'),
+        I18n.t('burn_down_charts.fri'),
+        I18n.t('burn_down_charts.sat')
+    ]
   end
 
 end

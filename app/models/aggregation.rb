@@ -13,24 +13,24 @@ class Aggregation < ActiveRecord::Base
   belongs_to :category, :class_name => 'IssueCategory'
 
   def self.get_aggs_each_daily(where) # fetch_sum_group_by_today
-      data = self
+    data = self
                .select([:today,
                         self.arel_table[:estimated_hours].sum().as('estimated_sum'),
                         self.arel_table[:act_value].sum().as('actual_sum'),
                         self.arel_table[:plan_value].sum().as('plan_value_sum'),])
-      where.each do |v|
-        data = data.where(v)
-      end
-      data =  data.group(:today)
+    where.each do |v|
+      data = data.where(v)
+    end
+    data =  data.group(:today)
   end
 
   def self.get_aggs_each_assigned(where) # fetch_cost_each_assigned
 
     record = self.select(
-                            "concat(users.lastname,' ',users.firstname) as name",
-                            self.arel_table[:estimated_hours].sum().as('estimated_sum'),
-                            self.arel_table[:act_value].sum().as('actual_sum'))
-                    .joins('left join users on users.id = aggregations.assigned_to_id')
+        "concat(users.lastname,' ',users.firstname) as name",
+        self.arel_table[:estimated_hours].sum().as('estimated_sum'),
+        self.arel_table[:act_value].sum().as('actual_sum'))
+                 .joins('left join users on users.id = aggregations.assigned_to_id')
 
     where.each do |v|
       record = record.where(v)
@@ -47,11 +47,11 @@ class Aggregation < ActiveRecord::Base
   def self.get_aggs_each_daily_assigned(where)
 
     record = self.select('aggregations.today as today',
-                            "concat(users.lastname,' ',users.firstname) as name",
-                            self.arel_table[:estimated_hours].sum().as('estimated_sum'),
-                            self.arel_table[:act_value].sum().as('actual_sum'),
-                            self.arel_table[:progress].sum().as('progress'))
-                    .joins('left join users on users.id = aggregations.assigned_to_id')
+                         "concat(users.lastname,' ',users.firstname) as name",
+                         self.arel_table[:estimated_hours].sum().as('estimated_sum'),
+                         self.arel_table[:act_value].sum().as('actual_sum'),
+                         self.arel_table[:progress].sum().as('progress'))
+                 .joins('left join users on users.id = aggregations.assigned_to_id')
 
     where.each do |v|
       record = record.where(v)
@@ -164,6 +164,148 @@ class Aggregation < ActiveRecord::Base
         "#{map[:method][:query]}")
 
     return {:data => data, :keys => keys}
+  end
+
+  def self.trend_of_total_progress(filter, days, map, format)
+
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Aggregation.joins(map[:view][:joins])
+
+    filter.each do |v|
+      query = [Aggregation.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys = record.pluck(query_var1).uniq
+    result = record.where("today in (#{days.join(',')})")
+                 .group("aggregations.today", query_var1)
+                 .pluck(
+                     "DATE_FORMAT(today,'#{format}')",
+                     query_var1,
+                     "sum(aggregations.act_value)"
+                 )
+
+    return {:data => result, :keys => keys}
+
+  end
+
+  def self.trend_of_total_count(filter, days, map, format)
+
+    closed_ids = IssueStatus.where(is_closed: 1).pluck("id").join(",")
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Aggregation.joins(map[:view][:joins])
+
+    filter.each do |v|
+      query = [Aggregation.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys = record.pluck(query_var1).uniq
+    result = record.where("today in (#{days.join(',')})")
+                 .group("aggregations.today", query_var1)
+                 .pluck(
+                     "DATE_FORMAT(today,'#{format}')",
+                     query_var1,
+                     "sum(aggregations.status_id in (#{closed_ids}))"
+                 )
+
+    return {:data => result, :keys => keys}
+
+  end
+
+  def self.ticket_amount(filter, days, map, format)
+
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Aggregation.joins(map[:view][:joins])
+
+    filter.each do |v|
+      query = [Aggregation.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys = record.pluck(query_var1).uniq
+    result = record.where("today in (#{days.join(',')})")
+                 .group("aggregations.today", query_var1)
+                 .pluck(
+                     "DATE_FORMAT(today,'#{format}')",
+                     query_var1,
+                     "count(aggregations.today)"
+                 )
+
+    return {:data => result, :keys => keys}
+
+  end
+
+  def self.workload(filter, days, map, format)
+
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Aggregation.joins(map[:view][:joins])
+
+    filter.each do |v|
+      query = [Aggregation.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys = record.pluck(query_var1).uniq
+    result = record.where("today in (#{days.join(',')})")
+                 .group("aggregations.today", query_var1)
+                 .pluck(
+                     "DATE_FORMAT(today,'#{format}')",
+                     query_var1,
+                     "sum(aggregations.estimated_hours)"
+                 )
+
+    return {:data => result, :keys => keys}
+
+  end
+
+  def self.per_period_work(filter, days, map, format, condition)
+
+    query_var1 = "ifnull(#{map[:view][:pluck]}, 'null')"
+    record = Aggregation.joins(map[:view][:joins])
+    sql = Array.new
+
+    filter.each do |v|
+      query = [Aggregation.table_name + '.' + v[0],v[1]]
+      record = record.where(query)
+    end
+
+    keys = record.pluck(query_var1).uniq
+
+    days.each do |v|
+      sql.push("("+record.select(
+          "DATE_FORMAT(#{v},'#{format}')",
+          query_var1,
+          "ifnull(sum(aggregations.progress), 0)"
+      )
+                       .where(condition.call(v))
+                       .group(query_var1).to_sql+")")
+    end
+
+    result = ActiveRecord::Base.connection.select_rows(sql.join(" UNION ALL "))
+
+    return {:data =>  result, :keys => keys}
+
+  end
+
+  def self.store_allRecord_with_excelData()
+
+    #workbook = Spreadsheet::Workbook.new
+    #worksheet = workbook.create_worksheet :name => "#{self.table_name}"
+    workbook = Spreadsheet.open("#{Rails.root}/tmp/Aggregation_template.xls")
+    worksheet = workbook.worksheet(0)
+
+    # output header
+    self.columns.each{|col| worksheet.row(0).push(col.name)}
+
+    # output data
+    self.pluck('*').each_with_index do |v1, i|
+      worksheet.row(i+1).replace(v1)
+    end
+
+    result = StringIO.new ''
+    workbook.write result
+    result
   end
 
 end

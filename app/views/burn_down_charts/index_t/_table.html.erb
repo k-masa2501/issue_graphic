@@ -27,6 +27,7 @@
             <td class="<%= get_n_color_of_assignend(sum) %>"><%= sum %></td>
         <% end %>
       </tr>
+  <% break if ((data[:atual].length-1) - index) > 20 %>
   <% end if data[:atual].present? %>
   </tbody>
 </table>
