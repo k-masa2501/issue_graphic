@@ -27,54 +27,22 @@ class BurnDownChartsController < ApplicationController
       }
       format.zip {
 =begin
-        require 'zip'
-        require 'stringio'
-
-        report = Spreadsheet::Workbook.new
-        info = report.create_worksheet :name => 'User Information'
-        info.row(0).push 'User ID', 1,222,333,"ああああああキタジマ匡訓"
-
-        outfile = "Report_for_#{1}.xls"
-
-        data = StringIO.new ''
-
-        report.write data
-
-        new_data = Zip::OutputStream.write_buffer((StringIO.new '').set_encoding(Encoding::CP932),
-                                                  Zip::TraditionalEncrypter.new('1234')) do |out|
-          out.put_next_entry(outfile.encode(Encoding::CP932))
-          out.write data.string
-        end
-
-        send_data new_data.string, :type => 'application/zip',
-                  :disposition => 'attachment',
-                  :filename => "#{outfile}.zip"
-=end
-
-        file_name = "Aggregation_#{Date.today.strftime("%Y-%m-%d")}"
+        fileName_nonExt = "Aggregation_#{Date.today.strftime("%Y-%m-%d")}"
 
         zipData = store_data_with_encryptZip(
           Aggregation.store_allRecord_with_excelData,
-          "#{file_name}.xls",
+          "#{fileName_nonExt}.xls",
           '1234'
         )
 
         send_data zipData.string, :type => 'application/zip',
                   :disposition => 'attachment',
-                  :filename => "#{file_name}.zip"
-
+                  :filename => "#{fileName_nonExt}.zip"
+=end
+        send_aggregation_send_zipFormat
       }
     end
 
-  end
-
-  def store_data_with_encryptZip(data, filename, encrypt, encoding=Encoding::CP932)
-    require 'zip'
-    Zip::OutputStream.write_buffer((StringIO.new '').set_encoding(encoding),
-                                   Zip::TraditionalEncrypter.new(encrypt)) do |out|
-      out.put_next_entry(filename.encode(encoding))
-      out.write data.string
-    end
   end
 
   def get_process
@@ -219,6 +187,29 @@ private
         I18n.t('burn_down_charts.fri'),
         I18n.t('burn_down_charts.sat')
     ]
+  end
+
+  def store_data_with_encryptZip(data, filename, encrypt, encoding=Encoding::CP932)
+    require 'zip'
+    Zip::OutputStream.write_buffer((StringIO.new '').set_encoding(encoding),
+                                   Zip::TraditionalEncrypter.new(encrypt)) do |out|
+      out.put_next_entry(filename.encode(encoding))
+      out.write data.string
+    end
+  end
+
+  def send_aggregation_send_zipFormat
+    fileName_nonExt = "Aggregation_#{Date.today.strftime("%Y-%m-%d")}"
+
+    zipData = store_data_with_encryptZip(
+      Aggregation.store_allRecord_with_excelData,
+      "#{fileName_nonExt}.xls",
+      '1234'
+    )
+
+    send_data zipData.string, :type => 'application/zip',
+              :disposition => 'attachment',
+              :filename => "#{fileName_nonExt}.zip"
   end
 
 end
